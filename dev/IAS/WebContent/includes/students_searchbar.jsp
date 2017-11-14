@@ -1,7 +1,7 @@
 <!-- SELECT2 EXAMPLE -->
       <div class="box box-info">
         <div class="box-header with-border">
-          <h3 class="box-title">Search Student</h3>
+          <h3 class="box-title"><b>Search Student</b></h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -10,7 +10,7 @@
         </div>
         <!-- /.box-header -->
         <div class="box-body">
-          <div class="row" style="margin-left:25px;">
+          <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:25px;">
           
           <!-- Start Radio Buttons -->
                 <div class="form-group row">
@@ -63,6 +63,9 @@
               </div>
               <!-- /.form-group -->
               
+                
+                <button type="submit" class="btn btn-info pull-right" style="width:200px;height:50px;">Search</button>
+             
              
               </div>
               <!-- /.form-group -->
@@ -70,6 +73,4 @@
             <!-- /.col -->
           </div>
           <!-- /.row -->
-        </div>
-      </div>
-      <!-- /.box -->
+        

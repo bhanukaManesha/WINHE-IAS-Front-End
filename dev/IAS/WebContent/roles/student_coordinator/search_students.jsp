@@ -34,11 +34,19 @@
 
 <!-- Main content -->
     <section class="content">
+    
+    
 
 	<%@include file= "../../includes/students_searchbar.jsp"%>
 
+	<%@include file= "../../includes/students_search_results.jsp"%>
     
-</div>
+    </section>
+    
+    </div>
+ </div>
+      <!-- /.box -->
+
 <!-- ./wrapper -->
 
 
