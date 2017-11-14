@@ -16,16 +16,16 @@
                 <div class="form-group row">
                 <form role="form">
                   <div class="radio">
-                    <label style="margin-left:30px;">
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    <label style="margin-left:50px;">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked style="margin-left:30px;">
                       Current Students
                     </label>
-                    <label style="margin-left:30px;">
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    <label style="margin-left:50px;">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" style="margin-left:30px;">
                       Past Students
                     </label>
-                    <label style="margin-left:30px;">
-                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                    <label style="margin-left:50px;">
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" style="margin-left:30px;">
                       All Students
                     </label>
                   </div>

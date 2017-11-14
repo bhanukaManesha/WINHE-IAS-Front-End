@@ -51,7 +51,7 @@
               <i class="fa fa-search"></i>
             </div>
             <a href="search_students.jsp" class="small-box-footer" style="font-size:20px;">
-              Search Students
+              Search Student
             </a>
           </div>
         </div>
@@ -68,7 +68,7 @@
               <i class="ion ion-person-add"></i>
             </div>
             <a href="add_students.jsp" class="small-box-footer" style="font-size:20px;">
-              Add Students
+              Add Student
             </a>
           </div>
         </div>
@@ -84,8 +84,8 @@
             <div class="icon">
               <i class="fa fa-edit"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
-              Edit Students
+            <a href="edit_students.jsp" class="small-box-footer" style="font-size:20px;">
+              Edit Student
             </a>
           </div>
         </div>
@@ -101,8 +101,8 @@
             <div class="icon">
               <i class="fa fa-trash"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
-              Delete Students
+            <a href="delete_students.jsp" class="small-box-footer" style="font-size:20px;">
+              Delete Student
             </a>
           </div>
         </div>

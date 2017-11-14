@@ -28,11 +28,11 @@
          Student Coordinator
       </h1>
       <h4 style="text-align:center">
-         Search Student
+         Edit Student
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="index.jsp"><i class="fa fa-search"></i> Search</a></li>
+        <li><a href="index.jsp"><i class="fa fa-edit"></i> Edit</a></li>
       </ol>
     </section>
 
@@ -43,7 +43,7 @@
 
 	<%@include file= "../../includes/students_searchbar.jsp"%>
 
-	<%@include file= "../../includes/students_search_results.jsp"%>
+	<%@include file= "../../includes/students_edit_results.jsp"%>
     
     </section>
     

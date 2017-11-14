@@ -21,12 +21,15 @@
 <%@include file= "../../includes/side_navbar.jsp"%>
   
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper" style="min-height: 2350px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1 style="text-align:center">
          Student Coordinator
       </h1>
+      <h4 style="text-align:center">
+         Add Student
+      </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li><a href="index.jsp"><i class="ion ion-person-add"></i> Add</a></li>
@@ -45,7 +48,7 @@
             <div class="tab-content">
             
           <div class="active tab-pane" id="new_students">
-     		<!-- Import Panel Start -->
+          <!-- Import Panel Start -->
      		<h2 class="box-title">New Student</h2>
           <div class="box box-success">
             <div class="box-header with-border">
@@ -121,7 +124,7 @@
 			           	
 			           	<label>Status</label>
 
-			            <select class="form-control select2" data-placeholder="Select a Course" style="display:block" >
+			            <select class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
 		                  <option>Single</option>
 		                  <option>Married</option>
 		                  </select>
@@ -195,7 +198,7 @@
 
 			           	<label>Relationship</label>
 
-			            <select class="form-control select2" data-placeholder="Select Relationship" style="display:block" >
+			            <select class="form-control select2" data-placeholder="Select Relationship" style="width: 100%;" >
 		                  <option>Father</option>
 		                  <option>Mother</option>
 		                  <option>Grand-Father</option>
@@ -272,7 +275,7 @@
 			           <label>Name of Qualification</label>
 			            <input type="text" class="form-control" placeholder="Enter Qualification" >
 			            <label>Subjects Passed</label>
-			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="display:block" >
+			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
 		                  <option>Mathematics</option>
 		                  <option>Sinhala</option>
 		                  <option>English</option>
@@ -295,7 +298,7 @@
 			           <label>Name of Qualification</label>
 			            <input type="text" class="form-control" placeholder="Enter Qualification" >
 			            <label>Subjects Passed</label>
-			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="display:block" >
+			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
 		                  <option>Mathematics</option>
 		                  <option>Sinhala</option>
 		                  <option>English</option>
@@ -347,7 +350,7 @@
             				<div class="form-group">
 			           
 			           <label>Course Name</label>
-			                  <select class="form-control select2" data-placeholder="Select a Course" >
+			                  <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
 			                  <option>Java - Associate</option>
 			                  <option>Java - Professional</option>
 			                  <option>Java - Master</option>
@@ -366,7 +369,7 @@
 			                  <option>asp.net - Expert</option>
                				</select>
                			<label>Batch ID</label>
-			                  <select class="form-control select2" data-placeholder="Select a Course" >
+			                  <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
 			                  <option>CS-450</option>
 			                  <option>CS-452</option>
                				</select>
@@ -488,7 +491,7 @@
 			           	
 			           	<label>Status</label>
 
-			            <select class="form-control select2" data-placeholder="Select a Course" style="display:block" >
+			            <select class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
 		                  <option>Single</option>
 		                  <option>Married</option>
 		                  </select>
@@ -562,7 +565,7 @@
 
 			           	<label>Relationship</label>
 
-			            <select class="form-control select2" data-placeholder="Select Relationship" style="display:block" >
+			            <select class="form-control select2" data-placeholder="Select Relationship" style="width: 100%;" >
 		                  <option>Father</option>
 		                  <option>Mother</option>
 		                  <option>Grand-Father</option>
@@ -639,7 +642,7 @@
 			           <label>Name of Qualification</label>
 			            <input type="text" class="form-control" placeholder="Enter Qualification" >
 			            <label>Subjects Passed</label>
-			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="display:block" >
+			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
 		                  <option>Mathematics</option>
 		                  <option>Sinhala</option>
 		                  <option>English</option>
@@ -662,7 +665,7 @@
 			           <label>Name of Qualification</label>
 			            <input type="text" class="form-control" placeholder="Enter Qualification" >
 			            <label>Subjects Passed</label>
-			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="display:block" >
+			           	<select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
 		                  <option>Mathematics</option>
 		                  <option>Sinhala</option>
 		                  <option>English</option>
@@ -685,7 +688,7 @@
             				<div class="form-group">
 			           
 						<div class="box-body pad">
-					         <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
+					         <textarea id="editor2" name="editor2" rows="10" cols="80"></textarea>
 					          </div>
 			            
                  			</div>
@@ -714,7 +717,7 @@
             				<div class="form-group">
 			           
 			           <label>Course Name</label>
-			                  <select class="form-control select2" data-placeholder="Select a Course" >
+			                  <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
 			                  <option>Java - Associate</option>
 			                  <option>Java - Professional</option>
 			                  <option>Java - Master</option>
@@ -733,7 +736,7 @@
 			                  <option>asp.net - Expert</option>
                				</select>
                			<label>Batch ID</label>
-			                  <select class="form-control select2" data-placeholder="Select a Course" >
+			                  <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
 			                  <option>CS-450</option>
 			                  <option>CS-452</option>
                				</select>
