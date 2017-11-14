@@ -67,7 +67,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="add_students.jsp" class="small-box-footer" style="font-size:20px;">
               Add Students
             </a>
           </div>

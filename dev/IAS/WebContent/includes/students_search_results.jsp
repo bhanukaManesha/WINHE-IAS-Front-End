@@ -1,7 +1,10 @@
- <h4 class="box-title"><b>Search Results</b></h4>
- <div class="box box-success">
-        <div class="box-header with-border">
  
+ <div class="box box-success">
+ 
+        <div class="box-header with-border" style="margin-bottom:10px;">
+        <h4 class="box-title"><b>Search Results</b></h4>
+ 		</div>
+ 		<br>
  <!-- Widget: user widget style 1 -->
           <div class="box box-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
@@ -119,5 +122,5 @@
               </div>
              </div>
             
-</div>
+
 </div>

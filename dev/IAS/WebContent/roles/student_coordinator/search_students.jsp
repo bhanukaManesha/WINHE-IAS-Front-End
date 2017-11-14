@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Student Coordinator | Dashboard</title>
+  <title>Student Coordinator | Search Student</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Adding the link bar -->
@@ -28,7 +28,8 @@
          Student Coordinator
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="index.jsp"><i class="fa fa-search"></i> Search</a></li>
       </ol>
     </section>
 
