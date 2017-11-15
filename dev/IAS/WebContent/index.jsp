@@ -81,8 +81,8 @@
 					</div>
 					<!-- /.col -->
 					<div class="col-xs-4">
-						<button type="submit" class="btn btn-primary btn-block btn-flat">Sign
-							In</button>
+						<a href="roles/student_coordinator/" type="submit" class="btn btn-primary btn-block btn-flat">Sign
+							In</a>
 					</div>
 					<!-- /.col -->
 				</div>

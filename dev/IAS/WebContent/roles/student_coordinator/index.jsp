@@ -9,7 +9,7 @@
   <!-- Adding the link bar -->
 	<%@include file= "../../includes/links.jsp"%>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
 <div class="wrapper">
 
 <!-- Adding the header bar -->
@@ -129,7 +129,7 @@
             <div class="icon">
               <i class="fa fa-calendar"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="search_attendance.jsp" class="small-box-footer" style="font-size:20px;">
               Search Attendance
             </a>
           </div>
@@ -146,7 +146,7 @@
             <div class="icon">
               <i class="fa fa-calendar-plus-o"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="add_attendance.jsp" class="small-box-footer" style="font-size:20px;">
               Add Attendance
             </a>
           </div>
@@ -163,7 +163,7 @@
             <div class="icon">
               <i class="fa fa-calendar-times-o"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="edit_attendance.jsp" class="small-box-footer" style="font-size:20px;">
               Edit Attendance
             </a>
           </div>

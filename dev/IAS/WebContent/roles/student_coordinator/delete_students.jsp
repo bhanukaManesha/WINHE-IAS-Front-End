@@ -27,7 +27,7 @@
 </head>
 
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
 <div class="wrapper">
 
 <!-- Adding the header bar -->
@@ -47,7 +47,7 @@
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="index.jsp"><i class="fa fa-trash"></i> Search</a></li>
+        <li><a href="index.jsp"><i class="fa fa-trash"></i> Delete</a></li>
       </ol>
     </section>
 
@@ -67,7 +67,7 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Danger Modal</h4>
+                <h4 class="modal-title">DELETE STUDENT</h4>
               </div>
               <div class="modal-body">
               

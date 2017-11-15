@@ -12,7 +12,7 @@
 </head>
 
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
 <div class="wrapper">
 
 <!-- Adding the header bar -->
@@ -39,7 +39,7 @@
 <!-- Main content -->
     <section class="content">
     
-    <div class="col-md-11">
+    <div class="col-md-12">
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#new_students" data-toggle="tab">New Student</a></li>
@@ -90,14 +90,19 @@
 		              <h3 class="box-title">Personal Details</h3>
 		            </div>
             				<div class="form-group">
+            				<label>Student ID</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Student ID" >
 			            <label>First Name</label>
-			            
 			            
 			            <input type="text" class="form-control" placeholder="Enter First Name" >
 			            
 			            <label>Last Name</label>
 			            <input type="text" class="form-control" placeholder="Enter Last Name" > 
             				
+            				<label>National Identity Card No / Birth Certificate No</label>
+
+			            <input type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
             				
             				<label>Date Of Birth:</label>
 			                <div class="input-group date">
@@ -122,6 +127,15 @@
 			                  
 			           	<!-- End Radio Buttons -->
 			           	
+			           	<label>Nationality</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Nationality" >
+			            <label>Race</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Race" >
+			            <label>Religion</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Religion" >
 			           	<label>Status</label>
 
 			            <select class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
@@ -136,7 +150,33 @@
                 </div>
                 </div> 
                  
-                 <div class="col-lg-6">    
+                 <div class="col-lg-6"> 
+                 
+                 	<div class="row">
+                 	
+                 	<div class="box box-info"  style="padding:10px">
+		            <div class="box-header with-border">
+		              <h3 class="box-title">Profile Picture</h3>
+		            </div>
+            				<div class="form-group">
+			            
+			            <div class="widget-user-image" style="margin-top:20px;">
+				              <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
+				        </div>
+				            <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
+                  			<p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
+			           	
+			          
+		                 </div>
+		                 </div>
+                 	
+                 	
+                 	
+                 	
+                 	</div>
+                 
+                  
+                 	<div class="row">  
 		   			<div class="box box-danger"  style="padding:10px">
 		            <div class="box-header with-border">
 		              <h3 class="box-title">Contact Details</h3>
@@ -172,7 +212,7 @@
 		                 </div>
 		                 </div>
 		                </div> 
-                
+                		</div>
                 		</div>
              <div class="row">
              <div class="col-lg-6">    
@@ -457,14 +497,19 @@
 		              <h3 class="box-title">Personal Details</h3>
 		            </div>
             				<div class="form-group">
+            				<label>Student ID</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Student ID" >
 			            <label>First Name</label>
-			            
 			            
 			            <input type="text" class="form-control" placeholder="Enter First Name" >
 			            
 			            <label>Last Name</label>
 			            <input type="text" class="form-control" placeholder="Enter Last Name" > 
             				
+            				<label>National Identity Card No / Birth Certificate No</label>
+
+			            <input type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
             				
             				<label>Date Of Birth:</label>
 			                <div class="input-group date">
@@ -489,6 +534,15 @@
 			                  
 			           	<!-- End Radio Buttons -->
 			           	
+			           	<label>Nationality</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Nationality" >
+			            <label>Race</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Race" >
+			            <label>Religion</label>
+
+			            <input type="text" class="form-control" placeholder="Enter Religion" >
 			           	<label>Status</label>
 
 			            <select class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
@@ -503,7 +557,33 @@
                 </div>
                 </div> 
                  
-                 <div class="col-lg-6">    
+                 <div class="col-lg-6"> 
+                 
+                 	<div class="row">
+                 	
+                 	<div class="box box-info"  style="padding:10px">
+		            <div class="box-header with-border">
+		              <h3 class="box-title">Profile Picture</h3>
+		            </div>
+            				<div class="form-group">
+			            
+			            <div class="widget-user-image" style="margin-top:20px;">
+				              <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
+				        </div>
+				            <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
+                  			<p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
+			           	
+			          
+		                 </div>
+		                 </div>
+                 	
+                 	
+                 	
+                 	
+                 	</div>
+                 
+                  
+                 	<div class="row">  
 		   			<div class="box box-danger"  style="padding:10px">
 		            <div class="box-header with-border">
 		              <h3 class="box-title">Contact Details</h3>
@@ -539,7 +619,7 @@
 		                 </div>
 		                 </div>
 		                </div> 
-                
+                		</div>
                 		</div>
              <div class="row">
              <div class="col-lg-6">    

@@ -43,8 +43,9 @@
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  
 
+ <!-- bootstrap slider -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-slider/slider.css">
   <!-- Custom -->
   <link rel="stylesheet" href="../../dist/css/custom.css">
   
@@ -89,6 +90,14 @@
 <script src="../../bower_components/ckeditor/ckeditor.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Bootstrap slider -->
+<script src="../../plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script>
+  $(function () {
+    /* BOOTSTRAP SLIDER */
+    $('.slider').slider()
+  })
+</script>
 <script>
   $(function () {
     // Replace the <textarea id="editor1"> with a CKEditor
@@ -113,7 +122,7 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- Page script -->
+
 <script>
   $(function () {
     //Initialize Select2 Elements
@@ -190,6 +199,7 @@
 			});
 		});
 	</script>
+
 
 	<script src="dist/js/custom.js"></script>
   <!-- Google Font -->
