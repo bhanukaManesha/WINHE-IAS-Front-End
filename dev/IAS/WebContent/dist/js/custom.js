@@ -24,3 +24,7 @@ $("#enter-email .btn").click(function(e){
 //	el = document.getElementById("overlay");
 //	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 //}
+
+//$("#see_all_messages").click(function(e){
+//	$("#mail_modal").modal('toggle');
+//});

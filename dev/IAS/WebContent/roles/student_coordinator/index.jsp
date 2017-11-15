@@ -195,7 +195,7 @@
             <div class="icon">
               <i class="	fa fa-clock-o"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="student_time_tables.jsp" class="small-box-footer" style="font-size:20px;">
               Time Table
             </a>
           </div>
@@ -229,7 +229,7 @@
             <div class="icon">
               <i class="fa fa-graduation-cap "></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="search_exam_time_table.jsp" class="small-box-footer" style="font-size:20px;">
               Exam Time Tables
             </a>
           </div>
@@ -267,7 +267,8 @@
             <div class="icon">
               <i class="fa fa-envelope-open"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="../mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
+                  
               Mail
             </a>
           </div>
@@ -282,9 +283,6 @@
   <!-- /.content-wrapper -->
 
 
-
-
-    
 </div>
 <!-- ./wrapper -->
 

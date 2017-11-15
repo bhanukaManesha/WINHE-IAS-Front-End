@@ -50,7 +50,7 @@
 								<div class="icon">
 									<i class="fa fa-search"></i>
 								</div>
-								<a href="search_students.jsp" class="small-box-footer"
+								<a href="search_exam_time_table.jsp" class="small-box-footer"
 									style="font-size: 20px;"> Search Exam Time Table </a>
 							</div>
 						</div>
