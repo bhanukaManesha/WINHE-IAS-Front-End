@@ -27,8 +27,12 @@
       <h1 style="text-align:center">
          Student Coordinator
       </h1>
+      <h4 style="text-align:center">
+         Exam Time Tables
+      </h4>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="search_exam_time_tables.jsp"><i class="fa fa-graduation-cap"></i> Exam Time Tables</a></li>
       </ol>
     </section>
 

@@ -24,8 +24,8 @@
 						<td>JA</td>
 						<td>JAVA ASSOCIATE</td>
 						<td>17.1</td>
-						<td><a href="index.jsp" type="button" class="btn btn-block btn-success btn-lg"><i class="	fa fa-plus"></i> &nbsp Add</a></td>
-						<td><a href="index.jsp" type="button" class="btn btn-block btn-warning btn-lg"><i class="	fa  fa-refresh"></i> &nbsp Update</a></td>
+						<td><a href="" type="button" class="btn btn-block btn-success btn-lg"><i class="	fa fa-plus"></i> &nbsp Add</a></td>
+						<td><a href="" type="button" class="btn btn-block btn-warning btn-lg"><i class="	fa  fa-refresh"></i> &nbsp Update</a></td>
 					</tr>
 					<tr>
 						<td>2.</td>

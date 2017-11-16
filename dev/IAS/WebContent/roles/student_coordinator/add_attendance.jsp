@@ -31,7 +31,7 @@
 				<ol class="breadcrumb">
 					<li><a href="index.jsp"><i class="fa fa-dashboard"></i>
 							Dashboard</a></li>
-					<li><a href="index.jsp"><i class="fa fa-calendar-plus-o"></i>
+					<li><a href="add_attendance.jsp"><i class="fa fa-calendar-plus-o"></i>
 							Add Attendance</a></li>
 				</ol>
 			</section>

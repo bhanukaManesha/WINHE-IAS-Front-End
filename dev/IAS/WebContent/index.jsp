@@ -74,7 +74,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-8">
-						<div class="checkbox icheck">
+						<div class="checkbox icheck" style="margin-left:10px;">
 							<label> <input type="checkbox"> Remember Me
 							</label>
 						</div>
@@ -86,7 +86,7 @@
 					</div>
 					<!-- /.col -->
 				</div>
-				<a href="" data-toggle="modal" data-target="#modal-default">I
+				<a href="" data-toggle="modal" data-target="#modal-default" style="margin-left:100px;">I
 					forgot my password</a>
 			</form>
 		</div>
@@ -106,7 +106,7 @@
 				<div id="enter-email">
 					<div class="modal-body">
 						<div class="form-group has-feedback">
-							<input type="email" class="form-control" placeholder="User Email">
+							<input type="email" class="form-control" placeholder="Please Enter Your Email Address">
 							<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 						</div>
 					</div>
@@ -124,16 +124,16 @@
 						<br/>
 						<div class="form-group has-feedback">
 							<input type="password" class="form-control"
-								placeholder="Enter Your new password"> <span
+								placeholder="Enter Your New Password"> <span
 								class="glyphicon glyphicon-lock form-control-feedback"></span>
 						</div>
 						<div class="form-group has-feedback">
 							<input type="password" class="form-control"
-								placeholder="Enter Your password Again"> <span
+								placeholder="Enter New Password Again"> <span
 								class="glyphicon glyphicon-lock form-control-feedback"></span>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary">Send</button>
+							<button type="button" class="btn btn-primary">Login In</button>
 						</div>
 					</div>
 				</div>

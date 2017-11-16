@@ -47,7 +47,7 @@
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="index.jsp"><i class="fa fa-trash"></i> Delete</a></li>
+        <li><a href="delete_students.jsp"><i class="fa fa-trash"></i> Delete Student</a></li>
       </ol>
     </section>
 

@@ -27,8 +27,12 @@
       <h1 style="text-align:center">
          Student Coordinator
       </h1>
+      <h4 style="text-align:center">
+         Time Tables
+      </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="student_time_tables.jsp"><i class="fa fa-clock-o"></i> Time Tables</a></li>
       </ol>
     </section>
 

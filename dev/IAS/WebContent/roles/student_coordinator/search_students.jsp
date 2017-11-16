@@ -49,7 +49,7 @@
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="index.jsp"><i class="fa fa-search"></i> Search</a></li>
+        <li><a href="search_students.jsp"><i class="fa fa-search"></i> Search Student</a></li>
       </ol>
     </section>
 

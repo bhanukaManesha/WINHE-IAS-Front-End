@@ -32,7 +32,7 @@
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="index.jsp"><i class="fa fa-edit"></i> Edit</a></li>
+        <li><a href="edit_students.jsp"><i class="fa fa-edit"></i> Edit Student</a></li>
       </ol>
     </section>
 

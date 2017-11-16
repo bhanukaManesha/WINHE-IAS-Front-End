@@ -32,7 +32,7 @@
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="index.jsp"><i class="ion ion-person-add"></i> Add</a></li>
+        <li><a href="add_students.jsp"><i class="ion ion-person-add"></i> Add Student</a></li>
       </ol>
     </section>
 

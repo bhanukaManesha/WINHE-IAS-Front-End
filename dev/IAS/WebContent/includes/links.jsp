@@ -238,8 +238,25 @@
 	});
 </script>
 
+<!-- Adding the Alert Modal-->
+	<%@include file="../../includes/modals/view_alert_modal.jsp"%>
+	
 <!-- Adding the Mail Modal bar -->
-	<%@include file="../../includes/mail_modal.jsp"%>
+	<%@include file="../../includes/modals/mail_modal.jsp"%>
+	
+<!-- Adding the Change Password Modal -->
+	<%@include file="../../includes/modals/change_password_modal.jsp"%>
+	
+<!-- Adding the Change Profile Picture Modal -->
+	<%@include file="../../includes/modals/change_profile_picture_modal.jsp"%>
+
+<!-- Adding the Change Theme Modal -->
+	<%@include file="../../includes/modals/change_theme_modal.jsp"%>
+	
+<!-- Adding the Logout Modal-->
+	<%@include file="../../includes/modals/log_out_modal.jsp"%>
+	
+
 
 <script src="dist/js/custom.js"></script>
 <!-- Google Font -->

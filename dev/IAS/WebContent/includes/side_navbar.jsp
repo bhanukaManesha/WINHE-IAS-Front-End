@@ -12,29 +12,18 @@
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
-      <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
-      <!-- /.search form -->
+      
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">USER SETTINGS</li>
         
-        <li><a href=""><i class="ion ion-locked"></i> <span>Change Password</span></a></li>
-        <li><a href=""><i class="ion ion-image"></i> <span>Change Profile Picture</span></a></li>
+        <li><a href="" data-toggle="modal" data-target="#change_password_modal"><i class="ion ion-locked"></i> <span>Change Password</span></a></li>
+        <li><a href="" data-toggle="modal" data-target="#change_profile_picture_modal"><i class="ion ion-image"></i> <span>Change Profile Picture</span></a></li>
         
         <li class="header">SYSTEM SETTINGS</li>
-        <li><a href=""><i class="ion ion-ios-analytics"></i> <span>Change Themes</span></a></li>
+        <li><a href="" data-toggle="modal" data-target="#change_theme_modal"><i class="ion ion-ios-analytics"></i> <span>Change Themes</span></a></li>
         
-        <li><a href=""><i class="ion ion-log-out"></i> <span>Log-out</span></a></li>
+        <li><a href="" data-toggle="modal" data-target="#log_out_modal"><i class="ion ion-log-out"></i> <span>Log-out</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

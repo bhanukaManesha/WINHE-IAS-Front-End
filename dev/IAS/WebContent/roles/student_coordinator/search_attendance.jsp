@@ -48,8 +48,8 @@
 				<ol class="breadcrumb">
 					<li><a href="index.jsp"><i class="fa fa-dashboard"></i>
 							Dashboard</a></li>
-					<li><a href="index.jsp"><i class="fa fa-calendar"></i>
-							Search</a></li>
+					<li><a href="search_attendance.jsp"><i class="fa fa-calendar"></i>
+							Search Attendance</a></li>
 				</ol>
 			</section>
 
