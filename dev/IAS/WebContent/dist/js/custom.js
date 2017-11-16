@@ -10,6 +10,10 @@ $("#enter-email .btn").click(function(e){
 	$("#re-enter-password").show();
 });
 
+$(document).ready(function(){
+	$("#import-exam-time-table").hide();
+});
+
 
 //function display() {
 //            var z = prompt("enter your code...");
