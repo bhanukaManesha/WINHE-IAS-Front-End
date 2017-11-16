@@ -36,7 +36,7 @@ public class Login extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Login</title>");            
+            out.println("<title>Servlet Login</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Login at " + request.getContextPath() + "</h1>");
@@ -58,9 +58,9 @@ public class Login extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
-          HttpSession session = request.getSession();
-          session.invalidate();
-          response.sendRedirect("/IAS");
+        HttpSession session = request.getSession();
+        session.invalidate();
+        response.sendRedirect("/IAS");
     }
 
     /**
@@ -75,23 +75,29 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
-            
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+
+        if (!email.isEmpty() && !password.isEmpty()) {
             HttpSession session = request.getSession();
-            
+
             session.setAttribute("role", email);
-            
+
             session.setAttribute("homePath", "roles/" + email + "/");
-            
-            switch (email){
-                case "student_coordinator":
-                    response.sendRedirect("roles/" + email + "/");
-                    break;
-                case "exam_coordinator":
-                    response.sendRedirect("roles/" + email + "/");
-                    break;     
-            }
+
+            response.sendRedirect("roles/" + email + "/");
+        } else {
+            response.sendRedirect("index.jsp");
+        }
+
+//            switch (email){
+//                case "student_coordinator":
+//                    response.sendRedirect("roles/" + email + "/");
+//                    break;
+//                case "exam_coordinator":
+//                    response.sendRedirect("roles/" + email + "/");
+//                    break;     
+//            }
     }
 
     /**
