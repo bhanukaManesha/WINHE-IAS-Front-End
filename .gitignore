@@ -1,3 +1,12 @@
 /.metadata/
 RemoteSystemsTempFiles/
 Servers/
+/dev/IAS/nbproject/private/
+/dev/IAS/nbbuild/
+/WINHE/nbproject/private/
+/WINHE/build/
+/IAS/nbproject/private/
+/IAS/build/
+dev/apache-tomcat-8.5.23/conf/Catalina/
+dev/apache-tomcat-8.5.23/logs/
+dev/apache-tomcat-8.5.23/work/
