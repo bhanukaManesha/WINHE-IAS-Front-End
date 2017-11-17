@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Exam Coordinator | Add Exam Time Tables</title>
+        <title>Exam Coordinator | Add Exam Results of Students</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -45,18 +45,17 @@
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i>
                                 Dashboard</a></li>
                         <li><a href="index.jsp"><i class="ion ion-person-add"></i>
-                                Add</a></li>
+                                Add Results of Students</a></li>
                     </ol>
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
 
-                    <%@include file="../../includes/batch_search_bar.jsp"%>
-                    <%@include file="../../includes/exam_time_table_add.jsp"%>
+                    <%@include file="../../includes/students_searchbar_edit_attendance.jsp"%>
+                    <%@include file="../../includes/student_exam_results_add.jsp"%>
 
                     <section>
-                        <!-- modal of "Reset your password" goes here -->
                         <div class="modal fade" id="modal-default">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -65,7 +64,7 @@
                                                 aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4 class="modal-title">Add Exam Time Table</h4>
+                                        <h4 class="modal-title">Add Student Exam Results</h4>
                                     </div>
                                     <div id="import-exam-time-table">
                                         <div class="modal-body">
@@ -99,7 +98,56 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Upload File</button>
+                                            <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">Upload File</button>
+                                        </div>
+                                        <div class="box box-success">
+                                            <div class="box-header with-border">
+
+                                                <div class="box">
+                                                    <div class="box-header">
+                                                        <h3 class="box-title">Search Results</h3>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <div class="box-body no-padding">
+                                                        <table class="table table-striped">
+                                                            <tr>
+                                                                <th style="width: 10px">#</th>
+                                                                <th>Name</th>
+                                                                <th>Student ID</th>
+                                                                <th style="width: 80px">Marks</th>
+                                                                <th>Grade</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1.</td>
+                                                                <td>Thushan Ranasinghe</td>
+                                                                <td>13618</td>
+                                                                <td>79</td>
+                                                                <td>A</td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2.</td>
+                                                                <td>Gihan Fernando</td>
+                                                                <td>57845</td>
+                                                                <td>78</td>
+                                                                <td>A</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3.</td>
+                                                                <td>Nirmal Dias</td>
+                                                                <td>28546</td>
+                                                                <td>74</td>
+                                                                <td>B</td>
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                    </div>
+                                                    <!-- /.box-body -->
+                                                </div>
+                                                <!-- /.box -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -109,9 +157,6 @@
                         <!-- /.modal-dialog -->
                         </div>
                     </section>
-
-
-
 
                     <!-- ./wrapper -->
                     </body>

@@ -1,20 +1,23 @@
-$(document).ready(function(){
-	console.log("Ready");
-	$("#re-enter-password").hide();
+$(document).ready(function () {
+    console.log("Ready");
+    $("#re-enter-password").hide();
 });
 
 
-$("#enter-email .btn").click(function(e){
-	console.log("clicked");
-	$("#enter-email").hide();
-	$("#re-enter-password").show();
+$("#enter-email .btn").click(function (e) {
+    console.log("clicked");
+    $("#enter-email").hide();
+    $("#re-enter-password").show();
 });
 
-$(document).ready(function(){
-	$("#import-exam-time-table").hide();
+$(document).ready(function () {
+    $("#import-exam-time-table").hide();
 });
 
+$(document).ready(function () {
 
+    $("#exam-results-view-more").hide();
+});
 //function display() {
 //            var z = prompt("enter your code...");
 //            if(z != null) {

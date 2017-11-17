@@ -29,16 +29,14 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        
       </ol>
     </section>
 
 <!-- Main content -->
     <section class="content">
     
-    
-
 	<%@include file= "../../includes/batch_search_bar.jsp"%>
-
 	<%@include file= "../../includes/batch_search_results.jsp"%>
     
     </section>
