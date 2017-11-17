@@ -17,7 +17,7 @@
 						<th >Course Name</th>
 						<th style="width: 80px">Batch ID</th>
 						<th style="width: 120px">Add Time Table</th>
-						<th style="width: 120px">Update Time Table</th>
+						
 					</tr>
 					<tr>
 						<td>1.</td>
@@ -25,7 +25,7 @@
 						<td>JAVA ASSOCIATE</td>
 						<td>17.1</td>
 						<td><a href="" type="button" class="btn btn-block btn-success btn-lg"><i class="	fa fa-plus"></i> &nbsp Add</a></td>
-						<td><a href="" type="button" class="btn btn-block btn-warning btn-lg"><i class="	fa  fa-refresh"></i> &nbsp Update</a></td>
+						
 					</tr>
 					<tr>
 						<td>2.</td>
@@ -33,7 +33,7 @@
 						<td>JAVA MASTER</td>
 						<td>17.1</td>
 						<td><a href="index.jsp" type="button" class="btn btn-block btn-success btn-lg"><i class="	fa fa-plus"></i> &nbsp Add</a></td>
-						<td><a href="index.jsp" type="button" class="btn btn-block btn-warning btn-lg"><i class="	fa  fa-refresh"></i> &nbsp Update</a></td>
+						
 					</tr>
 					<tr>
 						<td>3.</td>
@@ -41,7 +41,7 @@
 						<td>JAVA EXPERT</td>
 						<td>17.1</td>
 						<td><a href="index.jsp" type="button" class="btn btn-block btn-success btn-lg"><i class="	fa fa-plus"></i> &nbsp Add</a></td>
-						<td><a href="index.jsp" type="button" class="btn btn-block btn-warning btn-lg"><i class="	fa  fa-refresh"></i> &nbsp Update</a></td>
+						
 					</tr>
 					<tr>
 						<td>4.</td>
@@ -49,7 +49,7 @@
 						<td>JAVA ASSOCIATE</td>
 						<td>17.3</td>
 						<td><a href="index.jsp" type="button" class="btn btn-block btn-success btn-lg"><i class="	fa fa-plus"></i> &nbsp Add</a></td>
-						<td><a href="index.jsp" type="button" class="btn btn-block btn-warning btn-lg"><i class="	fa  fa-refresh"></i> &nbsp Update</a></td>
+						
 					</tr>
 				</table>
 			</div>

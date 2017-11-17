@@ -29,7 +29,7 @@
 			<section class="content-header">
 				<h1>Read Mail</h1>
 				<ol class="breadcrumb">
-					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li><a href="${pageContext.request.contextPath}/${sessionScope.homePath}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 					<li class="active">Mailbox</li>
 				</ol>
 			</section>

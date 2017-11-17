@@ -238,8 +238,6 @@
 	});
 </script>
 
-<!-- Adding the Alert Modal-->
-	<%@include file="../../includes/modals/view_alert_modal.jsp"%>
 	
 <!-- Adding the Mail Modal bar -->
 	<%@include file="../../includes/modals/mail_modal.jsp"%>

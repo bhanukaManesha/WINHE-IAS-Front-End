@@ -95,30 +95,26 @@
 						class="fa fa-bell-o"></i> <span class="label label-warning">10</span>
 				</a>
 					<ul class="dropdown-menu">
-						<li class="header">You have 10 notifications</li>
+						<li class="header">You have 4 notifications</li>
 						<li>
 							<!-- inner menu: contains the actual data -->
 							<ul class="menu">
-								<li><a href="#"> <i class="fa fa-users text-aqua"></i>
-										5 new members joined today
+								<li><a href="search_attendance.jsp"> <i class="fa fa-users text-red"></i>
+										5 students with low attendance
 								</a></li>
-								<li><a href="#"> <i class="fa fa-warning text-yellow"></i>
-										Very long description here that may not fit into the page and
-										may cause design problems
+								<li><a href="search_exam_results.jsp"> <i class="fa fa-warning text-yellow"></i>
+										2 students are at the risk of failing
 								</a></li>
-								<li><a href="#"> <i class="fa fa-users text-red"></i> 5
-										new members joined
+								<li><a href="search_students.jsp"> <i class="fa fa-users text-aqua"></i> 5
+										new students joined
 								</a></li>
-								<li><a href="#"> <i
-										class="fa fa-shopping-cart text-green"></i> 25 sales made
+								<li><a href=""> <i
+										class="fa fa-shopping-cart text-green"></i> 90% Pass Rate for all courses
 								</a></li>
-								<li><a href="#"> <i class="fa fa-user text-light-blue"></i>
-										You changed your username
-								</a></li>
+								
 							</ul>
 						</li>
-						<li class="footer"><a href="#" data-toggle="modal"
-							data-target="#view_alert_modal">View all</a></li>
+					
 					</ul></li>
 
 				<!-- User Account: style can be found in dropdown.less -->
