@@ -1,4 +1,4 @@
-<h4 class="box-title">
+Ï<h4 class="box-title">
 	<b>Search Results</b>
 </h4>
 <div class="box box-success">
@@ -24,7 +24,7 @@
 						<td>JAVA ASSOCIATE</td>
 						<td>17.1</td>
 						<td><span><button type="submit"
-									class="btn btn-primary btn-block btn-flat">Download</button></span></td>
+									class="btn btn-block btn-info btn-lg"><i class="fa fa-download"></i> Download</button></span></td>
 					</tr>
 					<tr>
 						<td>2.</td>
@@ -32,7 +32,7 @@
 						<td>JAVA MASTER</td>
 						<td>17.1</td>
 						<td><span><button type="submit"
-									class="btn btn-primary btn-block btn-flat">Download</button></span></td>
+									class="btn btn-block btn-info btn-lg"><i class="fa fa-download"></i> Download</button></span></td>
 					</tr>
 					<tr>
 						<td>3.</td>
@@ -40,7 +40,7 @@
 						<td>JAVA EXPERT</td>
 						<td>17.1</td>
 						<td><span><button type="submit"
-									class="btn btn-primary btn-block btn-flat">Download</button></span></td>
+									class="btn btn-block btn-info btn-lg"><i class="fa fa-download"></i> Download</button></span></td>
 					</tr>
 					<tr>
 						<td>4.</td>
@@ -48,7 +48,7 @@
 						<td>JAVA ASSOCIATE</td>
 						<td>17.3</td>
 						<td><span><button type="submit"
-									class="btn btn-primary btn-block btn-flat">Download</button></span></td>
+									class="btn btn-block btn-info btn-lg"><i class="fa fa-download"></i> Download</button></span></td>
 					</tr>
 				</table>
 			</div>

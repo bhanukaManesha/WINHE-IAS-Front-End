@@ -21,7 +21,7 @@
 <%@include file= "../../includes/side_navbar.jsp"%>
   
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper" style="min-height: 2350px;">
+<div class="content-wrapper" style="height: 2700px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1 style="text-align:center">

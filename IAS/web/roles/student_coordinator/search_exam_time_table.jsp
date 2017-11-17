@@ -32,7 +32,7 @@
       </h4>
       <ol class="breadcrumb">
         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="search_exam_time_tables.jsp"><i class="fa fa-graduation-cap"></i> Exam Time Tables</a></li>
+        <li><a href="search_exam_time_table.jsp"><i class="fa fa-graduation-cap"></i> Exam Time Tables</a></li>
       </ol>
     </section>
 

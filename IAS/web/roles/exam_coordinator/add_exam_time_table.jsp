@@ -69,7 +69,7 @@
                                     </div>
                                     <div id="import-exam-time-table">
                                         <div class="modal-body">
-                                            <div class="row">
+                                            <div class="row" style="padding:20px">
                                                 <div class="box box-success">
                                                     <div class="box-header with-border">
                                                         <h3 class="box-title">Course Name</h3>
@@ -109,7 +109,7 @@
                         <!-- /.modal-dialog -->
                         </div>
                     </section>
-
+                      
 
 
 
