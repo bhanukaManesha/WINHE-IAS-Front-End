@@ -14,7 +14,7 @@
     </head>
 
 
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
 
             <!-- Adding the header bar -->
@@ -27,15 +27,19 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align: center">Exam Coordinator</h1>
+                    <h4 style="text-align:center">
+                        Search Exam Results
+                    </h4>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                        <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                        <li><a href="search_exam_result.jsp"><i class="fa fa-book"></i> Search Exam Result</a></li>
                     </ol>
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
                     <%@include file="../../includes/students_searchbar_edit_attendance.jsp"%>
-                   
+
                     <%@include file="../../includes/batch_search_results_view_more.jsp"%>
                 </section>
 

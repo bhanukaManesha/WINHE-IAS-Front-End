@@ -28,7 +28,7 @@
         </style>
     </head>
 
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
 
             <!-- Adding the header bar -->
@@ -41,11 +41,15 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align: center">Exam Coordinator</h1>
+                    <h4 style="text-align:center">
+                        Add Exam Time Table
+                    </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i>
                                 Dashboard</a></li>
-                        <li><a href="index.jsp"><i class="ion ion-person-add"></i>
-                                Add</a></li>
+
+                        <li><a href="add_exam_time_table.jsp"><i class="fa fa-clock-o"></i>
+                                Add Exam Time Table</a></li>
                     </ol>
                 </section>
 

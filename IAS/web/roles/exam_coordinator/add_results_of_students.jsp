@@ -28,7 +28,7 @@
         </style>
     </head>
 
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
 
             <!-- Adding the header bar -->
@@ -41,10 +41,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align: center">Exam Coordinator</h1>
+                    <h4 style="text-align:center">
+                        Add Results of Students
+                    </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i>
                                 Dashboard</a></li>
-                        <li><a href="index.jsp"><i class="ion ion-person-add"></i>
+                        <li><a href="add_results_of_students.jsp"><i class="fa fa-file-excel-o"></i>
                                 Add Results of Students</a></li>
                     </ol>
                 </section>

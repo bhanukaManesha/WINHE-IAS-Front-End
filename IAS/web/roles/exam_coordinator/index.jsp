@@ -48,7 +48,7 @@
 									<p>&nbsp</p>
 								</div>
 								<div class="icon">
-									<i class="fa fa-search"></i>
+                                                                    <i class="fa fa-search"></i>
 								</div>
 								<a href="search_exam_time_table.jsp" class="small-box-footer"
 									style="font-size: 20px;"> Search Exam Time Table </a>
@@ -124,7 +124,7 @@
 								<div class="icon">
 									<i class="fa fa-envelope-open"></i>
 								</div>
-								<a href="#" class="small-box-footer" style="font-size: 20px;">
+								<a href="../mailbox/mailbox.jsp" class="small-box-footer" style="font-size: 20px;">
 									Mail </a>
 							</div>
 						</div>
