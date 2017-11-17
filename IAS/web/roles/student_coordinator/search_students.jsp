@@ -205,7 +205,7 @@
             </div>
             
             <div class="row">
-                <div class="col-sm-4 border-right">
+                <div class="col-sm-3 border-right">
                   <div class="description-block">
                     <h5 class="description-header" style="color:black">C6654</h5>
                     <span class="description-text" style="color:black">BATCH ID</span>
@@ -213,13 +213,20 @@
                   <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
-                <div class="col-sm-4 border-right">
+                <div class="col-sm-3 border-right">
                   <div class="description-block">
                     <h5 class="description-header" style="color:black">JAVA - ASSOCIATE</h5>
                     <span class="description-text" style="color:black">COURSE NAME</span>
                   </div>
                   </div>
-                  <div class="col-sm-4 border-right">
+                <div class="col-sm-3 border-right">
+                  <div class="description-block">
+                      <h5 class="description-header" style="color:black">12<sup>th</sup> August 2017</h5>
+                    <span class="description-text" style="color:black">DATE OF ADMISSION</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                  <div class="col-sm-3 border-right">
                   <div class="description-block">
                     <h5 class="description-header" style="color:black">FULL TIME</h5>
                     <span class="description-text" style="color:black"></span>

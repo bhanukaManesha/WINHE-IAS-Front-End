@@ -161,7 +161,7 @@
               <p>&nbsp</p>
             </div>
             <div class="icon">
-              <i class="fa fa-calendar-times-o"></i>
+              <i class="fa fa-calendar-minus-o"></i>
             </div>
             <a href="edit_attendance.jsp" class="small-box-footer" style="font-size:20px;">
               Edit Attendance
@@ -246,7 +246,7 @@
             <div class="icon">
               <i class="fa fa-book"></i>
             </div>
-            <a href="#" class="small-box-footer" style="font-size:20px;">
+            <a href="search_exam_result.jsp" class="small-box-footer" style="font-size:20px;">
               Exam Results
             </a>
           </div>

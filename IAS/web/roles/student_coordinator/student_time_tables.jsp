@@ -9,6 +9,21 @@
   <!-- Adding the link bar -->
 	<%@include file= "../../includes/links.jsp"%>
   
+        <style>
+            .example-modal .modal {
+                position: relative;
+                top: auto;
+                bottom: auto;
+                right: auto;
+                left: auto;
+                display: block;
+                z-index: 1;
+            }
+
+            .example-modal .modal {
+                background: transparent !important;
+            }
+        </style>
 </head>
 
 
@@ -46,7 +61,58 @@
 	<%@include file= "../../includes/time_table_search_results.jsp"%>
     
     </section>
-    
+    <!-- modal of "Reset your password" goes here -->
+                        <div class="modal fade" id="add_time_table">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title">Add Student Time Table</h4>
+                                    </div>
+                                    <div id="import-exam-time-table">
+                                        <div class="modal-body">
+                                            <div class="row" style="padding:20px">
+                                                <div class="box box-success" >
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">Course Name</h3>
+                                                        <h6 class="box-title">| Batch ID</h6>
+                                                    </div>
+                                                    <!-- /.box-header -->
+                                                    <!-- form start -->
+                                                    <form role="form">
+                                                        <div class="box-body">
+                                                            <div class="form-group">
+
+                                                                <input type="file" id="exampleInputFile"
+                                                                       style="margin: auto; width: 100%; text-align: center;">
+                                                                <p class="help-block"
+                                                                   style="margin: auto; text-align: center;">Please
+                                                                    upload a .xls file only</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.box-body -->
+
+                                                        <div class="box-footer">
+                                                            <button type="submit" class="btn btn-primary"
+                                                                    style="width: 100%">Import</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Upload File</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                        </div>
     </div>
  </div>
       <!-- /.box -->
