@@ -56,14 +56,13 @@
                                 </div>
                                 <div id="exam-results-view-more">
                                     <div class="modal-body">
-                                        <div class="row">
+                                        <div class="row" style="padding:20px;">
                                             <div class="box box-success">
                                                 <div class="box-header with-border">
                                                     <h3 class="box-title">Course ID</h3>
                                                     <h6 class="box-title">| Batch ID</h6>
                                                 </div>
-                                                <div class="box box-success">
-                                                    <div class="box-header with-border">
+                                               
 
                                                         <div class="box">
                                                             <div class="box-header">
@@ -108,8 +107,7 @@
                                                             <!-- /.box-body -->
                                                         </div>
                                                         <!-- /.box -->
-                                                    </div>
-                                                </div>
+
                                                 <div class="box-footer">
                                                     <button type="submit" class="btn btn-primary"
                                                             style="width: 100%">Done</button>
