@@ -53,7 +53,7 @@
 </head>
 
 <body class="hold-transition login-page"
-	style="float: right; margin-right: 20px; margin-top: 202px; background-image: url(images/login_page/main.jpg)">
+	style="float: right; margin-right: 20px; margin-top: 202px; background-image: url(images/login_page/main.jpg);">
 	<div class="login-box">
 		<div class="login-logo">
 			<a href="../../index2.html"> <b>LOGIN PAGE</b></a>
