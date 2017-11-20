@@ -65,11 +65,6 @@
 
 
 
-
-
-
-
-
 <!-- jQuery 3 -->
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Select2 -->
@@ -112,6 +107,18 @@
 	src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Bootstrap slider -->
 <script src="../../plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<!-- bootstrap time picker -->
+            <script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+            <!-- SlimScroll -->
+            <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+            <script>
+                $(function () {
+                    //Timepicker
+                    $('.timepicker').timepicker({
+                        showInputs: false
+                    })
+                })
+            </script>
 <script>
 	$(function() {
 		/* BOOTSTRAP SLIDER */
@@ -263,3 +270,5 @@
 <!-- Google Font -->
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+

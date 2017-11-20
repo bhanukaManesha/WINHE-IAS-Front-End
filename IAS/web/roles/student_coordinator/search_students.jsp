@@ -85,7 +85,7 @@
               <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
             </div>
             <div class="box-footer">
-            
+                
             <div class="row">
             
            		<h3 style="color:black; display:block;text-align:center;;">Personal Details</h3>
@@ -156,7 +156,7 @@
                 
                 
                </div>
-               
+               <div style="background-color:lightgrey">
                <div class="row">
             
            		<h3 style="color:black; display:block;text-align:center;;">Contact Details</h3>
@@ -198,6 +198,7 @@
                 </div>
                 <!-- /.col -->  
                </div>
+               </div>
                
                <div class="row">
             
@@ -235,7 +236,7 @@
                 </div>
                   <!-- /.description-block -->
                 </div>
-               
+                <div style="background-color:lightgrey">
                <div class="row">
             
            		<h3 style="color:black; display:block;text-align:center;;">Guardian Details</h3>
@@ -313,7 +314,7 @@
                 </div>
                 <!-- /.col -->  
                </div>
-                
+                </div>
                  <div class="row">
             
            		<h3 style="color:black; display:block;text-align:center;;">Academic Information</h3>
@@ -379,7 +380,7 @@
                 </div>
                 
                </div>
-               
+               <div style="background-color:lightgrey">
                <div class="row">
             
            		<h3 style="color:black; display:block;text-align:center;;">RESULTS</h3>
@@ -407,7 +408,7 @@
                
                
                 
-                
+               </div>
                </div>
               </div>
              </div>

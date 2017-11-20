@@ -14,7 +14,7 @@
     </head>
 
 
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition skin-blue sidebar-collapse sidebar-mini ">
         <div class="wrapper">
 
             <!-- Adding the header bar -->

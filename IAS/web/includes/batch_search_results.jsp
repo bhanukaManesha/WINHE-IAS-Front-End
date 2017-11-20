@@ -1,4 +1,4 @@
-Ï<h4 class="box-title">
+<h4 class="box-title">
 	<b>Search Results</b>
 </h4>
 <div class="box box-success">
