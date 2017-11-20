@@ -162,7 +162,7 @@
 
                                                     <div class="col-lg-6"> 
 
-                                                        <div class="row">
+                                                        <div class="row" style="margin-right:10px">
 
                                                             <div class="box box-info"  style="padding:10px">
                                                                 <div class="box-header with-border">
@@ -186,7 +186,7 @@
                                                         </div>
 
 
-                                                        <div class="row">  
+                                                        <div class="row" style="margin-right:10px">  
                                                             <div class="box box-danger"  style="padding:10px">
                                                                 <div class="box-header with-border">
                                                                     <h3 class="box-title">Contact Details</h3>

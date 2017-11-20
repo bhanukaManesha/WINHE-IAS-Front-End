@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Exam Coordinator | Dashboard</title>
+        <title>Student Coordinator | Dashboard</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -38,7 +38,7 @@
 
                 <!-- Main content -->
                 <section class="content">
-                    <%@include file="../../includes/students_searchbar_edit_attendance.jsp"%>
+                    <%@include file="../../includes/students_searchbar.jsp"%>
 
                     <%@include file="../../includes/batch_search_results_view_more.jsp"%>
                 </section>
