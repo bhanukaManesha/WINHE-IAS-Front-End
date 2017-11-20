@@ -107,18 +107,7 @@
 	src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Bootstrap slider -->
 <script src="../../plugins/bootstrap-slider/bootstrap-slider.js"></script>
-<!-- bootstrap time picker -->
-            <script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
-            <!-- SlimScroll -->
-            <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-            <script>
-                $(function () {
-                    //Timepicker
-                    $('.timepicker').timepicker({
-                        showInputs: false
-                    })
-                })
-            </script>
+
 <script>
 	$(function() {
 		/* BOOTSTRAP SLIDER */
@@ -201,7 +190,13 @@
 				})
 
 		//Date picker
-		$('#datepicker').datepicker({
+		$('#datepicker1').datepicker({
+			autoclose : true
+		})
+                $('#datepicker2').datepicker({
+			autoclose : true
+		})
+                $('#datepicker3').datepicker({
 			autoclose : true
 		})
 

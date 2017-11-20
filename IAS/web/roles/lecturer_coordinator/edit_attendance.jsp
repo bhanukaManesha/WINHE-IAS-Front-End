@@ -78,89 +78,102 @@
                                                 </h3>
                                             </div>
                                             <div class="row">
-                                                <div class="col-sm-4 border-right" >
-                                                    <div class="description-block">
-                                                        <h5 class="description-header" style="color: black"><div class="input-group">
-                                                                <input type="text" class="form-control timepicker">
-
-                                                                <div class="input-group-addon">
-                                                                    <i class="fa fa-clock-o"></i>
-                                                                </div>
-                                                            </div>
-                                                        </h5>
-                                                        <span class="description-text" style="color: black">Time In</span>
-                                                    </div>
-                                                    <!-- /.description-block -->
-                                                </div>
-                                                <!-- /.col -->
-
                                                 <div class="col-sm-4 border-right">
                                                     <div class="description-block">
-                                                        <h5 class="description-header" style="color: black"><div class="input-group">
-                                                                <input type="text" class="form-control timepicker">
+                                                        <h5 class="description-header" style="color:black"><div class="bootstrap-timepicker">
 
-                                                                <div class="input-group-addon">
-                                                                    <i class="fa fa-clock-o"></i>
+
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control timepicker">
+
+                                                                    <div class="input-group-addon">
+                                                                        <i class="fa fa-clock-o"></i>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- /.input group -->
+
+                                                                <!-- /.form group -->
                                                             </div>
                                                         </h5>
-                                                        <span class="description-text" style="color: black">Time Out</span>
+                                                        <span class="description-text" style="color:black">TIME IN</span>
                                                     </div>
-                                                    <!-- /.description-block -->
                                                 </div>
                                                 <div class="col-sm-4 border-right">
                                                     <div class="description-block">
-                                                        <h5 class="description-header" style="color: black">
-                                                            3 
+                                                        <h5 class="description-header" style="color:black">4
                                                         </h5>
-                                                        <span class="description-text" style="color: black">Hours Worked</span>
+                                                        <span class="description-text" style="color:black">HOURS WORKED</span>
                                                     </div>
-                                                    <!-- /.description-block -->
                                                 </div>
+                                                <div class="col-sm-4 border-right">
+                                                    <div class="description-block">
+                                                        <h5 class="description-header" style="color:black"><div class="bootstrap-timepicker">
+
+
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control timepicker">
+
+                                                                    <div class="input-group-addon">
+                                                                        <i class="fa fa-clock-o"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /.input group -->
+
+                                                                <!-- /.form group -->
+                                                            </div>
+                                                        </h5>
+                                                        <span class="description-text" style="color:black">TIME OUT</span>
+                                                    </div>
+                                                </div>
+
                                                 <!-- /.description-block -->
                                             </div>
-                                            <!-- /.col -->
 
 
-
+                                            <!-- /.description-block -->
                                         </div>
+                                        <!-- /.col -->
 
 
 
                                     </div>
 
 
+
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline pull-left"
-                                            data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline">Save
-                                        Changes</button>
-                                </div>
+
+
                             </div>
-                            <!-- /.modal-content -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left"
+                                        data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save
+                                    Changes</button>
+                            </div>
                         </div>
-                        <!-- /.modal-dialog -->
+                        <!-- /.modal-content -->
                     </div>
-
-
-
+                    <!-- /.modal-dialog -->
                 </div>
-            </div>
-            <!-- /.box -->
 
-            <!-- ./wrapper -->
-            <!-- bootstrap time picker -->
-            <script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
-            <!-- SlimScroll -->
-            <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-            <script>
-                $(function () {
-                    //Timepicker
-                    $('.timepicker').timepicker({
-                        showInputs: false
-                    })
+
+
+            </div>
+        </div>
+        <!-- /.box -->
+
+        <!-- ./wrapper -->
+        <!-- bootstrap time picker -->
+        <script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script>
+            $(function () {
+                //Timepicker
+                $('.timepicker').timepicker({
+                    showInputs: false
                 })
-            </script>
-        </body>
-    </html>
+            })
+        </script>
+    </body>
+</html>

@@ -180,7 +180,7 @@
                                     <div class="icon">
                                         <i class="fa fa fa-id-card"></i>
                                     </div>
-                                    <a href="edit_attendance.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="lecturer_leave.jsp" class="small-box-footer" style="font-size:20px;">
                                         Add Lecturer Leave
                                     </a>
                                 </div>
@@ -201,23 +201,6 @@
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-green">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-money"></i>
-                                    </div>
-                                    <a href="#" class="small-box-footer" style="font-size:20px;">
-                                        Lecturer Salary
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
                                 <div class="small-box bg-yellow">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
@@ -227,11 +210,29 @@
                                     <div class="icon">
                                         <i class="fa fa-graduation-cap "></i>
                                     </div>
-                                    <a href="search_exam_time_table.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="lecturer_time_tables.jsp" class="small-box-footer" style="font-size:20px;">
                                         Lecturer Time Tables
                                     </a>
                                 </div>
                             </div>
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-green">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <a href="/lecturer_salary.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Lecturer Salary
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
