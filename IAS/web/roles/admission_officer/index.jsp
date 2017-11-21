@@ -43,19 +43,23 @@
                             <!-- ./col -->
                             <div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-green">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+                                
+                                    <div class="small-box bg-green">
 
-                                        <p>&nbsp</p>
+                                        <div class="inner">
+                                            <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                            <p>&nbsp</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ion ion-person-add"></i>
+                                        </div>
+                                        <a href="add_students.jsp" class="small-box-footer" style="font-size:20px;">
+                                            Add Student
+                                        </a>
+
                                     </div>
-                                    <div class="icon">
-                                        <i class="ion ion-person-add"></i>
-                                    </div>
-                                    <a href="add_students.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Add Student
-                                    </a>
-                                </div>
+                               
                             </div><div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-aqua-active">
