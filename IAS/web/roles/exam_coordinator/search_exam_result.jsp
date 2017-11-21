@@ -38,7 +38,7 @@
 
                 <!-- Main content -->
                 <section class="content">
-                    <%@include file="../../includes/students_searchbar_edit_attendance.jsp"%>
+                    <%@include file="../../includes/batch_search_bar.jsp"%>
 
                     <%@include file="../../includes/batch_search_results_view_more.jsp"%>
                 </section>

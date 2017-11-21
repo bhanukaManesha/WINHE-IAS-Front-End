@@ -27,9 +27,9 @@
                             <td>JA</td>
                             <td>JAVA ASSOCIATE</td>
                             <td>17.1</td>
-                            <td><span><button type="submit"
-                                              class="btn btn-primary btn-block btn-flat" data-toggle="modal"
-                                              data-target="#modal-default">Add</button></span></td>
+                            <td><button type="submit"
+                                        class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                        data-target="#modal-default"> <span class="glyphicon glyphicon-plus"></span> Add</button></span></td></td>
 
 
                         </tr>
@@ -38,27 +38,27 @@
                             <td>JM</td>
                             <td>JAVA MASTER</td>
                             <td>17.1</td>
-                            <td><span><button type="submit"
-                                              class="btn btn-primary btn-block btn-flat" data-toggle="modal"
-                                              data-target="#modal-default">Add</button></span></td>
+                            <td><button type="submit"
+                                        class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                        data-target="#modal-default"> <span class="glyphicon glyphicon-plus"></span> Add</button></span></td></td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td>JE</td>
                             <td>JAVA EXPERT</td>
                             <td>17.1</td>
-                            <td><span><button type="submit"
-                                              class="btn btn-primary btn-block btn-flat" data-toggle="modal"
-                                              data-target="#modal-default">Add</button></span></td>
+                            <td><button type="submit"
+                                        class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                        data-target="#modal-default"> <span class="glyphicon glyphicon-plus"></span> Add</button></span></td></td>
                         </tr>
                         <tr>
                             <td>4.</td>
                             <td>JA</td>
                             <td>JAVA ASSOCIATE</td>
                             <td>17.3</td>
-                            <td><span><button type="submit"
-                                              class="btn btn-primary btn-block btn-flat" data-toggle="modal"
-                                              data-target="#modal-default">Add</button></span></td>
+                            <td><button type="submit"
+                                        class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                        data-target="#modal-default"> <span class="glyphicon glyphicon-plus"></span> Add</button></span></td></td>
                             </span>
                             </td>
                         </tr>
