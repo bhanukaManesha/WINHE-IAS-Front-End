@@ -1,4 +1,3 @@
-
 <script src="dist/js/custom.js"></script>
 
 <div>
