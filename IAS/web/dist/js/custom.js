@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
 $("#enter-email .btn").click(function (e) {
-    console.log("clicked");
+    
     $("#enter-email").hide();
     $("#re-enter-password").show();
 });
@@ -18,6 +18,12 @@ $(document).ready(function () {
 
     $("#exam-results-view-more").hide();
 });
+
+$( document ).ready(function() {
+    console.log("change")
+    $("#boxed_layout").removeClass('sidebar-collapse').addClass('layout-boxed');
+});
+
 //function display() {
 //            var z = prompt("enter your code...");
 //            if(z != null) {

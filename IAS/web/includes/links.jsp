@@ -65,11 +65,6 @@
 
 
 
-
-
-
-
-
 <!-- jQuery 3 -->
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Select2 -->
@@ -112,6 +107,7 @@
 	src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Bootstrap slider -->
 <script src="../../plugins/bootstrap-slider/bootstrap-slider.js"></script>
+
 <script>
 	$(function() {
 		/* BOOTSTRAP SLIDER */
@@ -194,7 +190,13 @@
 				})
 
 		//Date picker
-		$('#datepicker').datepicker({
+		$('#datepicker1').datepicker({
+			autoclose : true
+		})
+                $('#datepicker2').datepicker({
+			autoclose : true
+		})
+                $('#datepicker3').datepicker({
 			autoclose : true
 		})
 
@@ -263,3 +265,5 @@
 <!-- Google Font -->
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+

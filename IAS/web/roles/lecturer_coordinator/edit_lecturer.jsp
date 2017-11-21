@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Student Coordinator | Search Student</title>
+        <title>Lecturer Coordinator | Search Lecturer</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -25,14 +25,14 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
-                        Student Coordinator
+                        Lecturer Coordinator
                     </h1>
                     <h4 style="text-align:center">
                         Edit Student
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="edit_students.jsp"><i class="fa fa-edit"></i> Edit Student</a></li>
+                        <li><a href="edit_lecturer.jsp"><i class="fa fa-edit"></i> Edit Lecturer</a></li>
                     </ol>
                 </section>
 
@@ -41,9 +41,9 @@
 
 
 
-                    <%@include file= "../../includes/students_searchbar.jsp"%>
+                    <%@include file= "../../includes/lecturer_searchbar.jsp"%>
 
-                    <%@include file= "../../includes/students_edit_results.jsp"%>
+                    <%@include file= "../../includes/lecturer_edit_results.jsp"%>
 
                 </section>
                 <div class="modal modal-warning fade" id="modal-warning">
@@ -52,16 +52,17 @@
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">EDIT STUDENT</h4>
+                                <h4 class="modal-title">EDIT LECTURER</h4>
                             </div>
                             <div class="modal-body">
 
 
+
                                 <!-- Import Panel Start -->
-                                <h2 class="box-title" style="text-align:center">BHANUKA GAMAGE | CS3202</h2>
+                                <h2 class="box-title">BHANUKA GAMAGE | CS3202</h2>
                                 <div class="box box-success">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Import Student Details</h3>
+                                        <h3 class="box-title">Import Lecturer Details</h3>
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
@@ -84,7 +85,7 @@
                                 <!-- Enter Student Details Panel Start -->
                                 <div class="box box-info">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Enter Student Details</h3>
+                                        <h3 class="box-title">Enter Lecturer Details</h3>
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
@@ -99,7 +100,7 @@
                                                                 <h3 class="box-title">Personal Details</h3>
                                                             </div>
                                                             <div class="form-group">
-                                                                <label>Student ID</label>
+                                                                <label>Lecturer ID</label>
 
                                                                 <input type="text" class="form-control" placeholder="Enter Student ID" >
                                                                 <label>First Name</label>
@@ -223,89 +224,7 @@
                                                         </div> 
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">    
-                                                        <div class="box box-info"  style="padding:10px">
-                                                            <div class="box-header with-border">
-                                                                <h3 class="box-title">Guardian Details</h3>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label>First Name</label>
-                                                                <input type="text" class="form-control" placeholder="Enter First Name" >
 
-                                                                <label>Last Name</label>
-                                                                <input type="text" class="form-control" placeholder="Enter Last Name" > 
-
-
-                                                                <label>Date Of Birth:</label>
-                                                                <div class="input-group date">
-                                                                    <div class="input-group-addon">
-                                                                        <i class="fa fa-calendar"></i>
-                                                                    </div>
-                                                                    <input type="text" class="form-control pull-right" id="datepicker">
-                                                                </div>
-
-                                                                <label>Relationship</label>
-
-                                                                <select class="form-control select2" data-placeholder="Select Relationship" style="width: 100%;" >
-                                                                    <option>Father</option>
-                                                                    <option>Mother</option>
-                                                                    <option>Grand-Father</option>
-                                                                    <option>Grand-Mother</option>
-                                                                    <option>Uncle</option>
-                                                                    <option>Aunt</option>
-                                                                    <option>Brother</option>
-                                                                    <option>Sister</option>
-                                                                </select>
-
-                                                                <label>Occupation</label>
-                                                                <input type="text" class="form-control" placeholder="Enter Guardian Occupation" >
-
-
-
-
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-6">    
-                                                        <div class="box box-danger"  style="padding:10px">
-                                                            <div class="box-header with-border">
-                                                                <h3 class="box-title">Guardian Contact Details</h3>
-                                                            </div>
-                                                            <div class="form-group">
-
-
-                                                                <label>Email</label>
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                                    <input type="email" class="form-control" placeholder="Email">
-                                                                </div>
-
-                                                                <!-- textarea -->
-                                                                <label>Address</label>
-                                                                <textarea class="form-control" rows="3" placeholder="Enter Address"></textarea>
-
-                                                                <label>Home</label>
-                                                                <div class="input-group">
-                                                                    <div class="input-group-addon">
-                                                                        <i class="fa fa-phone"></i>
-                                                                    </div>
-                                                                    <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
-                                                                </div>
-                                                                <label>Mobile</label>
-
-                                                                <div class="input-group">
-                                                                    <div class="input-group-addon">
-                                                                        <i class="fa fa-phone"></i>
-                                                                    </div>
-                                                                    <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div class="row">
 
                                                     <div class="col-lg-12">    
@@ -314,51 +233,22 @@
                                                                 <h3 class="box-title">Academic Information</h3>
                                                             </div>
                                                             <div class="row">
-                                                                <div class="col-lg-6">    
+                                                                <div class="col-lg-12">    
                                                                     <div class="box box-default"  style="padding:10px">
                                                                         <div class="box-header with-border">
-                                                                            <h3 class="box-title">Year 10 or Equivalent</h3>
+                                                                            <h3 class="box-title">Highest Qualification</h3>
                                                                         </div>
                                                                         <div class="form-group">
 
                                                                             <label>Name of Qualification</label>
                                                                             <input type="text" class="form-control" placeholder="Enter Qualification" >
-                                                                            <label>Subjects Passed</label>
-                                                                            <select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
-                                                                                <option>Mathematics</option>
-                                                                                <option>Sinhala</option>
-                                                                                <option>English</option>
-                                                                                <option>History</option>
-                                                                                <option>Religion</option>
-                                                                                <option>Science</option>
-                                                                            </select>
+
 
                                                                         </div>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="col-lg-6">    
-                                                                    <div class="box box-default"  style="padding:10px">
-                                                                        <div class="box-header with-border">
-                                                                            <h3 class="box-title">Year 12 or Equivalent</h3>
-                                                                        </div>
-                                                                        <div class="form-group">
 
-                                                                            <label>Name of Qualification</label>
-                                                                            <input type="text" class="form-control" placeholder="Enter Qualification" >
-                                                                            <label>Subjects Passed</label>
-                                                                            <select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
-                                                                                <option>Mathematics</option>
-                                                                                <option>Sinhala</option>
-                                                                                <option>English</option>
-                                                                                <option>History</option>
-                                                                                <option>Religion</option>
-                                                                                <option>Science</option>
-                                                                            </select>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
 
                                                             </div>
                                                             <div class="row">
@@ -450,36 +340,30 @@
                                         <!-- /.box-body -->
 
 
-                                    </form>
+
+
                                 </div>
-                                <!-- Enter Student Details Panel End -->
-
-
-
 
 
                             </div>
-
-
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Save Changes</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-outline">Save Changes</button>
-                        </div>
+                        <!-- /.modal-content -->
                     </div>
-                    <!-- /.modal-content -->
+                    <!-- /.modal-dialog -->
                 </div>
-                <!-- /.modal-dialog -->
+
+
+
             </div>
-
-
-
         </div>
-    </div>
-    <!-- /.box -->
+        <!-- /.box -->
 
-    <!-- ./wrapper -->
+        <!-- ./wrapper -->
 
 
-</body>
+    </body>
 </html>

@@ -16,7 +16,7 @@
 						<th>Course ID</th>
 						<th>Course Name</th>
 						<th style="width: 80px">Batch ID</th>
-						<th>Exam Time Tables</th>
+						<th>View Exam Results</th>
 					</tr>
 					<tr>
 						<td>1.</td>
@@ -26,7 +26,7 @@
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
 									data-target="#modal-default"
-									 <span class="glyphicon glyphicon-info-sign"></span>View More</button></span></td>
+                                                                        <i class="fa fa-search"></i>View More</button></span></td>
 					</tr>
 					<tr>
 						<td>2.</td>
@@ -36,7 +36,7 @@
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
 									data-target="#modal-default"
-									 <span class="glyphicon glyphicon-info-sign"></span>View More</button></span></td>
+									 <i class="fa fa-search"></i>View More</button></span></td>
 					</tr>
 					<tr>
 						<td>3.</td>
@@ -46,7 +46,7 @@
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
 									data-target="#modal-default"
-									 <span class="glyphicon glyphicon-info-sign"></span>View More</button></span></td>
+									 <i class="fa fa-search"></i>View More</button></span></td>
 					</tr>
 					<tr>
 						<td>4.</td>
@@ -56,7 +56,7 @@
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
 									data-target="#modal-default"
-									 <span class="glyphicon glyphicon-info-sign"></span>View More</button></span></td>
+									 <i class="fa fa-search"></i>View More</button></span></td>
 					</tr>
 				</table>
 			</div>

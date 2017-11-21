@@ -49,7 +49,7 @@
 								<i class="fa fa-television"></i>
 							</div>
 							<a href="" class="small-box-footer"
-								style="font-size: 20px;"> Boxed Layout </a>
+								style="font-size: 20px;" id="boxed_layout"> Boxed Layout </a>
 						</div>
 					</div>
 					<!-- ./col -->
@@ -65,7 +65,7 @@
 								<i class="fa fa-gavel"></i>
 							</div>
 							<a href="" class="small-box-footer"
-								style="font-size: 20px;"> Fixed Layout </a>
+								style="font-size: 20px;" id="fixed_layout"> Fixed Layout </a>
 						</div>
 					</div>
 					<!-- ./col -->

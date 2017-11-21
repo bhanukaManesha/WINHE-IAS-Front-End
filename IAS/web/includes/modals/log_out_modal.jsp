@@ -23,7 +23,7 @@
 					</div>
 					<div class="box-footer">
 						<div class="row">
-							<div class="col-sm-12 border-right">
+							<div class="col-sm-12 ">
 								<div class="description-block">
 									<h5 class="description-header" style="color:black">Do You Really Want to Log Out?</h5>
 									<span class="description-text"></span>
