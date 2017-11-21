@@ -21,7 +21,7 @@
             <%@include file= "../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="height: 2250px;">
+            <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
@@ -32,7 +32,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="other_receipts.jsp"><i class="ion ion-person-add"></i> Other Receipts</a></li>
+                        <li><a href="other_receipts.jsp"><i class="fa fa-file-pdf-o"></i> Other Receipts</a></li>
                     </ol>
                 </section>
 

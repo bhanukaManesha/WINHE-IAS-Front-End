@@ -100,8 +100,8 @@
                                     <div class="icon">
                                         <i class="fa fa-line-chart"></i>
                                     </div>
-                                    <a href="add_lecturer.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Search Lecturer Salary
+                                    <a href="generate_lecturer_salary.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Generate Lecturer Salary
                                     </a>
                                 </div>
                             </div>

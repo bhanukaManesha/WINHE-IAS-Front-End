@@ -49,7 +49,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="add_student_payment.jsp"><i class="fa fa-search"></i> Add Student Payment</a></li>
+                        <li><a href="add_student_payment.jsp"><i class="fa fa-money"></i> Add Student Payment</a></li>
                     </ol>
                 </section>
 
