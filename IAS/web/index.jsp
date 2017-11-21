@@ -53,13 +53,13 @@
 </head>
 
 <body class="hold-transition login-page"
-	style="float: right; margin-right: 20px; margin-top: 202px; background-image: url(images/login_page/main.jpg);">
-	<div class="login-box">
+	style="float: right; margin-right: 20px; margin-top: 202px; background-image: url(images/login_page/login.jpg);background-size: cover;background-repeat: no-repeat;height:800px;">
+	<div class="login-box" style="margin-top:100px;">
 		<div class="login-logo">
 			<a href="../../index2.html"> <b>LOGIN PAGE</b></a>
 		</div>
 		<!-- /.login-logo -->
-		<div class="login-box-body">
+		<div class="login-box-body" >
 			<p class="login-box-msg">Sign in to start your session</p>
 
 			<form action="Login" method="post">
