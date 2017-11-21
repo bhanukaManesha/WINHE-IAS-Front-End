@@ -67,7 +67,7 @@
                                     <div class="icon">
                                         <i class="fa fa-search"></i>
                                     </div>
-                                    <a href="add_students.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="course_details.jsp" class="small-box-footer" style="font-size:20px;">
                                         Get Course Details
                                     </a>
                                 </div>
@@ -107,15 +107,14 @@
                         </div>
                         <!-- /.row -->
                     </div>
-                    <!-- =========================================================== -->
-                    <!-- =========================================================== -->
-
                     <div class="invoice">
 
-                        <h3> Attendance </h3>
+                        <h3> Inquiries </h3>
                         <!-- Small boxes (Stat box) -->
                         <div class="row">
-                            <div class="col-lg-3 col-xs-6">
+
+                            <!-- ./col -->
+                            <div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-aqua">
                                     <div class="inner">
@@ -124,51 +123,29 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-calendar"></i>
+                                        <i class="fa fa-lightbulb-o"></i>
                                     </div>
-                                    <a href="search_attendance.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Search Attendance
+                                    <a href="search_inquiry.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Search Inquiry
                                     </a>
                                 </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
+                            </div><div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-green">
+                                <div class="small-box bg-green-active">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-calendar-plus-o"></i>
+                                        <i class="fa fa-question-circle"></i>
                                     </div>
-                                    <a href="add_attendance.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Add Attendance
+                                    <a href="add_inquiry.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Add Inquiry
                                     </a>
                                 </div>
                             </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-yellow">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-calendar-minus-o"></i>
-                                    </div>
-                                    <a href="edit_attendance.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Edit Attendance
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-
-                            </div>
                             <!-- ./col -->
                         </div>
                         <!-- /.row -->
@@ -176,82 +153,10 @@
                     <!-- =========================================================== -->
                     <!-- =========================================================== -->
 
+
                     <div class="invoice">
 
                         <h3> Other </h3>
-                        <!-- Small boxes (Stat box) -->
-                        <div class="row">
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-aqua">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="	fa fa-clock-o"></i>
-                                    </div>
-                                    <a href="student_time_tables.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Time Table
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-green">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-money"></i>
-                                    </div>
-                                    <a href="#" class="small-box-footer" style="font-size:20px;">
-                                        Student Payment History
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-yellow">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-graduation-cap "></i>
-                                    </div>
-                                    <a href="search_exam_time_table.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Exam Time Tables
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-red">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-book"></i>
-                                    </div>
-                                    <a href="search_exam_result.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Exam Results
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                        </div>
-                        <!-- /.row -->
-
                         <div class="row">
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->

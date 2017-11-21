@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Student Coordinator | Add Student</title>
+  <title>Admission Officer  | Add Student</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Adding the link bar -->
@@ -25,7 +25,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1 style="text-align:center">
-         Student Coordinator
+         Admission Officer 
       </h1>
       <h4 style="text-align:center">
          Add Student
