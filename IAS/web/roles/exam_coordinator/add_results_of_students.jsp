@@ -144,7 +144,7 @@
                                                                 <td>74</td>
                                                                 <td>B</td>
                                                             </tr>
-                                                            
+
                                                         </table>
                                                     </div>
                                                     <!-- /.box-body -->
@@ -158,9 +158,10 @@
                             <!-- /.modal-content -->
                         </div>
                         <!-- /.modal-dialog -->
-                        </div>
                     </section>
 
-                    <!-- ./wrapper -->
-                    </body>
-                    </html>
+            </div>
+
+            <!-- ./wrapper -->
+    </body>
+</html>

@@ -38,9 +38,7 @@
 
                 <!-- Main content -->
                 <section class="content">
-
-
-
+                    
                     <%@include file= "../../includes/students_searchbar.jsp"%>
 
                     <%@include file= "../../includes/students_edit_results.jsp"%>

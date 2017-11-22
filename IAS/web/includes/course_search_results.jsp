@@ -15,14 +15,12 @@
                         <th style="width: 10px">#</th>
                         <th>Course ID</th>
                         <th >Course Name</th>
-                        <th style="width: 80px">Batch ID</th>
                         <th>View Info</th>
                     </tr>
                     <tr>
                         <td>1.</td>
                         <td>JA</td>
                         <td>JAVA ASSOCIATE</td>
-                        <td>17.1</td>
                         <td><span><button type="submit"
                                           class="btn btn-block btn-info btn-lg"><i class="fa fa-eye" aria-hidden="true"></i></i> View More</button></span></td>
                     </tr>
@@ -30,7 +28,6 @@
                         <td>2.</td>
                         <td>JM</td>
                         <td>JAVA MASTER</td>
-                        <td>17.1</td>
                         <td><span><button type="submit"
                                           class="btn btn-block btn-info btn-lg"><i class="fa fa-eye" aria-hidden="true"></i></i> View More</button></span></td>
                     </tr>
@@ -38,7 +35,6 @@
                         <td>3.</td>
                         <td>JE</td>
                         <td>JAVA EXPERT</td>
-                        <td>17.1</td>
                         <td><span><button type="submit"
                                           class="btn btn-block btn-info btn-lg"><i class="fa fa-eye" aria-hidden="true"></i></i> View More</button></span></td>
                     </tr>
@@ -46,7 +42,6 @@
                         <td>4.</td>
                         <td>JA</td>
                         <td>JAVA ASSOCIATE</td>
-                        <td>17.3</td>
                         <td><span><button type="submit"
                                           class="btn btn-block btn-info btn-lg"><i class="fa fa-eye" aria-hidden="true"></i></i> View More</button></span></td>
                     </tr>
