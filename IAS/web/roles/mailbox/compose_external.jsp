@@ -55,21 +55,21 @@
                                     <div class="form-group">
                                         <label>Who do you want to send the email : </label>
                                         <div class="radio">
-                                            <label style="margin-left:50px;">
-                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked style="margin-left:120px;">
+                                            <label style="margin-left:120px;">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                                  &nbsp Students
                                             </label>
-                                            <label style="margin-left:50px;">
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" style="margin-left:120px;">
+                                            <label style="margin-left:120px;">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                                                 &nbsp Lecturers
                                             </label>
-                                            <label style="margin-left:50px;">
-                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" style="margin-left:120px;">
+                                            <label style="margin-left:120px;">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
                                                 &nbsp Batch
                                             </label>
-                                            <label style="margin-left:50px;">
-                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" style="margin-left:120px;">
-                                                &nbsp All 
+                                            <label style="margin-left:120px;">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                &nbsp All Members
                                             </label>
                                         </div>
 
@@ -77,11 +77,10 @@
                                     <div class="form-group">
                                         <select class="form-control select2" data-placeholder=" To :" style="width: 100%;" multiple="multiple">
                                             <option disabled >&nbsp;</option>
-                                            <option>Bhanuka Gamage - Super Admin</option>
-                                            <option>Themiya Ranasinghe - Super Admin</option>
-                                            <option>Andrew Pierce - Cashier</option>
-                                            <option>David Callahan - Student Coordinator</option>
-                                            <option>Jack Thompson - Lecturer Coordinator</option>
+                                            <option>bhanukamgamage@gmail,com</option>
+                                            <option>doloawn@gmail.com</option>
+                                            <option>yelsae@gmail.com</option>
+                                            
                                             
                                         </select>
                                     </div>
