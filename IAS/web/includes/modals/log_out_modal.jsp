@@ -18,7 +18,7 @@
 						<h5 class="widget-user-desc">Student Coordinator</h5>
 					</div>
 					<div class="widget-user-image">
-						<img class="img-circle" src="../../dist/img/user2-160x160.jpg"
+						<img class="img-circle" src="${pageContext.request.contextPath}/dist/img/user2-160x160.jpg"
 							alt="User Avatar">
 					</div>
 					<div class="box-footer">
@@ -46,7 +46,7 @@
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default pull-left"
 					data-dismiss="modal">Close</button>
-				<a href="../../Login?logout" type="button" class="btn btn-primary">Log Out</a>
+				<a href="${pageContext.request.contextPath}/Login?logout" type="button" class="btn btn-primary">Log Out</a>
 			</div>
 		</div>
 		<!-- /.modal-content -->
