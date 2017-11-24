@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cashier | Generate Lecturer Salary</title>
+        <title>Lecturer Coordinator | Lecturer Salary</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -42,14 +42,14 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
-                        Cashier
+                        Lecturer Coordinator
                     </h1>
                     <h4 style="text-align:center">
-                        Generate Lecturer Salary
+                        Lecturer Salary
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="generate_lecturer_salary.jsp"><i class="fa fa-search"></i> Generate Lecturer Salary</a></li>
+                        <li><a href="lecturer_salary.jsp"><i class="fa fa-search"></i> Generate Lecturer Salary</a></li>
                     </ol>
                 </section>
 
@@ -197,24 +197,9 @@
 
 
                                         </div>
-                                        <div class="row" style="padding:10px;">
-                                            <h4 style="color:black;">Please enter the payment amount :</h4>
-                                            <div class="input-group">
-                                                <span class="input-group-addon">$</span>
-                                                <input type="text" class="form-control">
-                                                <span class="input-group-addon">.00</span>
-                                            </div>
+                                        
 
-                                        </div>
-
-                                        <div class="row no-print">
-                                            <div class="col-xs-12">
-
-                                                <a href="invoice-print.jsp" target="_blank" type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Submit Payment
-                                                </a>
-
-                                            </div>
-                                        </div>
+                                        
 
                                     </div>
                                 </div>

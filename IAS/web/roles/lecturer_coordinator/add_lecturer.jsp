@@ -21,7 +21,7 @@
             <%@include file= "../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="height: 2250px;">
+            <div class="content-wrapper" style="height: 2350px;">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
@@ -42,12 +42,12 @@
                     <div class="col-md-12">
                         <div class="nav-tabs-custom">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#new_students" data-toggle="tab">New Lecturer</a></li>
-                                <li><a href="#past_students" data-toggle="tab">Past Lecturer</a></li>
+                                <li class="active"><a href="#new_lecturer" data-toggle="tab">New Lecturer</a></li>
+                                <li><a href="#past_lecturer" data-toggle="tab">Past Lecturer</a></li>
                             </ul>
                             <div class="tab-content">
 
-                                <div class="active tab-pane" id="new_students">
+                                <div class="active tab-pane" id="new_lecturer">
                                     <!-- Import Panel Start -->
                                     <h2 class="box-title">New Lecturer</h2>
                                     <div class="box box-success">
@@ -342,7 +342,7 @@
 
                                 </div>
 
-                                <div class="tab-pane" id="past_students">
+                                <div class="tab-pane" id="past_lecturer">
                                     <div class="active tab-pane" id="new_students">
                                         <!-- Import Panel Start -->
                                         <h2 class="box-title">Past Lecturer</h2>
@@ -618,6 +618,28 @@
                                                                 </div>
                                                             </div>
 
+
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <div class="col-lg-12">    
+                                                                <div class="box box-danger"  style="padding:10px">
+                                                                    <div class="box-header with-border">
+                                                                        <h3 class="box-title">Reason For Removal</h3>
+                                                                    </div>
+                                                                    <div class="form-group">
+
+                                                                        <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                                            <option>Left the Course</option>
+                                                                            <option>Permanently Suspended</option>     
+
+                                                                        </select>
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
                                                         </div>
 

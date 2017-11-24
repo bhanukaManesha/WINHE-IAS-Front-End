@@ -226,7 +226,7 @@
                                     <div class="icon">
                                         <i class="fa fa-money"></i>
                                     </div>
-                                    <a href="/lecturer_salary.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="lecturer_salary.jsp" class="small-box-footer" style="font-size:20px;">
                                         Lecturer Salary
                                     </a>
                                 </div>

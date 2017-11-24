@@ -36,7 +36,7 @@ public class Login extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Login</title>");
+            out.println("<title>Servlet Login</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Login at " + request.getContextPath() + "</h1>");
@@ -44,8 +44,7 @@ public class Login extends HttpServlet {
             out.println("</html>");
         }
     }
-
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -79,13 +78,25 @@ public class Login extends HttpServlet {
         String password = request.getParameter("password");
 
         if (!email.isEmpty() && !password.isEmpty()) {
-            HttpSession session = request.getSession();
+            
+            if (!email.equals("super_admin")) {
+                HttpSession session = request.getSession();
 
-            session.setAttribute("role", email);
+                session.setAttribute("role", email);
 
-            session.setAttribute("homePath", "roles/" + email + "/");
+                session.setAttribute("homePath", "roles/" + email + "/");
 
-            response.sendRedirect("roles/" + email + "/");
+                response.sendRedirect("roles/" + email + "/");
+            } else {
+                HttpSession session = request.getSession();
+
+                session.setAttribute("role", email);
+
+                session.setAttribute("homePath", "" + email + "/");
+
+                response.sendRedirect(email + "/");
+            }
+
         } else {
             response.sendRedirect("index.jsp");
         }
@@ -99,6 +110,7 @@ public class Login extends HttpServlet {
 //                    break;     
 //            }
     }
+
 
     /**
      * Returns a short description of the servlet.

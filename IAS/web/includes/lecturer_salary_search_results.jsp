@@ -36,7 +36,7 @@
                 <div class="col-sm-4">
                   <div class="description-block">
                     <h5 class="description-header"></h5>
-                    <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-salary" data-studentid="CS3202"><i class="fa fa-credit-card"></i> &nbsp GENERATE SALARY</a>
+                    <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-salary" data-studentid="CS3202"><i class="fa fa-credit-card"></i> &nbsp VIEW SALARY INFORMATION</a>
                   </div>
                   <!-- /.description-block -->
                 </div>
