@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Course Coordinator | Search Course</title>
+        <title>Course Coordinator | Delete Course</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -23,9 +23,9 @@
             .example-modal .modal {
                 background: transparent !important;
             }
-
         </style>
     </head>
+
 
     <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
@@ -43,11 +43,11 @@
                         Course Coordinator
                     </h1>
                     <h4 style="text-align:center">
-                        Search Course
+                        Delete Course
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_course.jsp"><i class="fa fa-search"></i> Search Course</a></li>
+                        <li><a href="delete_course.jsp"><i class="fa fa-trash"></i> Delete Course</a></li>
                     </ol>
                 </section>
 
@@ -56,104 +56,74 @@
 
                     <%@include file= "../../includes/course_searchbar.jsp"%>
 
-                    <%@include file= "../../includes/course_search_results.jsp"%>
+                    <%@include file= "../../includes/course_delete_details.jsp"%>
 
                 </section>
-                <div class="modal modal-info fade" id="modal-info">
-                    <div class="modal-dialog modal-lg">
+                <div class="modal modal-danger fade" id="modal-danger">
+                    <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">COURSE INFORMATION</h4>
+                                <h4 class="modal-title">DELETE COURSE</h4>
                             </div>
                             <div class="modal-body">
-
 
                                 <!-- Widget: user widget style 1 -->
                                 <div class="box box-widget widget-user">
                                     <!-- Add the bg color to the header using any of the bg-* classes -->
-                                    <div class="widget-user-header bg-blue-active">
-                                        <h3 class="widget-user-username">JAVA ASSOCIATE</h3>
+                                    <div class="widget-user-header bg-red-active">
+                                        <h3 class="widget-user-username">Java - ASSOCIATE</h3>
                                         <h5 class="widget-user-desc">JA</h5>
                                     </div>
                                     <div class="widget-user-image">
                                         <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
                                     </div>
                                     <div class="box-footer">
-
                                         <div class="row">
-
-                                            <h3 style="color:black; display:block;text-align:center;;">Course Details</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 border-right">
-                                                <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">20/12/1996</h5>
-                                                    <span class="description-text" style="color:black">STARTED DATE</span>
-                                                </div>
-                                                <!-- /.description-block -->
-                                            </div>
-
-                                        </div>
-                                        <div class="row" style="background-color:lightgrey">
                                             <div class="col-sm-4 border-right">
-                                                <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">6 MONTHS</h5>
-                                                    <span class="description-text" style="color:black">DURATION OF THE COURSE</span>
-                                                </div>
+
                                                 <!-- /.description-block -->
                                             </div>
-
-                                        </div>
-                                        <!-- /.col -->
-
-                                        <div class="row">
-
                                             <!-- /.col -->
-                                            <div class="col-sm-6 border-right">
-                                                <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">SINGLE</h5>
-                                                    <span class="description-text" style="color:black">COURSE CONTENT</span>
-                                                </div>
+                                            <div class="col-sm-4 border-right">
+
                                                 <!-- /.description-block -->
                                             </div>
                                             <!-- /.col -->
 
-                                        </div>
-                                        <!--<div style="background-color:lightgrey">
-                                            <div class="row">
+                                            <div class="description-block">
+                                                <h5 class="description-header" style="color:black;margin-bottom:10px;">Reason for Removal</h5>
+                                                <div class="row" style="padding-left:50px; padding-right:50px;">
+                                                    <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                        <option>No Longer Available</option>
+                                                        <option>A new version of this course is available</option>     
 
-                                                <h3 style="color:black; display:block;text-align:center;;">Contact Details</h3>
+                                                    </select>
+                                                </div>
+                                                <!-- /.description-block -->
                                             </div>
-
                                         </div>
-                                        <div class="row">
-
-                                            <h3 style="color:black; display:block;text-align:center;;">Course Details</h3>
-                                        </div>-->
-
                                     </div>
                                 </div>
+
                             </div>
-                            <!-- /.modal-body -->
-
-
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
-
+                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline">Delete Course</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
                     </div>
                     <!-- /.modal-dialog -->
-
                 </div>
-                <!-- /.modal -->
+
             </div>
-            <!-- ./content-wrapper -->
         </div>
+        <!-- /.box -->
+
         <!-- ./wrapper -->
+
 
     </body>
 </html>

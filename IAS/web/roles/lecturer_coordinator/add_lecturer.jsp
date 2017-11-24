@@ -336,10 +336,6 @@
                                     </div>
                                     <!-- Enter Student Details Panel End -->
 
-
-
-
-
                                 </div>
 
                                 <div class="tab-pane" id="past_lecturer">

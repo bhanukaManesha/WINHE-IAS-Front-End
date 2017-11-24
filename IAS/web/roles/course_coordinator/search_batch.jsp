@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Course Coordinator | Search Course</title>
+        <title>Course Coordinator | Search Batch</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -43,20 +43,20 @@
                         Course Coordinator
                     </h1>
                     <h4 style="text-align:center">
-                        Search Course
+                        Search Batch
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_course.jsp"><i class="fa fa-search"></i> Search Course</a></li>
+                        <li><a href="search_batch.jsp"><i class="fa fa-search"></i> Search Batch</a></li>
                     </ol>
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
 
-                    <%@include file= "../../includes/course_searchbar.jsp"%>
+                    <%@include file= "../../includes/batch_search_bar.jsp"%>
 
-                    <%@include file= "../../includes/course_search_results.jsp"%>
+                    <%@include file= "../../includes/batch_search_results_get_more.jsp"%>
 
                 </section>
                 <div class="modal modal-info fade" id="modal-info">
@@ -65,7 +65,7 @@
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">COURSE INFORMATION</h4>
+                                <h4 class="modal-title">BATCH INFORMATION</h4>
                             </div>
                             <div class="modal-body">
 
@@ -74,7 +74,7 @@
                                 <div class="box box-widget widget-user">
                                     <!-- Add the bg color to the header using any of the bg-* classes -->
                                     <div class="widget-user-header bg-blue-active">
-                                        <h3 class="widget-user-username">JAVA ASSOCIATE</h3>
+                                        <h3 class="widget-user-username">17.1</h3>
                                         <h5 class="widget-user-desc">JA</h5>
                                     </div>
                                     <div class="widget-user-image">

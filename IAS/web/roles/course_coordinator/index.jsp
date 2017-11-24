@@ -65,7 +65,7 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="ion ion-person-add"></i>
+                                        <i class="fa fa-plus"></i>
                                     </div>
                                     <a href="add_course.jsp" class="small-box-footer" style="font-size:20px;">
                                         Add Course
@@ -115,7 +115,7 @@
 
                     <div class="invoice">
 
-                        <h3> Attendance </h3>
+                        <h3> Batch </h3>
                         <!-- Small boxes (Stat box) -->
                         <div class="row">
                             <div class="col-lg-3 col-xs-6">
@@ -127,10 +127,10 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-calendar"></i>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
                                     </div>
-                                    <a href="search_attendance.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Search Attendance
+                                    <a href="search_batch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Search Batch
                                     </a>
                                 </div>
                             </div>
@@ -144,10 +144,10 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-calendar-plus-o"></i>
+                                        <i class="fa fa-plus"></i>
                                     </div>
-                                    <a href="add_attendance.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Add Attendance
+                                    <a href="add_batch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Add Batch
                                     </a>
                                 </div>
                             </div>
@@ -161,27 +161,27 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-calendar-minus-o"></i>
+                                        <i class="fa fa-edit"></i>
                                     </div>
-                                    <a href="edit_attendance.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Edit Attendance
+                                    <a href="edit_batch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Edit Batch
                                     </a>
                                 </div>
                             </div>
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-green">
+                                <div class="small-box bg-red">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa fa-id-card"></i>
+                                        <i class="fa fa-trash"></i>
                                     </div>
-                                    <a href="lecturer_leave.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Add Lecturer Leave
+                                    <a href="delete_batch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Delete Batch
                                     </a>
                                 </div>
                             </div>
@@ -197,21 +197,21 @@
                         <h3> Other </h3>
                         <!-- Small boxes (Stat box) -->
                         <div class="row">
-                            
+
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-yellow">
+                                <div class="small-box bg-aqua">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-graduation-cap "></i>
+                                        <i class="fa fa-clock-o "></i>
                                     </div>
-                                    <a href="lecturer_time_tables.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Lecturer Time Tables
+                                    <a href="time_table_crud.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Course Time Tables
                                     </a>
                                 </div>
                             </div>
@@ -224,15 +224,82 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-money"></i>
+                                        <i class="fa fa-file-excel-o"></i>
                                     </div>
-                                    <a href="/lecturer_salary.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Lecturer Salary
+                                    <a href="search_exam_results_for_course_coordinator.jsp" class="small-box-footer" style="font-size:20px;">
+                                        View Exam Results
                                     </a>
                                 </div>
                             </div>
                             <!-- ./col -->
-                            
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-yellow">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <a href="search_student_payment_history.jsp" class="small-box-footer" style="font-size:20px;">
+                                        View Payment History
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-red">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <a href="/exam_cordinator/search_exam_result.jsp" class="small-box-footer" style="font-size:20px;">
+                                        View Exam Time Tables
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+
+                    <!-- =========================================================== -->
+                    <!-- =========================================================== -->
+
+                    <div class="invoice">
+
+                       
+                        <!-- Small boxes (Stat box) -->
+                        <div class="row">
+
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-blue">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <a href="../mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
+
+                                        View Lecturer Salary
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
@@ -254,8 +321,8 @@
                             <!-- ./col -->
                         </div>
                         <!-- /.row -->
+                    </div>
 
-                        
                 </section>
                 <!-- /.content -->
             </div>
