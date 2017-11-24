@@ -136,21 +136,21 @@
                                                             <input type="text" class="form-control" placeholder="Enter Course Name" >
                                                             <div class="row">
                                                                 <div class="col-md-6 lg-6">
-                                                                    
-                                                                         <label>Course Duration</label>
-                                                                        <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
+
+                                                                    <label>Course Duration</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
                                                                 </div>
                                                                 <div class="col-md-6 lg-6">
-                                                                    
 
-                                                                        <label>Select Duration Type</label>
-                                                                        <select class="form-control" width="50px">
-                                                                            <option>Days</option>
-                                                                            <option>Weeks</option>
-                                                                            <option>Months</option>
-                                                                            <option>Years</option>
-                                                                        </select>
-                                                                    
+
+                                                                    <label>Select Duration Type</label>
+                                                                    <select class="form-control" width="50px">
+                                                                        <option>Days</option>
+                                                                        <option>Weeks</option>
+                                                                        <option>Months</option>
+                                                                        <option>Years</option>
+                                                                    </select>
+
 
                                                                 </div>
                                                             </div>
@@ -158,13 +158,12 @@
                                                             <div class="box-body pad">
                                                                 <form>
                                                                     <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                            This is my textarea to be replaced with CKEditor.
+                                            
                                                                     </textarea>
                                                                 </form>
                                                             </div>
                                                             <!-- /.box -->
                                                         </div> 
-
                                                     </div>
                                                     <!-- /.box-body -->
                                             </div>
@@ -185,13 +184,15 @@
                                     </div>
                                 </div> 
                             </div>
-                        </div>
-                        <!-- /.modal-content -->
+                            <!-- /.modal-content -->
+                        </div>  
+                        <!-- /.modal-dialog -->
                     </div>
+                </section>
             </div>
-            <!-- /.modal-dialog -->
+            <!--./content-wrapper-->
         </section>
     </div>
-</div>
+    <!--./wrapper-->               
 </body>
 </html>

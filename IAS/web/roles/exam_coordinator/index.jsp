@@ -80,7 +80,7 @@
 									<p>&nbsp</p>
 								</div>
 								<div class="icon">
-									<i class="fa fa-book"></i>
+									<i class="fa fa-file-excel-o"></i>
 								</div>
 								<a href="search_exam_result.jsp" class="small-box-footer" style="font-size: 20px;">
 									Exam Results </a>
@@ -96,7 +96,7 @@
 									<p>&nbsp</p>
 								</div>
 								<div class="icon">
-									<i class="fa fa-file-excel-o" aria-hidden="true"></i>
+									<i class="fa fa-plus-square" aria-hidden="true"></i>
 								</div>
 								<a href="add_results_of_students.jsp" class="small-box-footer" style="font-size: 20px;">
 									Add Exam Result </a>

@@ -40,7 +40,7 @@
                 <section class="content">
                     <%@include file="../../includes/batch_search_bar.jsp"%>
 
-                    <%@include file="../../includes/batch_search_results_view_more.jsp"%>
+                    <%@include file="../../includes/batch_search_results_view_more_table.jsp"%>
                 </section>
 
                 <section>

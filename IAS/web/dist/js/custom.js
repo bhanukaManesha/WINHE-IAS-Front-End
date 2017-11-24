@@ -24,6 +24,10 @@ $( document ).ready(function() {
     $("#boxed_layout").removeClass('sidebar-collapse').addClass('layout-boxed');
 });
 
+//Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
 //function display() {
 //            var z = prompt("enter your code...");
 //            if(z != null) {

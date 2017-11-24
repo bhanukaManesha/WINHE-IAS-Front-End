@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Course Coordinator | Search Course</title>
+        <title>Admission Officer | Search Course</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -40,14 +40,14 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
-                        Course Coordinator
+                        Admission Officer
                     </h1>
                     <h4 style="text-align:center">
-                        Search Course
+                        Get Course Details
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_course.jsp"><i class="fa fa-search"></i> Search Course</a></li>
+                        <li><a href="search_course.jsp"><i class="fa fa-search"></i> Get Course Details</a></li>
                     </ol>
                 </section>
 
@@ -69,91 +69,89 @@
                             </div>
                             <div class="modal-body">
 
-
-                                <!-- Widget: user widget style 1 -->
                                 <div class="box box-widget widget-user">
                                     <!-- Add the bg color to the header using any of the bg-* classes -->
-                                    <div class="widget-user-header bg-blue-active">
-                                        <h3 class="widget-user-username">JAVA ASSOCIATE</h3>
-                                        <h5 class="widget-user-desc">JA</h5>
+                                    <div class="widget-user-header bg-aqua-active">
+                                        <h3 class="widget-user-username">JAVA Associate</h3>
+                                        <h5 class="widget-user-desc">JA32</h5>
                                     </div>
                                     <div class="widget-user-image">
                                         <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
                                     </div>
                                     <div class="box-footer">
-
                                         <div class="row">
-
-                                            <h3 style="color:black; display:block;text-align:center;;">Course Details</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6 border-right">
+                                            <div class="col-sm-12 border-right">
                                                 <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">20/12/1996</h5>
-                                                    <span class="description-text" style="color:black">STARTED DATE</span>
-                                                </div>
-                                                <!-- /.description-block -->
-                                            </div>
-
-                                        </div>
-                                        <div class="row" style="background-color:lightgrey">
-                                            <div class="col-sm-4 border-right">
-                                                <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">6 MONTHS</h5>
-                                                    <span class="description-text" style="color:black">DURATION OF THE COURSE</span>
-                                                </div>
-                                                <!-- /.description-block -->
-                                            </div>
-
-                                        </div>
-                                        <!-- /.col -->
-
-                                        <div class="row">
-
-                                            <!-- /.col -->
-                                            <div class="col-sm-6 border-right">
-                                                <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">SINGLE</h5>
-                                                    <span class="description-text" style="color:black">COURSE CONTENT</span>
+                                                    <h5 class="description-header"><select class="form-control select2" data-placeholder="Please Select a batch" style="width:100%;">
+                                                            <option>2018 - February</option>
+                                                            <option>2018 - June</option>
+                                                        </select></h5>
+                                                    <span class="description-text" style="color:black">Please Select the Batch</span>
                                                 </div>
                                                 <!-- /.description-block -->
                                             </div>
                                             <!-- /.col -->
-
                                         </div>
-                                        <!--<div style="background-color:lightgrey">
-                                            <div class="row">
-
-                                                <h3 style="color:black; display:block;text-align:center;;">Contact Details</h3>
+                                        <div class="row">
+                                            <div class="col-sm-6 border-right">
+                                                <div class="description-block">
+                                                    <h5 class="description-header" style="color:black">$350</h5>
+                                                    <span class="description-text" style="color:black">Amount</span>
+                                                </div>
+                                                <!-- /.description-block -->
                                             </div>
+                                            <div class="col-sm-6 border-right">
+                                                <div class="description-block">
+                                                    <h2 class="description-header" style="color:red">4</h2>
+                                                    <span class="description-text" style="color:red">Remaining Seats</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+
 
                                         </div>
                                         <div class="row">
 
-                                            <h3 style="color:black; display:block;text-align:center;;">Course Details</h3>
-                                        </div>-->
+                                            <h3 style="color:black; display:block;text-align:center;;">Course Content</h3>
+                                        </div>
+                                        <div class="row">
+                                            <p class="description-block" style="color:black">
+                                                <span class="description-text">
+                                                    
+                                                </span>
+                                            </p>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- /.modal-body -->
 
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
 
                             </div>
                         </div>
-                        <!-- /.modal-content -->
                     </div>
-                    <!-- /.modal-dialog -->
-
                 </div>
-                <!-- /.modal -->
-            </div>
-            <!-- ./content-wrapper -->
-        </div>
-        <!-- ./wrapper -->
 
-    </body>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+</div>
+</div>
+
+
+<!-- /.box -->
+
+<!-- ./wrapper -->
+
+
+</body>
 </html>
