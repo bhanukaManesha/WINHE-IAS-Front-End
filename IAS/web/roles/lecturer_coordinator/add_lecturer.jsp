@@ -109,7 +109,7 @@
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-                                                                        <input type="text" class="form-control pull-right" id="datepicker">
+                                                                        <input type="text" class="form-control pull-right" id="datepicker1">
                                                                     </div>
 
                                                                     <!-- Start Radio Buttons -->
@@ -401,7 +401,7 @@
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-calendar"></i>
                                                                             </div>
-                                                                            <input type="text" class="form-control pull-right" id="datepicker">
+                                                                            <input type="text" class="form-control pull-right" id="datepicker2">
                                                                         </div>
 
                                                                         <!-- Start Radio Buttons -->

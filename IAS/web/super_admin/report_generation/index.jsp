@@ -7,15 +7,15 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
-        <%@include file= "../includes/links.jsp"%>
+        <%@include file= "../../includes/links.jsp"%>
     </head>
     <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
 
             <!-- Adding the header bar -->
-            <%@include file= "../includes/top_navbar.jsp"%>
+            <%@include file= "../../includes/top_navbar.jsp"%>
             <!-- Adding the side bar -->
-            <%@include file= "../includes/side_navbar.jsp"%>
+            <%@include file= "../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
@@ -24,6 +24,9 @@
                     <h1 style="text-align:center">
                         Super Admin
                     </h1>
+                    <h4 style="text-align:center">
+                        Report Generation
+                    </h4>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                     </ol>
@@ -172,7 +175,7 @@
                                     <div class="icon">
                                         <i class="fa fa-book"></i>
                                     </div>
-                                    <a href="report_generation/" class="small-box-footer" style="font-size:20px;">
+                                    <a href="../roles/mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
 
                                         Report Generation
                                     </a>
