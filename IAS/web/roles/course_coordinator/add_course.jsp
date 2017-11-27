@@ -111,7 +111,7 @@
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label>Select Duration Type</label>
-                                                            <select class="form-control" disabled>
+                                                            <select class="form-control" style="width:240px">
                                                                 <option>Days</option>
                                                                 <option>Weeks</option>
                                                                 <option>Months</option>
@@ -123,7 +123,7 @@
                                             </div>
 
                                             <div class="form-group">
-
+                                                <label>Description</label>
                                                 <div class="box-body pad">
                                                     <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
                                                 </div>
@@ -144,7 +144,7 @@
                             <div class="tab-pane" id="past_courses">
                                 <div class="active tab-pane" id="new_courses">
                                     <!-- Import Panel Start -->
-                                    <h2 class="box-title">New Course</h2>
+                                    <h2 class="box-title">Past Course</h2>
                                     <div class="box box-success">
                                         <div class="box-header with-border">
                                             <h3 class="box-title">Import Course Details</h3>
@@ -204,10 +204,10 @@
                                                             <label>Course Duration</label>
                                                             <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
                                                         </div>
-                                                        <div class="col-md-6 lg-6">
+                                                        <div class="col-md-3 lg-3">
                                                             <div class="form-group">
                                                                 <label>Select Duration Type</label>
-                                                                <select class="form-control" disabled>
+                                                                <select class="form-control" style="width:240px">
                                                                     <option>Days</option>
                                                                     <option>Weeks</option>
                                                                     <option>Months</option>
@@ -221,7 +221,7 @@
                                                 <div class="form-group">
 
                                                     <div class="box-body pad">
-                                                        <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
+                                                        <textarea id="editor1" name="editor2" rows="10" cols="80"></textarea>
                                                     </div>
 
                                                 </div>

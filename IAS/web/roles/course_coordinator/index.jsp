@@ -199,7 +199,7 @@
                         <div class="row">
 
                             <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
+                            <div class="col-lg-4 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-aqua">
                                     <div class="inner">
@@ -215,7 +215,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-xs-6">
+                            <div class="col-lg-4 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-green">
                                     <div class="inner">
@@ -231,8 +231,34 @@
                                     </a>
                                 </div>
                             </div>
+
                             <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
+                            <div class="col-lg-4 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-red">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <a href="time_table_crud.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Exam Time Tables
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+
+                        </div>
+                        <!-- /.row -->
+
+
+                        <!-- Small boxes (Stat box) -->
+                        <div class="row">
+                            <!-- ./col -->
+                            <div class="col-lg-4 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-yellow">
                                     <div class="inner">
@@ -244,44 +270,13 @@
                                         <i class="fa fa-money"></i>
                                     </div>
                                     <a href="search_student_payment_history.jsp" class="small-box-footer" style="font-size:20px;">
-                                        View Payment History
+                                        Search Student Payment History
                                     </a>
                                 </div>
                             </div>
                             <!-- ./col -->
                             <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-red">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <a href="/exam_cordinator/search_exam_result.jsp" class="small-box-footer" style="font-size:20px;">
-                                        View Exam Time Tables
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                        </div>
-                        <!-- /.row -->
-                    </div>
-
-                    <!-- =========================================================== -->
-                    <!-- =========================================================== -->
-
-                    <div class="invoice">
-
-                       
-                        <!-- Small boxes (Stat box) -->
-                        <div class="row">
-
-                            <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
+                            <div class="col-lg-4 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-blue">
                                     <div class="inner">
@@ -292,16 +287,16 @@
                                     <div class="icon">
                                         <i class="fa fa-money"></i>
                                     </div>
-                                    <a href="../mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="search_lecturer_salary_details.jsp" class="small-box-footer" style="font-size:20px;">
 
-                                        View Lecturer Salary
+                                        Search Lecturer Salary Details
                                     </a>
                                 </div>
                             </div>
                             <!-- ./col -->
 
                             <!-- ./col -->
-                            <div class="col-lg-3 col-xs-6">
+                            <div class="col-lg-4 col-xs-4">
                                 <!-- small box -->
                                 <div class="small-box bg-purple">
                                     <div class="inner">
@@ -322,16 +317,17 @@
                         </div>
                         <!-- /.row -->
                     </div>
-
                 </section>
-                <!-- /.content -->
             </div>
-            <!-- /.content-wrapper -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
 
 
-        </div>
-        <!-- ./wrapper -->
+</div>
+<!-- ./wrapper -->
 
 
-    </body>
+</body>
 </html>

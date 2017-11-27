@@ -61,8 +61,8 @@
                 </section>
 
                 <section>
-                    <div class="modal fade" id="modal-default">
-                        <div class="modal-dialog">
+                    <div class="modal modal-warning fade" id="modal-default">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal"
@@ -142,7 +142,7 @@
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label>Select Duration Type</label>
-                                                            <select class="form-control">
+                                                            <select class="form-control" style="width:240px">
                                                                 <option>Days</option>
                                                                 <option>Weeks</option>
                                                                 <option>Months</option>

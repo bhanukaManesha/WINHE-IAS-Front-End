@@ -44,7 +44,7 @@
                 </section>
 
                 <section>
-                    <div class="modal modal-danger fade" id="modal-default">
+                    <div class="modal modal-info" id="modal-default">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -57,32 +57,34 @@
                                     <!-- Widget: user widget style 1 -->
                                     <div class="box box-widget widget-user">
                                         <!-- Add the bg color to the header using any of the bg-* classes -->
-                                        <div class="widget-user-header bg-red-active">
+                                        <div class="widget-user-header bg-blue-active">
                                             <h3 class="widget-user-username">Themiya Ranasinghe</h3>
                                             <h4 class="widget-user-desc">13618</h4>
-                                            <h5 class="widget-user-desc">JAVA ASSOCIATE</h5>
-                                            <h6 class="widget-user-desc">JA</h6>
+
                                         </div>
                                         <div class="widget-user-image">
                                             <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
                                         </div>
-                                        <div class="box-footer">
-                                            <div class="row">
-                                                <div class="col-sm-6">
 
-                                                    <div><label>A</label></div>
-                                                </div>
-                                                <!-- /.col -->
 
+                                        <div class="row" style="padding-top:20px; padding-bottom: 30px ">
+
+                                            <div class="description-block">
+                                                <h2 class="description-header" style="color:black;margin-bottom:10px;font-size: 50px">A</h2>
                                                 
-                                            </div>
-                                        </div>
-                                    </div>
 
+                                            </div>
+  
+                                        </div>
+
+                                    </div>
                                 </div>
+
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline">Generate</button>
+                                    <a href="result_print.jsp" target="_blank" type="button" class="btn btn-success pull-right"><i class="fa fa-file-excel-o"></i> Generate
+                                    </a>
                                 </div>
                             </div>
                             <!-- /.modal-content -->
@@ -90,14 +92,16 @@
                         <!-- /.modal-dialog -->
                     </div>
                 </section>
-
-
             </div>
+
+
+
         </div>
-        <!-- /.box -->
+    </div>
+    <!-- /.box -->
 
-        <!-- ./wrapper -->
+    <!-- ./wrapper -->
 
 
-    </body>
+</body>
 </html>

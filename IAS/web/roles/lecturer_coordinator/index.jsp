@@ -197,7 +197,7 @@
                         <h3> Other </h3>
                         <!-- Small boxes (Stat box) -->
                         <div class="row">
-                            
+
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
@@ -227,12 +227,12 @@
                                         <i class="fa fa-money"></i>
                                     </div>
                                     <a href="lecturer_salary.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Lecturer Salary
+                                        Search Lecturer Salary Details
                                     </a>
                                 </div>
                             </div>
                             <!-- ./col -->
-                            
+
                             <!-- ./col -->
                             <div class="col-lg-3 col-xs-6">
                                 <!-- small box -->
@@ -246,7 +246,6 @@
                                         <i class="fa fa-envelope-open"></i>
                                     </div>
                                     <a href="../mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
-
                                         Mail
                                     </a>
                                 </div>
@@ -255,7 +254,7 @@
                         </div>
                         <!-- /.row -->
 
-                        
+
                 </section>
                 <!-- /.content -->
             </div>

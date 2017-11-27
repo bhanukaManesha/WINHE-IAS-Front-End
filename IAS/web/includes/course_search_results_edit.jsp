@@ -22,15 +22,15 @@
                         <td>JA</td>
                         <td>JAVA ASSOCIATE</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
-                                              data-target="#modal-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></span></td>
+                                          class="btn btn-warning" data-toggle="modal" style="width:100%"
+                                          data-target="#modal-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></span></td>
                     </tr>
                     <tr>
                         <td>2.</td>
                         <td>JM</td>
                         <td>JAVA MASTER</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                          class="btn btn-warning" data-toggle="modal" style="width:100%"
                                           data-target="#modal-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></span></td>
                     </tr>
                     <tr>
@@ -38,7 +38,7 @@
                         <td>JE</td>
                         <td>JAVA EXPERT</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                          class="btn btn-warning" data-toggle="modal" style="width:100%"
                                           data-target="#modal-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></span></td>
                     </tr>
                     <tr>
@@ -46,7 +46,7 @@
                         <td>JA</td>
                         <td>JAVA ASSOCIATE</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
+                                          class="btn btn-warning" data-toggle="modal" style="width:100%"
                                           data-target="#modal-default"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></span></td>
                     </tr>
                 </table>

@@ -25,7 +25,7 @@
 						<td>17.1</td>
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
-									data-target="#modal-default"
+                                                                        data-target="#modal-info">
                                                                         <i class="fa fa-search"></i>View More</button></span></td>
 					</tr>
 					<tr>
@@ -35,7 +35,7 @@
 						<td>17.1</td>
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
-									data-target="#modal-default"
+                                                                        data-target="#modal-info">
 									 <i class="fa fa-search"></i>View More</button></span></td>
 					</tr>
 					<tr>
@@ -45,8 +45,8 @@
 						<td>17.1</td>
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
-									data-target="#modal-default"
-									 <i class="fa fa-search"></i>View More</button></span></td>
+                                                                        data-target="#modal-info">
+									 <i class="fa fa-search" aria-hidden="true"></i>View More</button></span></td>
 					</tr>
 					<tr>
 						<td>4.</td>
@@ -55,8 +55,8 @@
 						<td>17.3</td>
 						<td><span><button type="submit"
 									class="btn btn-block btn-info btn-lg" data-toggle="modal"
-									data-target="#modal-default"
-									 <i class="fa fa-search"></i>View More</button></span></td>
+                                                                        data-target="#modal-info">
+									 <i class="fa fa-search">View More</button></span></td>
 					</tr>
 				</table>
 			</div>

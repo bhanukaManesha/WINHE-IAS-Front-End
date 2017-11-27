@@ -24,9 +24,9 @@
                         <td>JAVA ASSOCIATE</td>
                         <td>17.1</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
-                                          data-target="#modal-default"
-                                          <i class="fa fa-edit"></i>Edit</button></span></td>
+                                          class="btn btn-warning" data-toggle="modal"
+                                          data-target="#modal-default" style="width:100%">
+                                          <i class="fa fa-pencil-square-o">Edit</button></span></td>
                     </tr>
                     <tr>
                         <td>2.</td>
@@ -34,9 +34,9 @@
                         <td>JAVA MASTER</td>
                         <td>17.1</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
-                                          data-target="#modal-default"
-                                          <i class="fa fa-edit"></i>Edit</button></span></td>
+                                          class="btn btn-warning" data-toggle="modal"
+                                          data-target="#modal-default" style="width:100%">
+                                          <i class="fa fa-pencil-square-o"></i>Edit</button></span></td>
                     </tr>
                     <tr>
                         <td>3.</td>
@@ -44,9 +44,9 @@
                         <td>JAVA EXPERT</td>
                         <td>17.1</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
-                                          data-target="#modal-default"
-                                          <i class="fa fa-edit"></i>Edit</button></span></td>
+                                          class="btn btn-warning" data-toggle="modal"
+                                          data-target="#modal-default" style="width:100%">
+                                          <i class="fa fa-pencil-square-o"></i>Edit</button></span></td>
                     </tr>
                     <tr>
                         <td>4.</td>
@@ -54,9 +54,9 @@
                         <td>JAVA ASSOCIATE</td>
                         <td>17.3</td>
                         <td><span><button type="submit"
-                                          class="btn btn-block btn-info btn-lg" data-toggle="modal"
-                                          data-target="#modal-default"
-                                          <i class="fa fa-edit"></i>Edit</button></span></td>
+                                          class="btn btn-warning" data-toggle="modal"
+                                          data-target="#modal-default" style="width:100%">
+                                          <i class="fa fa-pencil-square-o"></i>Edit</button></span></td>
                     </tr>
                 </table>
             </div>

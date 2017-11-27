@@ -61,8 +61,8 @@
                 </section>
 
                 <section>
-                    <div class="modal fade" id="modal-default">
-                        <div class="modal-dialog">
+                    <div class="modal modal-warning fade" id="modal-default">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal"
@@ -127,13 +127,13 @@
 
                                                                 </div>
                                                             </div>
-
+                                                         
                                                             <label>Course ID</label>
-
                                                             <input type="text" class="form-control" placeholder="Enter Course ID" >
+                                                            
                                                             <label>Course Name</label>
-
                                                             <input type="text" class="form-control" placeholder="Enter Course Name" >
+                                                            
                                                             <div class="row">
                                                                 <div class="col-md-6 lg-6">
 
@@ -156,23 +156,24 @@
                                                             </div>
                                                             <!-- /.box-header -->
                                                             <div class="box-body pad">
-                                                                <form>
-                                                                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+
+                                                                <textarea id="editor1" name="editor1" rows="10" cols="80">
                                             
-                                                                    </textarea>
-                                                                </form>
+                                                                </textarea>
+
                                                             </div>
                                                             <!-- /.box -->
                                                         </div> 
                                                     </div>
                                                     <!-- /.box-body -->
+                                                </form>
                                             </div>
-                                            </form>
-                                            <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Add</button>
-                                            </div>
+
+
+                                            <button type="submit" class="btn btn-primary" style="width:100%">Add</button>
+
                                         </div>
-                                        </form>
+                                        
                                     </div>
                                     <!-- Enter Course Details Panel End -->
 

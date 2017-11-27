@@ -87,7 +87,8 @@
                                             <h3 style="color:black; display:block;text-align:center;;">Course Details</h3>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6 border-right">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-6">
                                                 <div class="description-block">
                                                     <h5 class="description-header" style="color:black">20/12/1996</h5>
                                                     <span class="description-text" style="color:black">STARTED DATE</span>
@@ -96,24 +97,28 @@
                                             </div>
 
                                         </div>
-                                        <div class="row" style="background-color:lightgrey">
-                                            <div class="col-sm-4 border-right">
-                                                <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">6 MONTHS</h5>
-                                                    <span class="description-text" style="color:black">DURATION OF THE COURSE</span>
+                                        <div style="background-color:lightgrey">
+                                            <div class="row">
+                                                <div class="col-sm-4"></div>
+                                                <div class="col-sm-4">
+                                                    <div class="description-block">
+                                                        <h5 class="description-header" style="color:black">6 MONTHS</h5>
+                                                        <span class="description-text" style="color:black">DURATION OF THE COURSE</span>
+                                                    </div>
+                                                    <!-- /.description-block -->
                                                 </div>
-                                                <!-- /.description-block -->
-                                            </div>
 
+                                            </div>
                                         </div>
                                         <!-- /.col -->
 
                                         <div class="row">
 
                                             <!-- /.col -->
-                                            <div class="col-sm-6 border-right">
+                                            <div class="col-sm-4"></div>
+                                            <div class="col-sm-4">
                                                 <div class="description-block">
-                                                    <h5 class="description-header" style="color:black">SINGLE</h5>
+                                                    <h5 class="description-header" style="color:black">3 Subjects</h5>
                                                     <span class="description-text" style="color:black">COURSE CONTENT</span>
                                                 </div>
                                                 <!-- /.description-block -->

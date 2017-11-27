@@ -55,16 +55,10 @@
 
                 <!-- Main content -->
                 <section class="content">
-
-
-
                     <%@include file= "../../includes/batch_search_bar.jsp"%>
                     <%@include file= "../../includes/time_table_search_results_crud.jsp"%>
 
                 </section>
-               
-               
-
                 <section>
                     <div class="modal fade" id="modal-default">
                         <div class="modal-dialog">
@@ -108,96 +102,112 @@
                     </div>  
 
                 </section>
-
-                <div class="modal modal-warning fade" id="modal-warning">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">EDIT TIME TABLE</h4>
-                            </div>
-                            <div class="modal-body">
-
-                            </div>
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-outline">Save Changes</button>
-                        </div>
-                    </div>
-                    <!-- /.modal-dialog -->
-                    <!-- /.modal-content -->
-                </div>
-
-
-            </div>
-            <div class="modal modal-danger fade" id="modal-danger">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">DELETE TIME TABLE</h4>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- Widget: user widget style 1 -->
-                            <div class="box box-widget widget-user">
-                                <!-- Add the bg color to the header using any of the bg-* classes -->
-                                <div class="widget-user-header bg-red-active">
-                                    <h3 class="widget-user-username">BATCH 1</h3>
-                                    <h5 class="widget-user-desc">***</h5>
+                <section>
+                    <div class="modal modal-warning fade" id="modal-warning">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">EDIT TIME TABLE</h4>
                                 </div>
-                                <div class="widget-user-image">
-                                    <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
-                                </div>
-                                <div class="box-footer">
-                                    <div class="row">
-                                        <div class="col-sm-4 border-right">
-                                            <div class="description-block">
-                                                <h5 class="description-header" style="color:black">JAVA - ASSOCIATE</h5>
-                                                <span class="description-text" style="color:black">COURSE NAME</span>
+                                <!-- Import Panel Start -->
+                                <div class="box box-success">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Import Time Table</h3>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <!-- form start -->
+                                    <form role="form">
+                                        <div class="box-body">
+                                            <div class="form-group">
+
+                                                <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                             </div>
-                                            <!-- /.description-block -->
                                         </div>
-                                    </div>
-                                    <!-- /.col -->
-                                    <div class="col-sm-4">
-                                        <div class="description-block">
-                                            <h5 class="description-header" style="color:black;margin-bottom:10px;">Reason for Removal</h5>
-                                            <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
-                                                <option>No Longer Available</option>
-                                                <option>False</option>     
+                                        <!-- /.box-body -->
 
-                                            </select>
+                                        <div class="box-footer">
+                                            <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
                                         </div>
-                                        <!-- /.description-block -->
+                                    </form>
+                                </div>
+                                <!-- Import Panel End -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline">Save Changes</button>
+                                </div>
+
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+
+                    </div>
+                </section>
+                <section>
+                    <div class="modal modal-danger fade" id="modal-danger">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">DELETE TIME TABLE</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- Widget: user widget style 1 -->
+                                    <div class="box box-widget widget-user">
+                                        <!-- Add the bg color to the header using any of the bg-* classes -->
+                                        <div class="widget-user-header bg-red-active">
+                                            <h3 class="widget-user-username">BATCH 1 TIME TABLE </h3>
+                                            <h5 class="widget-user-desc">***</h5>
+                                        </div>
+                                        <div class="widget-user-image">
+                                            <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
+                                        </div>
+                                        <div class="box-footer">
+                                            <div class="row">
+                                                <div class="col-sm-4"></div>
+                                                <div class="col-sm-4 ">
+                                                    <div class="description-block">
+                                                        <h5 class="description-header" style="color:black">JAVA - ASSOCIATE</h5>
+                                                        <span class="description-text" style="color:black">COURSE NAME</span>
+                                                    </div>
+                                                    <!-- /.description-block -->
+                                                </div>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-sm-4"></div>
+                                            <div class="col-sm-4">
+                                                <div class="description-block">
+                                                    <h5 class="description-header" style="color:black;margin-bottom:10px;">Reason for Removal</h5>
+                                                    <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                        <option>No Longer Available</option>
+                                                        <option>False</option>     
+
+                                                    </select>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline">Delete Time Table</button>
+                                </div>
                             </div>
+                            <!-- /.modal-content -->
                         </div>
-
+                        <!-- /.modal-dialog -->
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-outline">Delete Time Table</button>
-                    </div>
-                </div>
-                <!-- /.modal-content -->
+                    <!-- /.box -->
+                </section>
             </div>
-            <!-- /.modal-dialog -->
+            <!-- ./content-wrapper -->      
         </div>
-    </div>
-
-
-
-    <!-- /.box -->
-
-    <!-- ./wrapper -->
-
-
-</body>
+        <!-- ./wrapper -->
+    </body>
 </html>
