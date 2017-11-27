@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Super Admin| Dashboard</title>
+        <title>Super Admin| Report Generation</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -28,7 +28,8 @@
                         Report Generation
                     </h4>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                        <li><a href="../index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                        <li><a href=""><i class="fa fa-book"></i> Report Generation</a></li>
                     </ol>
                 </section>
 
@@ -39,10 +40,10 @@
 
                     <div class="invoice">
 
-                        <h3> Roles </h3>
+                        <h3> Reports </h3>
                         <!-- Small boxes (Stat box) -->
                         <div class="row">
-                            <div class="col-lg-4 col-xs-6">
+                            <div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
                                 <div class="small-box bg-aqua">
                                     <div class="inner">
@@ -51,44 +52,27 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa fa-address-book"></i>
-                                    </div>
-                                    <a href="../roles/student_coordinator/" class="small-box-footer" style="font-size:20px;">
-                                        Student Coordinator
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-lg-4 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-green">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
                                         <i class="fa fa fa-group"></i>
                                     </div>
-                                    <a href="../roles/lecturer_coordinator/" class="small-box-footer" style="font-size:20px;">
-                                        Lecturer Coordinator
+                                    <a href="course_intake/" class="small-box-footer" style="font-size:20px;">
+                                        Course Intake
                                     </a>
                                 </div>
                             </div>
                             <!-- ./col -->
-                            <div class="col-lg-4 col-xs-6">
+                            <div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-yellow">
+                                <div class="small-box bg-red-active">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa fa-map-signs"></i>
+                                        <i class="fa fa-graduation-cap"></i>
                                     </div>
-                                    <a href="../roles/course_coordinator/" class="small-box-footer" style="font-size:20px;">
-                                        Course Coordinator
+                                    <a href="exam_results/" class="small-box-footer" style="font-size:20px;">
+                                        Exam Results
                                     </a>
                                 </div>
                             </div>
@@ -100,73 +84,9 @@
 
                         <!-- Small boxes (Stat box) -->
                         <div class="row">
-                            <div class="col-lg-4 col-xs-6">
+                            <div class="col-lg-12 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-light-blue-active">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-money"></i>
-                                    </div>
-                                    <a href="../roles/cashier/" class="small-box-footer" style="font-size:20px;">
-                                        Cashier
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            
-                            <!-- ./col -->
-                            <div class="col-lg-4 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-red">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-graduation-cap"></i>
-                                    </div>
-                                    <a href="../roles/exam_coordinator/" class="small-box-footer" style="font-size:20px;">
-                                        Exam Coordinator
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-maroon">
-                                    <div class="inner">
-                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-
-                                        <p>&nbsp</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="ion ion-person-add"></i>
-                                    </div>
-                                    <a href="../roles/admission_officer/" class="small-box-footer" style="font-size:20px;">
-                                        Admission Officer
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- ./col -->
-
-                            <!-- ./col -->
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- =========================================================== -->
-                    <!-- =========================================================== -->
-
-                    <div class="invoice">
-
-                        <h3> Other </h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-xs-6">
-                                <!-- small box -->
-                                <div class="small-box bg-olive-active">
+                                <div class="small-box bg-yellow-active">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
@@ -175,33 +95,56 @@
                                     <div class="icon">
                                         <i class="fa fa-book"></i>
                                     </div>
-                                    <a href="../roles/mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
-
-                                        Report Generation
+                                    <a href="student_result_sheet/" class="small-box-footer" style="font-size:20px;">
+                                        Student Result Sheet
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
                             <div class="col-lg-6 col-xs-6">
                                 <!-- small box -->
-                                <div class="small-box bg-purple">
+                                <div class="small-box bg-green">
                                     <div class="inner">
                                         <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-envelope-open"></i>
+                                        <i class="fa fa-user-circle-o"></i>
                                     </div>
-                                    <a href="../roles/mailbox/mailbox.jsp" class="small-box-footer" style="font-size:20px;">
-
-                                        Mail
+                                    <a href="student_payment/" class="small-box-footer" style="font-size:20px;">
+                                        Student Payment
                                     </a>
                                 </div>
                             </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- =========================================================== -->
+                            <!-- ./col -->
+                            <div class="col-lg-6 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-green-active">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
 
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <a href="lecturer_salary/" class="small-box-footer" style="font-size:20px;">
+                                        Lecturer Salary
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- =========================================================== -->
+                    <!-- =========================================================== -->
+
+                    
+                        
                 </section>
                 <!-- /.content -->
             </div>
