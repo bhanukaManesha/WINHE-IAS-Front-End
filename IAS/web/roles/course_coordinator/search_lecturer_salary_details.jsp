@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Course Coordinator | Dashboard</title>
+        <title>Course Coordinator | Search Lecturer Salary</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -32,7 +32,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_lecturer_salary_details.jsp"><i class="fa fa-book"></i> Search Lecturer Salary Details</a></li>
+                        <li><a href="search_lecturer_salary_details.jsp"><i class="fa fa-line-chart"></i> Search Lecturer Salary Details</a></li>
                     </ol>
                 </section>
 

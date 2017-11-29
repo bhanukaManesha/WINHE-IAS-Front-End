@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Course Coordinator | Dashboard</title>
+        <title>Course Coordinator | View Exam Results</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -28,11 +28,11 @@
                 <section class="content-header">
                     <h1 style="text-align: center">Course Coordinator</h1>
                     <h4 style="text-align:center">
-                        Search Exam Results
+                        View Exam Results
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_exam_result.jsp"><i class="fa fa-book"></i> Search Exam Results</a></li>
+                        <li><a href="search_exam_result.jsp"><i class="fa fa-file-excel-o"></i> Search Exam Results</a></li>
                     </ol>
                 </section>
 
@@ -67,14 +67,26 @@
                                         </div>
 
 
-                                        <div class="row" style="padding-top:20px; padding-bottom: 30px ">
-
-                                            <div class="description-block">
-                                                <h2 class="description-header" style="color:black;margin-bottom:10px;font-size: 50px">A</h2>
+                                        <div class="box-footer">
+                                            <div class="row">
+                                                <div class="col-sm-6 border-right">
+                                                    <div class="description-block">
+                                                        <h5 class="description-header" style="color:black;font-size: 50px;">85</h5>
+                                                        <span class="description-text" style="color:black">MARKS</span>
+                                                    </div>
+                                                    <!-- /.description-block -->
+                                                </div>
+                                                <!-- /.col -->
+                                                <div class="col-sm-6 border-right">
+                                                    <div class="description-block">
+                                                        <h5 class="description-header" style="color:black;font-size: 50px;">A</h5>
+                                                        <span class="description-text" style="color:black">GRADE</span>
+                                                    </div>
+                                                    <!-- /.description-block -->
+                                                </div>
+                                                <!-- /.col -->
                                                 
-
                                             </div>
-  
                                         </div>
 
                                     </div>
@@ -83,7 +95,7 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                                    <a href="result_print.jsp" target="_blank" type="button" class="btn btn-success pull-right"><i class="fa fa-file-excel-o"></i> Generate
+                                    <a href="../../super_admin/report_generation/student_result_sheet/student_result_sheet-print.jsp" target="_blank" type="button" class="btn btn-success pull-right"><i class="fa fa-file-excel-o"></i> &nbsp;Generate
                                     </a>
                                 </div>
                             </div>

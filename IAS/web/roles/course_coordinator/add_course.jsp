@@ -21,7 +21,7 @@
             <%@include file= "../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="height: 1460px;">
+            <div class="content-wrapper" style="height: 1600px;">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
@@ -32,7 +32,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="add_course.jsp"><i class="ion ion-person-add"></i> Add Course</a></li>
+                        <li><a href="add_course.jsp"><i class="fa fa-plus"></i> Add Course</a></li>
                     </ol>
                 </section>
 
@@ -111,7 +111,7 @@
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label>Select Duration Type</label>
-                                                            <select class="form-control" style="width:240px">
+                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
                                                                 <option>Days</option>
                                                                 <option>Weeks</option>
                                                                 <option>Months</option>
@@ -204,10 +204,10 @@
                                                             <label>Course Duration</label>
                                                             <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
                                                         </div>
-                                                        <div class="col-md-3 lg-3">
+                                                        <div class="col-md-6 lg-6">
                                                             <div class="form-group">
                                                                 <label>Select Duration Type</label>
-                                                                <select class="form-control" style="width:240px">
+                                                                <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
                                                                     <option>Days</option>
                                                                     <option>Weeks</option>
                                                                     <option>Months</option>
@@ -219,9 +219,32 @@
                                                 </div>
 
                                                 <div class="form-group">
-
+                                                    <label>Description</label>
                                                     <div class="box-body pad">
                                                         <textarea id="editor1" name="editor2" rows="10" cols="80"></textarea>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">    
+                                                        <div class="box box-danger"  style="padding:10px">
+                                                            <div class="box-header with-border">
+                                                                <h3 class="box-title">Reason For Removal</h3>
+                                                            </div>
+                                                            <div class="form-group">
+
+                                                                <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                                    <option>No Longer Available</option>
+                                                                    <option>A new version of this course is available</option>    
+
+                                                                </select>
+
+
+
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                 </div>

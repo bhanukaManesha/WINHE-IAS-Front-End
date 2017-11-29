@@ -47,7 +47,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="edit_course.jsp"><i class="fa fa-search"></i> Edit Course</a></li>
+                        <li><a href="edit_course.jsp"><i class="fa fa-edit"></i> Edit Course</a></li>
                     </ol>
                 </section>
 
@@ -128,50 +128,45 @@
                                                                 </div>
                                                             </div>
                                                          
-                                                            <label>Course ID</label>
-                                                            <input type="text" class="form-control" placeholder="Enter Course ID" >
-                                                            
-                                                            <label>Course Name</label>
-                                                            <input type="text" class="form-control" placeholder="Enter Course Name" >
-                                                            
-                                                            <div class="row">
-                                                                <div class="col-md-6 lg-6">
+                                                            <label style="color:black;">Course ID</label>
 
-                                                                    <label>Course Duration</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
-                                                                </div>
-                                                                <div class="col-md-6 lg-6">
+                                                <input type="text" class="form-control" placeholder="Enter Course ID" >
+                                                <label style="color:black;">Course Name</label>
 
-
-                                                                    <label>Select Duration Type</label>
-                                                                    <select class="form-control" width="50px">
-                                                                        <option>Days</option>
-                                                                        <option>Weeks</option>
-                                                                        <option>Months</option>
-                                                                        <option>Years</option>
-                                                                    </select>
-
-
-                                                                </div>
-                                                            </div>
-                                                            <!-- /.box-header -->
-                                                            <div class="box-body pad">
-
-                                                                <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                            
-                                                                </textarea>
-
-                                                            </div>
-                                                            <!-- /.box -->
-                                                        </div> 
+                                                <input type="text" class="form-control" placeholder="Enter Course Name" >
+                                                <div class="row">
+                                                    <div class="col-md-6 lg-6">
+                                                        <label style="color:black;">Course Duration</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
                                                     </div>
-                                                    <!-- /.box-body -->
+                                                    <div class="col-md-6 lg-6">
+                                                        <div class="form-group">
+                                                            <label style="color:black;">Select Duration Type</label>
+                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
+                                                                <option>Days</option>
+                                                                <option>Weeks</option>
+                                                                <option>Months</option>
+                                                                <option>Years</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label style="color:black;">Description</label>
+                                                <div class="box-body pad">
+                                                    <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </div> 
+                                        <!-- /.box-body -->
                                                 </form>
                                             </div>
 
 
-                                            <button type="submit" class="btn btn-primary" style="width:100%">Add</button>
-
+                                            
                                         </div>
                                         
                                     </div>
@@ -179,11 +174,10 @@
 
                                 </div>
 
-                                <div class="tab-pane" id="past_courses">
-                                    <div class="active tab-pane" id="new_courses">
-
-                                    </div>
-                                </div> 
+                                <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-outline">Save Changes</button>
+                                        </div>
                             </div>
                             <!-- /.modal-content -->
                         </div>  

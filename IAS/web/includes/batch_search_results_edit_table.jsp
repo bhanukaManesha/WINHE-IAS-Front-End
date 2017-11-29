@@ -26,7 +26,7 @@
                         <td><span><button type="submit"
                                           class="btn btn-warning" data-toggle="modal"
                                           data-target="#modal-default" style="width:100%">
-                                          <i class="fa fa-pencil-square-o">Edit</button></span></td>
+                                    <i class="fa fa-pencil-square-o"></i>&nbsp;EDIT</button></span></td>
                     </tr>
                     <tr>
                         <td>2.</td>
@@ -36,7 +36,7 @@
                         <td><span><button type="submit"
                                           class="btn btn-warning" data-toggle="modal"
                                           data-target="#modal-default" style="width:100%">
-                                          <i class="fa fa-pencil-square-o"></i>Edit</button></span></td>
+                                          <i class="fa fa-pencil-square-o"></i>&nbsp;EDIT</button></span></td>
                     </tr>
                     <tr>
                         <td>3.</td>
@@ -46,7 +46,7 @@
                         <td><span><button type="submit"
                                           class="btn btn-warning" data-toggle="modal"
                                           data-target="#modal-default" style="width:100%">
-                                          <i class="fa fa-pencil-square-o"></i>Edit</button></span></td>
+                                          <i class="fa fa-pencil-square-o"></i>&nbsp;EDIT</button></span></td>
                     </tr>
                     <tr>
                         <td>4.</td>
@@ -56,7 +56,7 @@
                         <td><span><button type="submit"
                                           class="btn btn-warning" data-toggle="modal"
                                           data-target="#modal-default" style="width:100%">
-                                          <i class="fa fa-pencil-square-o"></i>Edit</button></span></td>
+                                    <i class="fa fa-pencil-square-o"></i> &nbsp;EDIT</button></span></td>
                     </tr>
                 </table>
             </div>

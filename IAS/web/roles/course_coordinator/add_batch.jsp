@@ -32,7 +32,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="add_batch.jsp"><i class="ion ion-person-add"></i> Add Batch</a></li>
+                        <li><a href="add_batch.jsp"><i class="fa fa-plus"></i> Add Batch</a></li>
                     </ol>
                 </section>
 
@@ -95,30 +95,47 @@
 
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
-                                                    <div class="col-lg-4 col-md-4"> 
-                                                        <label>Course ID</label>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <label>Course Name</label>
-                                                        <input type="text" class="form-control" placeholder="Enter Course ID" >
 
+                                                    <div class="col-md-6 lg-6">
+                                                        <div class="form-group">
+                                                            <label style="display:block;">Select Course</label>
+                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+                                                                <option>Java - Associate</option>
+                                                                <option>Java - Professional</option>
+                                                                <option>Java - Master</option>
+                                                                <option>Java - Expert</option>
+                                                                <option>C# - Associate</option>
+                                                                <option>C# - Professional</option>
+                                                                <option>C# - Master</option>
+                                                                <option>C# - Expert</option>
+                                                                <option>PHP - Associate</option>
+                                                                <option>PHP - Professional</option>
+                                                                <option>PHP - Master</option>
+                                                                <option>PHP - Expert</option>
+                                                                <option>asp.net - Associate</option>
+                                                                <option>asp.net - Professional</option>
+                                                                <option>asp.net - Master</option>
+                                                                <option>asp.net - Expert</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-4"> 
+                                                    <div class="col-md-6 lg-6">
                                                         <label>Batch ID</label>
+                                                        <input type="text" class="form-control" placeholder="Batch ID" >
                                                     </div>
-
                                                 </div>
 
                                                 <div class="row">
                                                     <div class="col-md-6 lg-6">
                                                         <label>Course Duration</label>
-                                                        <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
+                                                        <input type="number" class="form-control" placeholder="Enter Duration of The Course" >
                                                     </div>
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
-                                                            <label>Select Duration Type</label>
-                                                            <select class="form-control">
+                                                            <label style="display:block;">Select Duration Type</label>
+                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
                                                                 <option>Days</option>
                                                                 <option>Weeks</option>
                                                                 <option>Months</option>
@@ -130,7 +147,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <lable>Description </lable>
+                                                <label>Description </label>
                                                 <div class="box-body pad">
                                                     <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
                                                 </div>
@@ -138,7 +155,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <div class ="row">
-                                                    <div class="col-lg-4 col-md-4">
+                                                    <div class="col-lg-6 col-md-4">
 
                                                         <!-- Date -->
                                                         <div class="form-group">
@@ -148,40 +165,58 @@
                                                                 <div class="input-group-addon">
                                                                     <i class="fa fa-calendar"></i>
                                                                 </div>
-                                                                <input type="text" class="form-control pull-right" id="datepicker">
+                                                                <input type="text" class="form-control pull-right" id="datepicker1">
                                                             </div>
                                                             <!-- /.input group -->
                                                         </div>
                                                         <!-- /.form group -->
                                                     </div>
-                                                    <div class="col-lg-4 col-md-4">
+                                                    <div class="col-lg-6 col-md-4">
                                                         <div class="form-group">
 
-                                                            <lable>Intake Amount :</lable>
-                                                            <div></div>
-                                                            <div class="box-body pad">
-                                                                <input type="text" class="form-control" id="" placeholder="Enter Amount">
+                                                            <label>Intake Amount :</label>
+
+                                                            <input type="text" class="form-control" id="" placeholder="Enter Amount">
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class ="row">
+                                                    <div class="col-lg-6 col-md-4">
+
+                                                        <!-- Date -->
+                                                        <div class="form-group">
+                                                            <label>Batch Fee :</label>
+
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">$</span>
+                                                                <input type="text" class="form-control">
+                                                                <span class="input-group-addon">.00</span>
                                                             </div>
+                                                        </div>
+                                                        <!-- /.form group -->
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-4">
+                                                        <div class="form-group">
+
+                                                            <label>Hourly Rate:</label>
+
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">$</span>
+                                                                <input type="text" class="form-control">
+                                                                <span class="input-group-addon">/per hour</span>
+                                                            </div>
+
                                                         </div>
                                                     </div>
 
                                                 </div>
 
-                                                <div>
-                                                    <lable>Batch Fee :</lable>
-                                                    <input type="text" class="form-control" placeholder="Enter Amount">
 
-                                                </div>
 
                                             </div>
-                                            <div class="form-group">
 
-                                                <label>Hourly Rate: </label>
-                                                <div class ="row">
-                                                    <input type="text" class="form-control" placeholder="Enter Amount" style="width: 100px;">
-                                                </div>
-
-                                            </div>
                                         </div> 
                                         <!-- /.box-body -->
 
@@ -244,29 +279,45 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-lg-4 col-md-4"> 
-                                                            <label>Course ID</label>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4">
-                                                            <label>Course Name</label>
-                                                            <input type="text" class="form-control" placeholder="Enter Course ID" >
 
+                                                        <div class="col-md-6 lg-6">
+                                                            <div class="form-group">
+                                                                <label style="display:block;">Select Course</label>
+                                                                <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+                                                                    <option>Java - Associate</option>
+                                                                    <option>Java - Professional</option>
+                                                                    <option>Java - Master</option>
+                                                                    <option>Java - Expert</option>
+                                                                    <option>C# - Associate</option>
+                                                                    <option>C# - Professional</option>
+                                                                    <option>C# - Master</option>
+                                                                    <option>C# - Expert</option>
+                                                                    <option>PHP - Associate</option>
+                                                                    <option>PHP - Professional</option>
+                                                                    <option>PHP - Master</option>
+                                                                    <option>PHP - Expert</option>
+                                                                    <option>asp.net - Associate</option>
+                                                                    <option>asp.net - Professional</option>
+                                                                    <option>asp.net - Master</option>
+                                                                    <option>asp.net - Expert</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4"> 
+                                                        <div class="col-md-6 lg-6">
                                                             <label>Batch ID</label>
+                                                            <input type="text" class="form-control" placeholder="Batch ID" >
                                                         </div>
-
                                                     </div>
 
                                                     <div class="row">
                                                         <div class="col-md-6 lg-6">
                                                             <label>Course Duration</label>
-                                                            <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
+                                                            <input type="number" class="form-control" placeholder="Enter Duration of The Course" >
                                                         </div>
                                                         <div class="col-md-6 lg-6">
                                                             <div class="form-group">
-                                                                <label>Select Duration Type</label>
-                                                                <select class="form-control">
+                                                                <label style="display:block;">Select Duration Type</label>
+                                                                <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
                                                                     <option>Days</option>
                                                                     <option>Weeks</option>
                                                                     <option>Months</option>
@@ -278,15 +329,15 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <lable>Description </lable>
+                                                    <label>Description </label>
                                                     <div class="box-body pad">
-                                                        <textarea id="editor2" name="editor1" rows="10" cols="80"></textarea>
+                                                        <textarea id="editor1" name="editor2" rows="10" cols="80"></textarea>
                                                     </div>
 
                                                 </div>
                                                 <div class="form-group">
                                                     <div class ="row">
-                                                        <div class="col-lg-4 col-md-4">
+                                                        <div class="col-lg-6 col-md-4">
 
                                                             <!-- Date -->
                                                             <div class="form-group">
@@ -296,39 +347,80 @@
                                                                     <div class="input-group-addon">
                                                                         <i class="fa fa-calendar"></i>
                                                                     </div>
-                                                                    <input type="text" class="form-control pull-right" id="datepicker">
+                                                                    <input type="text" class="form-control pull-right" id="datepicker2">
                                                                 </div>
                                                                 <!-- /.input group -->
                                                             </div>
                                                             <!-- /.form group -->
                                                         </div>
-                                                        <div class="col-lg-4 col-md-4">
+                                                        <div class="col-lg-6 col-md-4">
                                                             <div class="form-group">
 
-                                                                <lable>Intake Amount :</lable>
-                                                                <div></div>
-                                                                <div class="box-body pad">
-                                                                    <input type="text" class="form-control" id="" placeholder="Enter Amount">
+                                                                <label>Intake Amount :</label>
+
+                                                                <input type="text" class="form-control" id="" placeholder="Enter Amount">
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class ="row">
+                                                        <div class="col-lg-6 col-md-4">
+
+                                                            <!-- Date -->
+                                                            <div class="form-group">
+                                                                <label>Batch Fee :</label>
+
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">$</span>
+                                                                    <input type="text" class="form-control">
+                                                                    <span class="input-group-addon">.00</span>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.form group -->
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-4">
+                                                            <div class="form-group">
+
+                                                                <label>Hourly Rate:</label>
+
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">$</span>
+                                                                    <input type="text" class="form-control">
+                                                                    <span class="input-group-addon">/per hour</span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                        <div class="col-lg-12">    
+                                                            <div class="box box-danger"  style="padding:10px">
+                                                                <div class="box-header with-border">
+                                                                    <h3 class="box-title">Reason For Removal</h3>
+                                                                </div>
+                                                                <div class="form-group">
+
+                                                                    <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                                        <option>No Longer Available</option>
+                                                                        <option>Whole Batch Was Suspended</option>   
+
+                                                                    </select>
+
+
+
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                     </div>
 
-                                                    <div>
-                                                        <lable>Batch Fee :</lable>
-                                                        <input type="text" class="form-control" placeholder="Enter Amount">
 
-                                                    </div>
 
                                                 </div>
-                                                <div class="form-group">
-                                                    <div>
 
-                                                        <label>Hourly Rate of a Lecturer </label>
-                                                        <input type="text" class="form-control" id="" placeholder="Enter Amount" style="width: 100px;">
-                                                    </div>
-                                                </div>
                                             </div> 
                                             <!-- /.box-body -->
 

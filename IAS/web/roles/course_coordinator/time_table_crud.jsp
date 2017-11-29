@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Course Coordinator | Batch Time Tables</title>
+        <title> Course Coordinator | Course Time Tables</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -45,11 +45,11 @@
                         Course Coordinator
                     </h1>
                     <h4 style="text-align:center">
-                        Search Time Table
+                        Course Time Table
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_inquiry.jsp"><i class="fa fa-lightbulb-o"></i> Search Inquiry</a></li>
+                        <li><a href="search_inquiry.jsp"><i class="fa fa-clock-o"></i> Course Time Table</a></li>
                     </ol>
                 </section>
 
@@ -60,15 +60,15 @@
 
                 </section>
                 <section>
-                    <div class="modal fade" id="modal-default">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="modal-success">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal"
                                             aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                                    <h4 class="modal-title">Edit Time Table</h4>
+                                    <h4 class="modal-title">Add Time Table</h4>
                                 </div>
                                 <!-- Import Panel Start -->
 
@@ -185,7 +185,7 @@
                                                     <h5 class="description-header" style="color:black;margin-bottom:10px;">Reason for Removal</h5>
                                                     <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
                                                         <option>No Longer Available</option>
-                                                        <option>False</option>     
+                                                           
 
                                                     </select>
                                                 </div>
