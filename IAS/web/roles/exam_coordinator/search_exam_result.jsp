@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Exam Coordinator | Dashboard</title>
+        <title>Exam Coordinator | Search Exam Results</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta
             content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -32,7 +32,7 @@
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_exam_result.jsp"><i class="fa fa-book"></i> Search Exam Result</a></li>
+                        <li><a href="search_exam_result.jsp"><i class="fa fa-file-excel-o"></i> Search Exam Result</a></li>
                     </ol>
                 </section>
 

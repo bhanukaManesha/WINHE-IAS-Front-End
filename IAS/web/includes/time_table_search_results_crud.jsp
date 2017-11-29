@@ -26,7 +26,7 @@
                 <div class="col-sm-3 border-right">
                     <div class="description-block">
                         <h5 class="description-header"></h5>
-                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-default" data-studentid="CS3202"><i class="fa fa-plus"></i> &nbsp ADD</a>
+                        <a href="" class="btn btn-success" data-toggle="modal" data-target="#modal-success" data-studentid="CS3202"><i class="fa fa-plus"></i> &nbsp ADD</a>
                     </div>
                     <!-- /.description-block -->
                 </div>

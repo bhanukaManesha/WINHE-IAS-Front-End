@@ -47,7 +47,7 @@
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i>
                                 Dashboard</a></li>
-                        <li><a href="add_results_of_students.jsp"><i class="fa fa-file-excel-o"></i>
+                        <li><a href="add_results_of_students.jsp"><i class="fa fa-plus-square"></i>
                                 Add Results of Students</a></li>
                     </ol>
                 </section>

@@ -244,7 +244,7 @@
                                     <div class="icon">
                                         <i class="fa fa-clock-o"></i>
                                     </div>
-                                    <a href="time_table_crud.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="search_exam_time_table.jsp" class="small-box-footer" style="font-size:20px;">
                                         Exam Time Tables
                                     </a>
                                 </div>
@@ -269,7 +269,7 @@
                                     <div class="icon">
                                         <i class="fa fa-money"></i>
                                     </div>
-                                    <a href="search_student_payment_history.jsp" class="small-box-footer" style="font-size:20px;">
+                                    <a href="student_payment_history.jsp" class="small-box-footer" style="font-size:20px;">
                                         Search Student Payment History
                                     </a>
                                 </div>
@@ -285,7 +285,7 @@
                                         <p>&nbsp</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="fa fa-money"></i>
+                                        <i class="fa fa-line-chart"></i>
                                     </div>
                                     <a href="search_lecturer_salary_details.jsp" class="small-box-footer" style="font-size:20px;">
 

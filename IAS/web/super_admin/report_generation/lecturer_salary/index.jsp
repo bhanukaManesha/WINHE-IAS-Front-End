@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Super Admin| Course Intake</title>
+        <title>Super Admin| Lecturer Salary Report</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
         <%@include file= "../../../includes/links.jsp"%>
+        
     </head>
     <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
@@ -25,23 +26,23 @@
                         Super Admin
                     </h1>
                     <h4 style="text-align:center">
-                        Course Intake Report
+                        Lecturer Salary Report
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="../../index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                         <li><a href="../index.jsp"><i class="fa fa-book"></i> Report Generation</a></li>
-                        <li><a href=""><i class="fa fa-group"></i> Course Intake</a></li>
+                        <li><a href=""><i class="fa fa-money"></i> Lecturer Salary Report</a></li>
                     </ol>
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
 
-                    <%@include file= "../../../includes/course_searchbar.jsp"%>
+
 
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Java Associate Course Intake</h3>
+                            <h3 class="box-title">Lecturer Salary Report</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool"
@@ -57,36 +58,39 @@
                         <div class="box-body">
                             <div class="chart">
                                 <canvas id="areaChart" style="height: 250px"></canvas>
-                                <h7 style="display:block;text-align: center;">Batch ID</h7>
+                                <h7 style="display:block;text-align: center;">Year</h7>
                             </div>
                         </div>
                         <!-- /.box-body -->
 
                         <div class="row">
+
                             <div class="col-sm-4 border-right">
                                 <div class="description-block">
-                                    <h3 class="description-header" style="font-size:30px;">3,200</h3>
-                                    <span class="description-text">TOTAL STUDENTS</span>
+                                    <h3 class="description-header" style="font-size:30px;">$130,290,111</h3>
+                                    <span class="description-text">TOTAL AMOUNT</span>
                                 </div>
                                 <!-- /.description-block -->
                             </div>
                             <!-- /.col -->
                             <div class="col-sm-4 border-right">
                                 <div class="description-block">
-                                    <h3 class="description-header" style="font-size:30px;">1,300</h3>
-                                    <span class="description-text">CURRENT STUDENTS</span>
+                                    <h3 class="description-header" style="font-size:30px;">$290,111</h3>
+                                    <span class="description-text">LAST YEAR (2018)</span>
                                 </div>
                                 <!-- /.description-block -->
                             </div>
                             <!-- /.col -->
                             <div class="col-sm-4">
                                 <div class="description-block">
-                                    <h3 class="description-header" style="font-size:30px;">70</h3>
-                                    <span class="description-text">LAST BATCH</span>
+                                    <h3 class="description-header" style="font-size:30px;">$10,450</h3>
+                                    <span class="description-text">THIS YEAR (2019)</span>
                                 </div>
                                 <!-- /.description-block -->
                             </div>
-                            <a href="course_intake-print.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+
+                            <!-- /.col -->
+                            <a href="lecturer_salary-print.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
                             </a>
                             <!-- /.col -->
                         </div>
@@ -122,17 +126,17 @@
 
 
                 var areaChartData = {
-                    labels: ['CS001', 'CS002', 'CS003', 'CS004', 'CS005',
-                        'CS006', 'CS007'],
+                    labels: ['2013', '2014', '2015', '2016', '2017',
+                        '2018', '2019'],
                     datasets: [{
-                            label: 'Batch',
-                            fillColor: 'rgba(60,141,188,0.9)',
+                            label: 'Year',
+                            fillColor: '#00a65a',
                             strokeColor: 'rgba(60,141,188,0.8)',
                             pointColor: '#3b8bba',
                             pointStrokeColor: 'rgba(60,141,188,1)',
                             pointHighlightFill: '#fff',
                             pointHighlightStroke: 'rgba(60,141,188,1)',
-                            data: [10, 26, 8, 40, 50, 20, 70]
+                            data: [10450, 20102, 40100, 50100, 30010, 124990, 10450]
                         }]
                 }
 
@@ -186,7 +190,7 @@
 
         </script>
 
-        
+
 
     </body>
 </html>

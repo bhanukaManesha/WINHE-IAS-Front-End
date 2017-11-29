@@ -7,7 +7,6 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <%@include file= "../../../includes/links.jsp"%>
-        
         <style type="text/css" media="print">
             @page {
                 size: auto;   /* auto is the initial value */
@@ -24,7 +23,7 @@
 
 
                     <div class="box-header with-border">
-                        <h3 class="box-title" style="display:block;text-align: center;margin-bottom:10px; ">Java Associate Course Intake</h3>
+                        <h3 class="box-title" style="display:block;text-align: center;margin-bottom:10px; ">Lecturer Salary from 2010</h3>
 
                         <h5 class="box-title" style="display:block;text-align: center;font-size:14px;"> 12<sup>th</sup> December 2017</h5>
 
@@ -33,8 +32,39 @@
                     <div class="box-body">
                         <div class="chart">
                             <canvas id="areaChart" style="height: 250px"></canvas>
-                            <h7 style="display:block;text-align: center;">Batch ID</h7>
+                            <h7 style="display:block;text-align: center;">Year</h7>
                         </div>
+                    </div>
+
+
+                    <!-- /.box-body -->
+
+                    <div class="row">
+                        <div class="col-sm-4 border-right">
+                            <div class="description-block">
+                                <h3 class="description-header" style="font-size:30px;">$130,290,111</h3>
+                                <span class="description-text">TOTAL AMOUNT</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-4 border-right">
+                            <div class="description-block">
+                                <h3 class="description-header" style="font-size:30px;">$290,111</h3>
+                                <span class="description-text">LAST YEAR (2018)</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-4">
+                            <div class="description-block">
+                                <h3 class="description-header" style="font-size:30px;">$10,450</h3>
+                                <span class="description-text">THIS YEAR (2019)</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+
+                        <!-- /.col -->
                     </div>
 
                 </div>
@@ -65,17 +95,17 @@
 
 
         var areaChartData = {
-            labels: ['CS001', 'CS002', 'CS003', 'CS004', 'CS005',
-                'CS006', 'CS007'],
+            labels: ['2013', '2014', '2015', '2016', '2017',
+                '2018', '2019'],
             datasets: [{
-                    label: 'Batch',
-                    fillColor: 'rgba(60,141,188,0.9)',
+                    label: 'Year',
+                    fillColor: '#00a65a',
                     strokeColor: 'rgba(60,141,188,0.8)',
                     pointColor: '#3b8bba',
                     pointStrokeColor: 'rgba(60,141,188,1)',
                     pointHighlightFill: '#fff',
                     pointHighlightStroke: 'rgba(60,141,188,1)',
-                    data: [10, 26, 8, 40, 50, 20, 70]
+                    data: [10450, 20102, 40100, 50100, 30010, 124990, 10450]
                 }]
         }
 
