@@ -39,8 +39,8 @@
 
                     <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#all_results" data-toggle="tab">All Results</a></li>
-                            <li ><a href="#course_results" data-toggle="tab" id="course">Course Results</a></li>
+                            <li class="active"><a href="#all_results" data-toggle="tab" id="tab1">All Results</a></li>
+                            <li ><a href="#course_results" data-toggle="tab" id="tab2">Course Results</a></li>
                         </ul>
                         <div class="tab-content">
 
@@ -307,13 +307,10 @@
                                     <!-- ChartJS -->
                                     <script src="../../../bower_components/chart.js/Chart.js"></script>
                                     <script>
-                                        $(document).ready(function () {
+                                        $(function () {
 
-                                            //-------------
-                                            //- BAR CHART -
-                                            //-------------
-                                            var barChartCanvas = $('#barChart1').get(0).getContext('2d')
-                                            var barChart = new Chart(barChartCanvas)
+
+
                                             var barChartData = {
                                                 labels: ['Java Associate', 'Java Professional', 'Java Master', 'C# Associate', 'C# Professional', 'C# Master'],
                                                 datasets: [
@@ -367,13 +364,8 @@
                                                 responsive: true,
                                                 maintainAspectRatio: true
                                             }
-
-
                                             barChartOptions.datasetFill = false
-                                            barChart.Bar(barChartData, barChartOptions)
 
-                                            barChartCanvas = $('#barChart2').get(0).getContext('2d')
-                                            barChart = new Chart(barChartCanvas)
                                             var barChartData2 = {
                                                 labels: ['Batch 1', 'Batch 2', 'Batch 3', 'Batch 4', 'Batch 5', 'Batch 6'],
                                                 datasets: [
@@ -429,34 +421,32 @@
                                                 maintainAspectRatio: true
                                             }
 
-
-
-
                                             barChartOptions2.datasetFill = false
-                                            barChart.Bar(barChartData2, barChartOptions2)
+
+
+                                            var barChartCanvas = $('#barChart1').get(0).getContext('2d')
+                                            var barChart = new Chart(barChartCanvas).Bar(barChartData, barChartOptions)
+
+                                            var barChartCanvas2 = $('#barChart2').get(0).getContext('2d')
+                                            var barChart2;
+                                            //-------------
+                                            //- BAR CHART -
+                                            //-------------
+
+                                            $('#tab1').on('shown.bs.tab', function (e) {
+                                                barChart2.destroy();
+                                                barChart = new Chart(barChartCanvas).Bar(barChartData, barChartOptions)
+                                            });
+
+                                            $('#tab2').on('shown.bs.tab', function (e) { 
+                                                barChart.destroy();
+                                                barChart2 =new Chart(barChartCanvas2).Bar(barChartData2, barChartOptions2)
+                                            });
+
+
                                         })
+
                                     </script>
 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     </body>
                                     </html>
