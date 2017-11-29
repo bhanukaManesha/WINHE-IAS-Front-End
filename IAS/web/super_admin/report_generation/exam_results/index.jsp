@@ -39,8 +39,8 @@
 
                     <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#all_results" data-toggle="tab">All Results</a></li>
-                            <li ><a href="#course_results" data-toggle="tab" id="course">Course Results</a></li>
+                            <li class="active"><a href="#all_results" data-toggle="tab" id="tab1">All Results</a></li>
+                            <li ><a href="#course_results" data-toggle="tab" id="tab2">Course Results</a></li>
                         </ul>
                         <div class="tab-content">
 
@@ -104,16 +104,15 @@
                                         <label>Best Course</label>
                                         <input type="text" class="form-control">
 
-
                                     </div>
-                                    <a href="exam_all_results_print_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
-                                    </a>
 
-
+                                    <div class="row">
+                                        <a href="exam_all_results_print_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+                                        </a>
+                                    </div>
                                 </div>
-
-
                             </div>
+
                             <div class="tab-pane" id="course_results">
                                 <div class="active tab-pane" id="all_results">
                                     <!-- Import Panel Start -->
@@ -165,13 +164,6 @@
                                                     <h7 style="display:block;text-align: center;">Batch</h7>
                                                 </div>
                                             </div>
-
-
-
-
-
-
-
                                             <!-- /.box-body -->
                                         </div>
                                         <!-- /.box -->
@@ -204,261 +196,262 @@
                                         <div class="form-group">
                                             <label>Best Batch</label>
                                             <input type="text" class="form-control">
-
+                                            <div style="padding-top: 10px; padding-bottom: 30px;">
+                                                <a href="best_batch_according_to_the_course_results_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <a href="exam_all_results_print_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
-                                            </a>
+
+
+
+                                    </section>
+                                    <section>
+                                        <div class="box box-success">
+                                            <h2 class="box-title">Performance Summary</h2>
+                                            <div class="form-group">
+                                                <label>Select a Batch  </label>
+                                                <select class="form-control select2" data-placeholder="Select a Batch" style="width: 100%;" >
+                                                    <option>Batch 1</option>
+                                                    <option>Batch 2</option>
+                                                    <option>Batch 3</option>
+                                                    <option>Batch 4</option>
+                                                    <option>Batch 5</option>
+                                                    <option>Batch 6</option>
+                                                    <option>Batch 7</option>
+                                                </select>
+
+                                                <div class="row">
+                                                    <div class="col-sm-4 ">
+                                                        <div class="description-block">
+                                                            <h3 class="description-header" style="font-size:30px;">72%</h3>
+                                                            <span class="description-text">PASS</span>
+                                                        </div>
+                                                        <!-- /.description-block -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-sm-4 ">
+                                                        <div class="description-block">
+                                                            <h3 class="description-header" style="font-size:30px;">45</h3>
+                                                            <span class="description-text">TOTAL STUDENTS</span>
+                                                        </div>
+                                                        <!-- /.description-block -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-sm-4">
+                                                        <div class="description-block">
+                                                            <h3 class="description-header" style="font-size:30px;">28%</h3>
+                                                            <span class="description-text">Fail</span>
+                                                        </div>
+                                                        <!-- /.description-block -->
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </div>
+
+
+                                                <div class="box-header with-border">
+                                                    <div class="box">
+                                                        <div class="box-header">
+                                                            <h3 class="box-title">Best Performance</h3>
+                                                        </div>
+                                                        <div class="box-body no-padding">
+
+                                                            <table class="table table-striped">
+                                                                <tr>
+                                                                    <th style="width: 10px">Rank</th>
+                                                                    <th>Student ID</th>
+                                                                    <th>Student Name</th>
+                                                                    <th>Grade</th>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1.</td>
+                                                                    <td>13618</td>
+                                                                    <td>Themiya</td>
+                                                                    <td>A</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2.</td>
+                                                                    <td>58742</td>
+                                                                    <td>Bhanuka</td>
+                                                                    <td>A</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3.</td>
+                                                                    <td>27854</td>
+                                                                    <td>Ruwan</td>
+                                                                    <td>B</td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4.</td>
+                                                                    <td>14985</td>
+                                                                    <td>Kamal</td>
+                                                                    <td>B-</td>
+                                                                </tr>
+                                                            </table>
+
+                                                            <div style="padding-top: 10px; padding-bottom: 30px;">
+                                                                <a href="performance_summary_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </section>
-                                    <div class="box box-success">
-                                        <h2 class="box-title">Performance Summary</h2>
-                                        <div class="form-group">
-                                            <label>Select a Batch  </label>
-                                            <select class="form-control select2" data-placeholder="Select a Batch" style="width: 100%;" >
-                                                <option>Batch 1</option>
-                                                <option>Batch 2</option>
-                                                <option>Batch 3</option>
-                                                <option>Batch 4</option>
-                                                <option>Batch 5</option>
-                                                <option>Batch 6</option>
-                                                <option>Batch 7</option>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </body>
 
-                                            </select>
-
-                                            <div class="row">
-                                                <div class="col-sm-4 ">
-                                                    <div class="description-block">
-                                                        <h3 class="description-header" style="font-size:30px;">72%</h3>
-                                                        <span class="description-text">PASS</span>
-                                                    </div>
-                                                    <!-- /.description-block -->
-                                                </div>
-                                                <!-- /.col -->
-                                                <div class="col-sm-4 ">
-                                                    <div class="description-block">
-                                                        <h3 class="description-header" style="font-size:30px;">45</h3>
-                                                        <span class="description-text">TOTAL STUDENTS</span>
-                                                    </div>
-                                                    <!-- /.description-block -->
-                                                </div>
-                                                <!-- /.col -->
-                                                <div class="col-sm-4">
-                                                    <div class="description-block">
-                                                        <h3 class="description-header" style="font-size:30px;">28%</h3>
-                                                        <span class="description-text">Fail</span>
-                                                    </div>
-                                                    <!-- /.description-block -->
-                                                </div>
-                                                <!-- /.col -->
-                                            </div>
+                <!-- ChartJS -->
+                <script src="../../../bower_components/chart.js/Chart.js"></script>
+                <script>
+                    $(function () {
 
 
 
+                        var barChartData = {
+                            labels: ['Java Associate', 'Java Professional', 'Java Master', 'C# Associate', 'C# Professional', 'C# Master'],
+                            datasets: [
+                                {
+                                    label: 'Electronics',
+                                    fillColor: 'rgba(210, 214, 222, 1)',
+                                    strokeColor: 'rgba(210, 214, 222, 1)',
+                                    pointColor: 'rgba(210, 214, 222, 1)',
+                                    pointStrokeColor: '#c1c7d1',
+                                    pointHighlightFill: '#fff',
+                                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                                    data: [65, 59, 80, 81, 56, 55]
+                                },
+                                {
+                                    label: 'Digital Goods',
+                                    fillColor: 'rgba(60,141,188,0.9)',
+                                    strokeColor: 'rgba(60,141,188,0.8)',
+                                    pointColor: '#3b8bba',
+                                    pointStrokeColor: 'rgba(60,141,188,1)',
+                                    pointHighlightFill: '#fff',
+                                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                                    data: [28, 48, 40, 19, 86, 27]
+                                }
+                            ]
+                        }
+                        barChartData.datasets[1].fillColor = '#00a65a'
+                        barChartData.datasets[1].strokeColor = '#00a65a'
+                        barChartData.datasets[1].pointColor = '#00a65a'
+                        var barChartOptions = {
+                            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+                            scaleBeginAtZero: true,
+                            //Boolean - Whether grid lines are shown across the chart
+                            scaleShowGridLines: true,
+                            //String - Colour of the grid lines
+                            scaleGridLineColor: 'rgba(0,0,0,.05)',
+                            //Number - Width of the grid lines
+                            scaleGridLineWidth: 1,
+                            //Boolean - Whether to show horizontal lines (except X axis)
+                            scaleShowHorizontalLines: true,
+                            //Boolean - Whether to show vertical lines (except Y axis)
+                            scaleShowVerticalLines: true,
+                            //Boolean - If there is a stroke on each bar
+                            barShowStroke: true,
+                            //Number - Pixel width of the bar stroke
+                            barStrokeWidth: 2,
+                            //Number - Spacing between each of the X value sets
+                            barValueSpacing: 5,
+                            //Number - Spacing between data sets within X values
+                            barDatasetSpacing: 1,
+                            //Boolean - whether to make the chart responsive
+                            responsive: true,
+                            maintainAspectRatio: true
+                        }
+                        barChartOptions.datasetFill = false
 
-                                            <div class="box-header with-border">
+                        var barChartData2 = {
+                            labels: ['Batch 1', 'Batch 2', 'Batch 3', 'Batch 4', 'Batch 5', 'Batch 6'],
+                            datasets: [
+                                {
+                                    label: 'Electronics',
+                                    fillColor: 'rgba(210, 214, 222, 1)',
+                                    strokeColor: 'rgba(210, 214, 222, 1)',
+                                    pointColor: 'rgba(210, 214, 222, 1)',
+                                    pointStrokeColor: '#c1c7d1',
+                                    pointHighlightFill: '#fff',
+                                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                                    data: [65, 59, 80, 81, 56, 55]
+                                },
+                                {
+                                    label: 'Digital Goods',
+                                    fillColor: 'rgba(60,141,188,0.9)',
+                                    strokeColor: 'rgba(60,141,188,0.8)',
+                                    pointColor: '#3b8bba',
+                                    pointStrokeColor: 'rgba(60,141,188,1)',
+                                    pointHighlightFill: '#fff',
+                                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                                    data: [28, 48, 40, 19, 86, 27]
+                                }
+                            ]
+                        }
+                        barChartData2.datasets[1].fillColor = '#00a65a'
+                        barChartData2.datasets[1].strokeColor = '#00a65a'
+                        barChartData2.datasets[1].pointColor = '#00a65a'
 
-                                                <div class="box">
-                                                    <div class="box-header">
-                                                        <h3 class="box-title">Best Performance</h3>
-                                                    </div>
-                                                    <div class="box-body no-padding">
+                        var barChartOptions2 = {
+                            //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+                            scaleBeginAtZero: true,
+                            //Boolean - Whether grid lines are shown across the chart
+                            scaleShowGridLines: true,
+                            //String - Colour of the grid lines
+                            scaleGridLineColor: 'rgba(0,0,0,.05)',
+                            //Number - Width of the grid lines
+                            scaleGridLineWidth: 1,
+                            //Boolean - Whether to show horizontal lines (except X axis)
+                            scaleShowHorizontalLines: true,
+                            //Boolean - Whether to show vertical lines (except Y axis)
+                            scaleShowVerticalLines: true,
+                            //Boolean - If there is a stroke on each bar
+                            barShowStroke: true,
+                            //Number - Pixel width of the bar stroke
+                            barStrokeWidth: 2,
+                            //Number - Spacing between each of the X value sets
+                            barValueSpacing: 5,
+                            //Number - Spacing between data sets within X values
+                            barDatasetSpacing: 1,
+                            //Boolean - whether to make the chart responsive
+                            responsive: true,
+                            maintainAspectRatio: true
+                        }
 
-                                                        <table class="table table-striped">
-                                                            <tr>
-                                                                <th style="width: 10px">Rank</th>
-                                                                <th>Student ID</th>
-                                                                <th>Student Name</th>
-                                                                <th>Grade</th>
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1.</td>
-                                                                <td>13618</td>
-                                                                <td>Themiya</td>
-                                                                <td>A</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2.</td>
-                                                                <td>58742</td>
-                                                                <td>Bhanuka</td>
-                                                                <td>A</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3.</td>
-                                                                <td>27854</td>
-                                                                <td>Ruwan</td>
-                                                                <td>B</td>
-
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4.</td>
-                                                                <td>14985</td>
-                                                                <td>Kamal</td>
-                                                                <td>B-</td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    </body>
-
-                                    <!-- ChartJS -->
-                                    <script src="../../../bower_components/chart.js/Chart.js"></script>
-                                    <script>
-                                        $(document).ready(function () {
-
-                                            //-------------
-                                            //- BAR CHART -
-                                            //-------------
-                                            var barChartCanvas = $('#barChart1').get(0).getContext('2d')
-                                            var barChart = new Chart(barChartCanvas)
-                                            var barChartData = {
-                                                labels: ['Java Associate', 'Java Professional', 'Java Master', 'C# Associate', 'C# Professional', 'C# Master'],
-                                                datasets: [
-                                                    {
-                                                        label: 'Electronics',
-                                                        fillColor: 'rgba(210, 214, 222, 1)',
-                                                        strokeColor: 'rgba(210, 214, 222, 1)',
-                                                        pointColor: 'rgba(210, 214, 222, 1)',
-                                                        pointStrokeColor: '#c1c7d1',
-                                                        pointHighlightFill: '#fff',
-                                                        pointHighlightStroke: 'rgba(220,220,220,1)',
-                                                        data: [65, 59, 80, 81, 56, 55]
-                                                    },
-                                                    {
-                                                        label: 'Digital Goods',
-                                                        fillColor: 'rgba(60,141,188,0.9)',
-                                                        strokeColor: 'rgba(60,141,188,0.8)',
-                                                        pointColor: '#3b8bba',
-                                                        pointStrokeColor: 'rgba(60,141,188,1)',
-                                                        pointHighlightFill: '#fff',
-                                                        pointHighlightStroke: 'rgba(60,141,188,1)',
-                                                        data: [28, 48, 40, 19, 86, 27]
-                                                    }
-                                                ]
-                                            }
-                                            barChartData.datasets[1].fillColor = '#00a65a'
-                                            barChartData.datasets[1].strokeColor = '#00a65a'
-                                            barChartData.datasets[1].pointColor = '#00a65a'
-                                            var barChartOptions = {
-                                                //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-                                                scaleBeginAtZero: true,
-                                                //Boolean - Whether grid lines are shown across the chart
-                                                scaleShowGridLines: true,
-                                                //String - Colour of the grid lines
-                                                scaleGridLineColor: 'rgba(0,0,0,.05)',
-                                                //Number - Width of the grid lines
-                                                scaleGridLineWidth: 1,
-                                                //Boolean - Whether to show horizontal lines (except X axis)
-                                                scaleShowHorizontalLines: true,
-                                                //Boolean - Whether to show vertical lines (except Y axis)
-                                                scaleShowVerticalLines: true,
-                                                //Boolean - If there is a stroke on each bar
-                                                barShowStroke: true,
-                                                //Number - Pixel width of the bar stroke
-                                                barStrokeWidth: 2,
-                                                //Number - Spacing between each of the X value sets
-                                                barValueSpacing: 5,
-                                                //Number - Spacing between data sets within X values
-                                                barDatasetSpacing: 1,
-                                                //Boolean - whether to make the chart responsive
-                                                responsive: true,
-                                                maintainAspectRatio: true
-                                            }
+                        barChartOptions2.datasetFill = false
 
 
-                                            barChartOptions.datasetFill = false
-                                            barChart.Bar(barChartData, barChartOptions)
+                        var barChartCanvas = $('#barChart1').get(0).getContext('2d')
+                        var barChart = new Chart(barChartCanvas).Bar(barChartData, barChartOptions)
 
-                                            barChartCanvas = $('#barChart2').get(0).getContext('2d')
-                                            barChart = new Chart(barChartCanvas)
-                                            var barChartData2 = {
-                                                labels: ['Batch 1', 'Batch 2', 'Batch 3', 'Batch 4', 'Batch 5', 'Batch 6'],
-                                                datasets: [
-                                                    {
-                                                        label: 'Electronics',
-                                                        fillColor: 'rgba(210, 214, 222, 1)',
-                                                        strokeColor: 'rgba(210, 214, 222, 1)',
-                                                        pointColor: 'rgba(210, 214, 222, 1)',
-                                                        pointStrokeColor: '#c1c7d1',
-                                                        pointHighlightFill: '#fff',
-                                                        pointHighlightStroke: 'rgba(220,220,220,1)',
-                                                        data: [65, 59, 80, 81, 56, 55]
-                                                    },
-                                                    {
-                                                        label: 'Digital Goods',
-                                                        fillColor: 'rgba(60,141,188,0.9)',
-                                                        strokeColor: 'rgba(60,141,188,0.8)',
-                                                        pointColor: '#3b8bba',
-                                                        pointStrokeColor: 'rgba(60,141,188,1)',
-                                                        pointHighlightFill: '#fff',
-                                                        pointHighlightStroke: 'rgba(60,141,188,1)',
-                                                        data: [28, 48, 40, 19, 86, 27]
-                                                    }
-                                                ]
-                                            }
-                                            barChartData2.datasets[1].fillColor = '#00a65a'
-                                            barChartData2.datasets[1].strokeColor = '#00a65a'
-                                            barChartData2.datasets[1].pointColor = '#00a65a'
+                        var barChartCanvas2 = $('#barChart2').get(0).getContext('2d')
+                        var barChart2;
+                        //-------------
+                        //- BAR CHART -
+                        //-------------
 
-                                            var barChartOptions2 = {
-                                                //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-                                                scaleBeginAtZero: true,
-                                                //Boolean - Whether grid lines are shown across the chart
-                                                scaleShowGridLines: true,
-                                                //String - Colour of the grid lines
-                                                scaleGridLineColor: 'rgba(0,0,0,.05)',
-                                                //Number - Width of the grid lines
-                                                scaleGridLineWidth: 1,
-                                                //Boolean - Whether to show horizontal lines (except X axis)
-                                                scaleShowHorizontalLines: true,
-                                                //Boolean - Whether to show vertical lines (except Y axis)
-                                                scaleShowVerticalLines: true,
-                                                //Boolean - If there is a stroke on each bar
-                                                barShowStroke: true,
-                                                //Number - Pixel width of the bar stroke
-                                                barStrokeWidth: 2,
-                                                //Number - Spacing between each of the X value sets
-                                                barValueSpacing: 5,
-                                                //Number - Spacing between data sets within X values
-                                                barDatasetSpacing: 1,
-                                                //Boolean - whether to make the chart responsive
-                                                responsive: true,
-                                                maintainAspectRatio: true
-                                            }
+                        $('#tab1').on('shown.bs.tab', function (e) {
+                            barChart2.destroy();
+                            barChart = new Chart(barChartCanvas).Bar(barChartData, barChartOptions)
+                        });
+
+                        $('#tab2').on('shown.bs.tab', function (e) {
+                            barChart.destroy();
+                            barChart2 = new Chart(barChartCanvas2).Bar(barChartData2, barChartOptions2)
+                        });
 
 
+                    })
+
+                </script>
 
 
-                                            barChartOptions2.datasetFill = false
-                                            barChart.Bar(barChartData2, barChartOptions2)
-                                        })
-                                    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    </body>
-                                    </html>
+                </body>
+                </html>
