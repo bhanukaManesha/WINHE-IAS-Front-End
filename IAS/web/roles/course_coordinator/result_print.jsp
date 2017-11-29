@@ -86,14 +86,14 @@
                 <div class="row">
                     
                     <!-- /.col -->
-                    <div class="col-xs-6">
-                        <p class="lead">Amount Due 2/22/2014</p>
+                    <div class="col-xs-7">
+                        <p class="lead">You Are Successfully Completed & Passed To The Next Level of The Course Program Series</p>
 
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
                                     <th style="width:50%">Pass Level:</th>
-                                    <td>$100</td>
+                                    <td>80%</td>
                                 </tr>
                                 
                             </table>
