@@ -7,7 +7,12 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <%@include file= "../../../includes/links.jsp"%>
-       
+        <style type="text/css" media="print">
+            @page {
+                size: auto;   /* auto is the initial value */
+                margin: 0;  /* this affects the margin in the printer settings */
+            }
+        </style>
     </head>
     <body>
         <div class="wrapper">
@@ -23,7 +28,7 @@
                         <h5 class="box-title" style="display:block;text-align: center;font-size:14px;">12<sup>th</sup> December 2017</h5>
 
                     </div>
-                    
+
 
 
                 </div>
@@ -32,8 +37,11 @@
         </div>
         <script>
             $(document).ready(function () {
-                setTimeout(function(){  window.print();; }, 1000);
-               
+                setTimeout(function () {
+                    window.print();
+                    ;
+                }, 1000);
+
             });
         </script>
     </body>

@@ -30,7 +30,7 @@
                     <ol class="breadcrumb">
                         <li><a href="../../index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
                         <li><a href="../index.jsp"><i class="fa fa-book"></i> Report Generation</a></li>
-                        <li><a href=""><i class="fa fa-group"></i> Course Intake</a></li>
+                        <li><a href=""><i class="fa fa-user-circle-o"></i> Student Payment</a></li>
                     </ol>
                 </section>
 
@@ -57,7 +57,7 @@
                         <div class="box-body">
                             <div class="chart">
                                 <canvas id="areaChart" style="height: 250px"></canvas>
-                                <h7 style="display:block;text-align: center;">Batch ID</h7>
+                                <h7 style="display:block;text-align: center;">Year</h7>
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -86,7 +86,7 @@
                                 </div>
                                 <!-- /.description-block -->
                             </div>
-                            <a href="course_intake-print.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+                            <a href="student_payment-print.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
                             </a>
                             <!-- /.col -->
                         </div>
@@ -126,7 +126,7 @@
                         '2018', '2019'],
                     datasets: [{
                             label: 'Year',
-                            fillColor: 'rgba(60,141,188,0.9)',
+                            fillColor: '#00a65a',
                             strokeColor: 'rgba(60,141,188,0.8)',
                             pointColor: '#3b8bba',
                             pointStrokeColor: 'rgba(60,141,188,1)',
