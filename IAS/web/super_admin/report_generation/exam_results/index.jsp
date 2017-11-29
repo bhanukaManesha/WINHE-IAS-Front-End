@@ -18,7 +18,7 @@
             <%@include file= "../../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
+            <div class="content-wrapper" style="height: 2200px;">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
@@ -99,13 +99,19 @@
                                         </div>
                                         <!-- /.col -->
                                     </div>
+                                   
                                     <div class="form-group">
                                         <label>Best Course</label>
                                         <input type="text" class="form-control">
-
+                                        
+                                        
                                     </div>
+                                    <a href="exam_all_results_print_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+                                        </a>
+
 
                                 </div>
+
 
                             </div>
                             <div class="tab-pane" id="course_results">
@@ -116,7 +122,7 @@
 
                                     </div>
                                     <section>
-                                        
+
                                         <div class="form-group">
                                             <label>Select a Course </label>
                                             <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
@@ -190,6 +196,10 @@
                                             <label>Best Batch</label>
                                             <input type="text" class="form-control">
 
+                                        </div>
+                                        <div>
+                                            <a href="exam_all_results_print_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
+                                            </a>
                                         </div>
                                     </section>
                                     <div class="box box-success">

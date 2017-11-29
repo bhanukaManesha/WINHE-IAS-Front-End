@@ -437,6 +437,7 @@
                             <!-- /.tab-pane -->
                         </div>
                         <!-- /.tab-content -->
+                    </div>
                 </section>
             </div>
             <!-- / .content wrapper -->
