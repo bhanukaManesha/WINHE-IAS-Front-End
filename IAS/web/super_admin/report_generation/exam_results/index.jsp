@@ -99,15 +99,15 @@
                                         </div>
                                         <!-- /.col -->
                                     </div>
-                                   
+
                                     <div class="form-group">
                                         <label>Best Course</label>
                                         <input type="text" class="form-control">
-                                        
-                                        
+
+
                                     </div>
                                     <a href="exam_all_results_print_report.jsp" target="_blank" type="button" style="margin-right: 30px;margin-bottom: 10px;" class="btn btn-success pull-right"><i class="fa fa-book"></i>&nbsp; Print Report
-                                        </a>
+                                    </a>
 
 
                                 </div>
@@ -301,16 +301,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-
-
                                             </section>
                                         </div>
-
-
-
-
-
                                     </div>
                                     </body>
 
@@ -447,26 +439,26 @@
                                         })
                                     </script>
 
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     </body>
                                     </html>
