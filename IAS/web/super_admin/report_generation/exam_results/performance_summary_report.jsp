@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Super Admin | Print All Results</title>
+        <title>Super Admin | Print Performance Summary</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <%@include file= "../../../includes/links.jsp"%>
@@ -24,116 +24,72 @@
 
 
                     <div class="box-header with-border">
-                        <h3 class="box-title" style="display:block;text-align: center;margin-bottom:10px; ">Java Associate Course Intake</h3>
+                        <h3 class="box-title" style="display:block;text-align: center;margin-bottom:10px; ">Batch 1 Best Performance</h3>
 
                         <h5 class="box-title" style="display:block;text-align: center;font-size:14px;"> 12<sup>th</sup> December 2017</h5>
 
                     </div>
 
-                    <div class="box-body">
-                        <div class="chart">
-                            <canvas id="barChart1" style="height:230px"></canvas>
-                            <h7 style="display:block;text-align: center;">Course</h7>
+                    <div class="box-header with-border">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title">Best Performance</h3>
+                            </div>
+                            <div class="box-body no-padding">
+
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th style="width: 10px">Rank</th>
+                                        <th>Student ID</th>
+                                        <th>Student Name</th>
+                                        <th>Grade</th>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>13618</td>
+                                        <td>Themiya</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>58742</td>
+                                        <td>Bhanuka</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>27854</td>
+                                        <td>Ruwan</td>
+                                        <td>B</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>14985</td>
+                                        <td>Kamal</td>
+                                        <td>B-</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+
                         </div>
                     </div>
-
-                </div>
-
-
+            </section>
+            <!-- /.content -->
         </div>
-    </section>
-    <!-- /.content -->
-</div>
-<!-- ./wrapper -->
-<script src="../../../bower_components/chart.js/Chart.js"></script>
-<script>
+        <!-- ./wrapper -->
 
-    $(function () {
-        /* ChartJS
-         * -------
-         * Here we will create a few charts using ChartJS
-         */
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    window.print();
+                    ;
+                }, 1000);
 
-        //--------------
-        //- AREA CHART -
-        //--------------
-        // Get context with jQuery - using jQuery's .get() method.
-        var areaChartCanvas = $('#areaChart1').get(0).getContext('2d')
-        // This will get the first returned node in the jQuery collection.
-        var areaChart = new Chart(areaChartCanvas)
-
-
-
-        var areaChartData = {
-            labels: ['CS001', 'CS002', 'CS003', 'CS004', 'CS005',
-                'CS006', 'CS007'],
-            datasets: [{
-                    label: 'Batch',
-                    fillColor: 'rgba(60,141,188,0.9)',
-                    strokeColor: 'rgba(60,141,188,0.8)',
-                    pointColor: '#3b8bba',
-                    pointStrokeColor: 'rgba(60,141,188,1)',
-                    pointHighlightFill: '#fff',
-                    pointHighlightStroke: 'rgba(60,141,188,1)',
-                    data: [10, 26, 8, 40, 50, 20, 70]
-                }]
-        }
-
-
-        var areaChartOptions = {
-            //Boolean - If we should show the scale at all
-            showScale: true,
-            //Boolean - Whether grid lines are shown across the chart
-            scaleShowGridLines: false,
-            //String - Colour of the grid lines
-            scaleGridLineColor: 'rgba(0,0,0,.05)',
-            //Number - Width of the grid lines
-            scaleGridLineWidth: 1,
-            //Boolean - Whether to show horizontal lines (except X axis)
-            scaleShowHorizontalLines: true,
-            //Boolean - Whether to show vertical lines (except Y axis)
-            scaleShowVerticalLines: true,
-            //Boolean - Whether the line is curved between points
-            bezierCurve: true,
-            //Number - Tension of the bezier curve between points
-            bezierCurveTension: 0.3,
-            //Boolean - Whether to show a dot for each point
-            pointDot: false,
-            //Number - Radius of each point dot in pixels
-            pointDotRadius: 4,
-            //Number - Pixel width of point dot stroke
-            pointDotStrokeWidth: 1,
-            //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-            pointHitDetectionRadius: 20,
-            //Boolean - Whether to show a stroke for datasets
-            datasetStroke: true,
-            //Number - Pixel width of dataset stroke
-            datasetStrokeWidth: 2,
-            //Boolean - Whether to fill the dataset with a color
-            datasetFill: true,
-            //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-            maintainAspectRatio: true,
-            //Boolean - whether to make the chart responsive to window resizing
-            responsive: true,
-
-        }
-        //Create the line chart
-        areaChart.Line(areaChartData, areaChartOptions)
-
-
-    })
-
-
-</script>
-
-<script>
-    $(document).ready(function () {
-        setTimeout(function () {
-            window.print();
-            ;
-        }, 1000);
-
-    });
-</script>
-</body>
+            });
+        </script>
+    </body>
 </html>
