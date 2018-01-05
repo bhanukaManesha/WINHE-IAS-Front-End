@@ -72,7 +72,7 @@
                     pointStrokeColor: 'rgba(60,141,188,1)',
                     pointHighlightFill: '#fff',
                     pointHighlightStroke: 'rgba(60,141,188,1)',
-                    data: [28, 48, 40, 19, 86, 27]
+                    data: [28, 48, 40, 19, 40, 27]
                 }
             ]
         }

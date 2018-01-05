@@ -211,7 +211,7 @@
                                         <i class="fa fa-clock-o "></i>
                                     </div>
                                     <a href="time_table_crud.jsp" class="small-box-footer" style="font-size:20px;">
-                                        Course Time Tables
+                                        Batch Time Tables
                                     </a>
                                 </div>
                             </div>

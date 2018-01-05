@@ -58,7 +58,7 @@
 
 	<%@include file= "../../includes/lecturer_searchbar.jsp"%>
 
-	<%@include file= "../../includes/time_table_search_results.jsp"%>
+	<%@include file= "../../includes/time_table_search_results_for_lecturer_timetable.jsp"%>
     
     </section>
     <!-- modal of "Reset your password" goes here -->

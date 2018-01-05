@@ -45,11 +45,11 @@
                         Course Coordinator
                     </h1>
                     <h4 style="text-align:center">
-                        Course Time Table
+                        Batch Time Table
                     </h4>
                     <ol class="breadcrumb">
                         <li><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                        <li><a href="search_inquiry.jsp"><i class="fa fa-clock-o"></i> Course Time Table</a></li>
+                        <li><a href="search_inquiry.jsp"><i class="fa fa-clock-o"></i> Batch Time Table</a></li>
                     </ol>
                 </section>
 
