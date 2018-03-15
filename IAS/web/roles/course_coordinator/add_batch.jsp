@@ -55,11 +55,11 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form role="form">
+                                    <form name="" role="form">
                                         <div class="box-body">
                                             <div class="form-group">
 
-                                                <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                <input name="batchPhoto" type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
                                                 <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                             </div>
                                         </div>
@@ -78,7 +78,7 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form role="form">
+                                    <form id="batchadd"> <!--added an id-->
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -90,7 +90,7 @@
                                                         <div class="widget-user-image" style="margin-top:20px;">
                                                             <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
                                                         </div>
-                                                        <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
+                                                        <input type="file" name="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
                                                         <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
 
                                                     </div>
@@ -123,19 +123,19 @@
                                                     </div>
                                                     <div class="col-md-6 lg-6">
                                                         <label>Batch ID</label>
-                                                        <input type="text" class="form-control" placeholder="Batch ID" >
+                                                        <input name="batchId" type="text" class="form-control" placeholder="Batch ID" >
                                                     </div>
                                                 </div>
 
                                                 <div class="row">
                                                     <div class="col-md-6 lg-6">
                                                         <label>Course Duration</label>
-                                                        <input type="number" class="form-control" placeholder="Enter Duration of The Course" >
+                                                        <input name="courseDuration" type="number" class="form-control" placeholder="Enter Duration of The Course" >
                                                     </div>
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label style="display:block;">Select Duration Type</label>
-                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+                                                            <select name="duration" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
                                                                 <option>Days</option>
                                                                 <option>Weeks</option>
                                                                 <option>Months</option>
@@ -149,7 +149,7 @@
                                             <div class="form-group">
                                                 <label>Description </label>
                                                 <div class="box-body pad">
-                                                    <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
+                                                    <textarea name="description" id="editor1" name="editor1" rows="10" cols="80"></textarea>
                                                 </div>
 
                                             </div>
@@ -165,7 +165,7 @@
                                                                 <div class="input-group-addon">
                                                                     <i class="fa fa-calendar"></i>
                                                                 </div>
-                                                                <input type="text" class="form-control pull-right" id="datepicker1">
+                                                                <input name="commenceDate" type="text" class="form-control pull-right" id="datepicker1">
                                                             </div>
                                                             <!-- /.input group -->
                                                         </div>
@@ -176,7 +176,7 @@
 
                                                             <label>Intake Amount :</label>
 
-                                                            <input type="text" class="form-control" id="" placeholder="Enter Amount">
+                                                            <input name="intakeAmount" type="text" class="form-control" id="" placeholder="Enter Amount">
 
                                                         </div>
                                                     </div>
@@ -191,7 +191,7 @@
 
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">$</span>
-                                                                <input type="text" class="form-control">
+                                                                <input name="batchFee" type="text" class="form-control">
                                                                 <span class="input-group-addon">.00</span>
                                                             </div>
                                                         </div>
@@ -204,7 +204,7 @@
 
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">$</span>
-                                                                <input type="text" class="form-control">
+                                                                <input name="lecturerHourlyRate" type="text" class="form-control">
                                                                 <span class="input-group-addon">/per hour</span>
                                                             </div>
 
@@ -221,7 +221,7 @@
                                         <!-- /.box-body -->
 
                                         <div class="box-footer">
-                                            <button type="submit" class="btn btn-primary" style="width:100%">Add</button>
+                                            <button type="button" id="bbttnn" class="btn btn-primary" style="width:100%">Add</button>
                                         </div>
 
                                     </form>
@@ -261,7 +261,7 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form id="batchadd2" role="form">
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
@@ -417,8 +417,6 @@
 
                                                     </div>
 
-
-
                                                 </div>
 
                                             </div> 
@@ -444,5 +442,54 @@
         </div>
         <!-- ./wrapper -->
 
+        <script type="text/javascript">
+
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+            function toJSON(form) {
+                var object = {};
+                jQuery(form).serializeArray().forEach(function (value, key) {
+                    object[key] = value;
+                });
+                return JSON.stringify(object);
+            }
+
+//            jQuery(document).on('ready', function () {
+            jQuery('#bbttnn').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#batchadd";
+                var json = ConvertFormToJSON(form);
+//				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/batches/645467798943543008088",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+//            });
+        </script>	
+
+
     </body>
 </html>
+
