@@ -67,7 +67,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
+                                                <button type="button" class="btn btn-primary" style="width:100%">Import</button>
                                             </div>
                                         </form>
                                     </div>
@@ -79,7 +79,7 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" id="form_newAddStudent">
                                             <div class="box-body">
                                                 <div class="form-group">
 
@@ -441,7 +441,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Submit</button>
+                                                <button type="submit" id="btn_newStudentAdd"class="btn btn-primary" style="width:100%">Submit</button>
                                             </div>
                                         </form>
                                     </div>
@@ -486,7 +486,7 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" id="form_pastStudentAdd">
                                             <div class="box-body">
                                                 <div class="form-group">
 
@@ -871,7 +871,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Submit</button>
+                                                <button type="button" id="btn_pastStudentAdd"class="btn btn-primary" style="width:100%">Submit</button>
                                             </div>
                                         </form>
                                     </div>
@@ -896,7 +896,84 @@
         <!-- /.box -->
 
         <!-- ./wrapper -->
+        <script type="text/javascript">
 
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_newStudentAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_newAddStudent";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/newStudents/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            //            });
+        </script>	
+<script type="text/javascript">
+
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_pastStudentAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_pastStudentAdd";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/pastStudents/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            //            });
+        </script>	
 
     </body>
 </html>

@@ -154,7 +154,7 @@
                                         <div class="row no-print">
                                             <div class="col-xs-12">
 
-                                                <a href="invoice-print.jsp" target="_blank" type="button" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Submit Payment
+                                                <a href="invoice-print.jsp" target="_blank" type="button" id="btn_addStudentPayment"class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Submit Payment
                                                 </a>
 
                                             </div>
@@ -182,6 +182,47 @@
         <!-- /.box -->
 
         <!-- ./wrapper -->
+        
+        <script type="text/javascript">
+
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_addStudentPayment').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+               // var form = "#form_addLecturer";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/lecturers/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            //            });
+        </script>	
+
 
 
     </body>

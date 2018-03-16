@@ -455,13 +455,7 @@
                 return JSON.stringify(json);
             }
 
-            function toJSON(form) {
-                var object = {};
-                jQuery(form).serializeArray().forEach(function (value, key) {
-                    object[key] = value;
-                });
-                return JSON.stringify(object);
-            }
+         
 
 //            jQuery(document).on('ready', function () {
             jQuery('#bbttnn').on('click', function (event) {
