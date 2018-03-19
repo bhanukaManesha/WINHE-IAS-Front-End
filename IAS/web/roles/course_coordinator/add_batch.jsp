@@ -198,7 +198,7 @@
                                                         <!-- /.form group -->
                                                     </div>
                                                     <div class="col-lg-6 col-md-4">
-                                                        <div class="form-group">
+<!--                                                        <div class="form-group">
 
                                                             <label>Hourly Rate:</label>
 
@@ -208,7 +208,7 @@
                                                                 <span class="input-group-addon">/per hour</span>
                                                             </div>
 
-                                                        </div>
+                                                        </div>-->
                                                     </div>
 
                                                 </div>

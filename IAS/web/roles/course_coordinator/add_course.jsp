@@ -97,8 +97,8 @@
                                                     </div>
                                                 </div>
 
-                                                <label>Course ID</label>
-                                                <input type="text" name="id" class="form-control" placeholder="Enter Course ID" >
+<!--                                                <label>Course ID</label>
+                                                <input type="text" name="id" class="form-control" placeholder="Enter Course ID" >-->
 
                                                 <label>Course Name</label>
                                                 <input type="text" name="courseName" class="form-control" placeholder="Enter Course Name" >
