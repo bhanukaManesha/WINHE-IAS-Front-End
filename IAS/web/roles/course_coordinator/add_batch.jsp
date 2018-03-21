@@ -327,27 +327,21 @@
                                                 </div>
 
                                             </div> 
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-lg-12">  
+                                                        <label>Reason For Removal</label>
+                                                        <select class="form-control select3" name="reasonForRemoval" data-placeholder="Select the Reason" style="width:100%;">
+                                                            <option>No Longer Available</option>
+                                                            <option>Whole Batch Was Suspended</option>
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
                                         </form>
 
-                                        <div class="row">
-
-                                            <div class="col-lg-12">    
-                                                <!--<div class="box box-danger"  style="padding:10px">-->
-                                                <div class="box-header with-border">
-                                                    <h3 class="box-title">Reason For Removal</h3>
-                                                </div>
-                                                <div class="form-group">
-
-                                                    <select class="form-control"  name="reasonForRemoval" data-placeholder="Reason For Removal" style="width: 100%;" >
-                                                        <option value="No Longer Available">No Longer Available</option>
-                                                        <option value="Whole Batch Was Suspended">Whole Batch Was Suspended</option>   
-
-                                                    </select>
-                                                </div>
-                                                <!--</div>-->
-                                            </div>
-
-                                        </div>
 
                                     </div>
 
@@ -358,7 +352,7 @@
                                     <button type="button" id="btn_pastBatchAdd"class="btn btn-primary" style="width:100%">Add</button>
                                 </div>
 
-                                </form>
+
                             </div>
                             <!-- Enter Batch Details Panel End -->
                         </div>
