@@ -597,7 +597,7 @@
 
                                                     </div>
                                                 </div>
-                                                <!-- /.box-body -->
+                                                <!-- /.box-form_lecturerAddy -->
 
                                                 <div class="box-footer">
                                                     <button type="button" id="btn_pastLecturerAdd"class="btn btn-primary" style="width:100%">Submit</button>
