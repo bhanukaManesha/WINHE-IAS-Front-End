@@ -127,7 +127,7 @@
                                             <div class="form-group">
                                                 <label>Description</label>
                                                 <div class="box-body pad">
-                                                    <textarea id="editor1" name="description" rows="10" cols="80"></textarea>
+                                                    <textarea  name="description" rows="10" cols="162"></textarea>
                                                 </div>
 
                                             </div>
@@ -225,7 +225,7 @@
                                                 <div class="form-group">
                                                     <label>Description</label>
                                                     <div class="box-body pad">
-                                                        <textarea id="editor1" name="description"  rows="10" cols="80"></textarea>
+                                                        <textarea  name="description"  rows="10" cols="161"></textarea>
                                                     </div>
 
                                                 </div>
@@ -311,22 +311,10 @@
                 });
             });
             //            });
-        </script>
-        
-         <script type="text/javascript">
+            
+//            past course script start
 
-            function ConvertFormToJSON(form) {
-                var array = jQuery(form).serializeArray();
-                var json = {};
-
-                jQuery.each(array, function () {
-                    json[this.name] = this.value || '';
-                });
-
-                return JSON.stringify(json);
-            }
-
-
+           
             //            jQuery(document).on('ready', function () {
             jQuery('#btn_pastCourseAdd').on('click', function (event) {
                 event.preventDefault();
@@ -337,7 +325,7 @@
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/pastCourses/645467798943543008081",
+                    url: "http://localhost:8081/courses/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
@@ -351,7 +339,9 @@
                 });
             });
             //            });
-        </script>	
+        </script>
+        
+        
 
 
     </body>

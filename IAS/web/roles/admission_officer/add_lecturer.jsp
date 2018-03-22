@@ -667,9 +667,9 @@
                 });
             });
             //            });
-        </script>	
+            
+//            past lecture script start
 
-        <script type="text/javascript">
 
    //            jQuery(document).on('ready', function () {
             jQuery('#btn_pastLecturerAdd').on('click', function (event) {
@@ -696,6 +696,8 @@
             });
             //            });
         </script>	
+
+        
 
 
 
