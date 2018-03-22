@@ -198,7 +198,7 @@
                                                         <!-- /.form group -->
                                                     </div>
                                                     <div class="col-lg-6 col-md-4">
-                                                        <div class="form-group">
+<!--                                                        <div class="form-group">
 
                                                             <label>Hourly Rate:</label>
 
@@ -208,7 +208,7 @@
                                                                 <span class="input-group-addon">/per hour</span>
                                                             </div>
 
-                                                        </div>
+                                                        </div>-->
                                                     </div>
 
                                                 </div>
@@ -455,13 +455,7 @@
                 return JSON.stringify(json);
             }
 
-            function toJSON(form) {
-                var object = {};
-                jQuery(form).serializeArray().forEach(function (value, key) {
-                    object[key] = value;
-                });
-                return JSON.stringify(object);
-            }
+         
 
 //            jQuery(document).on('ready', function () {
             jQuery('#bbttnn').on('click', function (event) {

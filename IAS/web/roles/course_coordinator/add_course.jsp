@@ -55,7 +55,7 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form role="form">
+                                    <form role="form" >
                                         <div class="box-body">
                                             <div class="form-group">
 
@@ -66,7 +66,7 @@
                                         <!-- /.box-body -->
 
                                         <div class="box-footer">
-                                            <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
+                                            <button type="button" class="btn btn-primary" style="width:100%">Import</button>
                                         </div>
                                     </form>
                                 </div>
@@ -78,7 +78,7 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form role="form">
+                                    <form role="form" id="form_courseAdd">
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -97,21 +97,22 @@
                                                     </div>
                                                 </div>
 
-                                                <label>Course ID</label>
+<!--                                                <label>Course ID</label>
+                                                <input type="text" name="id" class="form-control" placeholder="Enter Course ID" >-->
 
-                                                <input type="text" class="form-control" placeholder="Enter Course ID" >
                                                 <label>Course Name</label>
+                                                <input type="text" name="courseName" class="form-control" placeholder="Enter Course Name" >
 
-                                                <input type="text" class="form-control" placeholder="Enter Course Name" >
                                                 <div class="row">
                                                     <div class="col-md-6 lg-6">
                                                         <label>Course Duration</label>
-                                                        <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
+                                                        <input type="text" name="courseDuration"class="form-control" placeholder="Enter Duration of The Course" >
                                                     </div>
+
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label>Select Duration Type</label>
-                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
+                                                            <select class="form-control select2" name="durationType"data-placeholder="Select a Course" style="width: 100%;" >
                                                                 <option>Days</option>
                                                                 <option>Weeks</option>
                                                                 <option>Months</option>
@@ -119,21 +120,23 @@
                                                             </select>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label>Description</label>
                                                 <div class="box-body pad">
-                                                    <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
+                                                    <textarea id="editor1" name="description" rows="10" cols="80"></textarea>
                                                 </div>
 
                                             </div>
                                         </div> 
+
                                         <!-- /.box-body -->
 
                                         <div class="box-footer">
-                                            <button type="submit" class="btn btn-primary" style="width:100%">Add</button>
+                                            <button type="button" id="btn_courseAdd"class="btn btn-primary" style="width:100%">Add</button>
                                         </div>
 
                                     </form>
@@ -174,7 +177,7 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" id="form_pastCourseAdd">
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
@@ -193,21 +196,22 @@
                                                         </div>
                                                     </div>
 
-                                                    <label>Course ID</label>
+<!--                                                    <label>Course ID</label>
 
                                                     <input type="text" class="form-control" placeholder="Enter Course ID" >
+                                                   -->
                                                     <label>Course Name</label>
 
-                                                    <input type="text" class="form-control" placeholder="Enter Course Name" >
+                                                    <input type="text" name="courseName" class="form-control" placeholder="Enter Course Name" >
                                                     <div class="row">
                                                         <div class="col-md-6 lg-6">
                                                             <label>Course Duration</label>
-                                                            <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
+                                                            <input type="text" name="courseDuration" class="form-control" placeholder="Enter Duration of The Course" >
                                                         </div>
                                                         <div class="col-md-6 lg-6">
                                                             <div class="form-group">
                                                                 <label>Select Duration Type</label>
-                                                                <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
+                                                                <select class="form-control select2" name="durationType" data-placeholder="Select a Course" style="width: 100%;" >
                                                                     <option>Days</option>
                                                                     <option>Weeks</option>
                                                                     <option>Months</option>
@@ -221,7 +225,7 @@
                                                 <div class="form-group">
                                                     <label>Description</label>
                                                     <div class="box-body pad">
-                                                        <textarea id="editor1" name="editor2" rows="10" cols="80"></textarea>
+                                                        <textarea id="editor1" name="description"  rows="10" cols="80"></textarea>
                                                     </div>
 
                                                 </div>
@@ -235,7 +239,7 @@
                                                             </div>
                                                             <div class="form-group">
 
-                                                                <select class="form-control select2" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                                <select class="form-control select2" name="reasonRemoval" data-placeholder="Reason For Removal" style="width: 100%;" >
                                                                     <option>No Longer Available</option>
                                                                     <option>A new version of this course is available</option>    
 
@@ -252,7 +256,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Add</button>
+                                                <button type="button" id="btn_pastCourseAdd" class="btn btn-primary" style="width:100%">Add</button>
                                             </div>
 
                                         </form>
@@ -269,6 +273,86 @@
             <!-- / .content wrapper -->
         </div>
         <!-- ./wrapper -->
+        <script type="text/javascript">
+
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_courseAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_courseAdd";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/courses/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            //            });
+        </script>
+        
+         <script type="text/javascript">
+
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_pastCourseAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_pastCourseAdd";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/pastCourses/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            //            });
+        </script>	
+
 
     </body>
 </html>
