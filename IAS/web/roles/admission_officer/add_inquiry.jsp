@@ -54,7 +54,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" id="form_inquiryAdd">
 		         <div class="box-body">
 		             <div class="form-group">
 		             
@@ -68,32 +68,32 @@
             				
 			            <label>First Name</label>
 			            
-			            <input type="text" class="form-control" placeholder="Enter First Name" >
+			            <input type="text" name="firstName" class="form-control" placeholder="Enter First Name" >
 			            
 			            <label>Last Name</label>
-			            <input type="text" class="form-control" placeholder="Enter Last Name" > 
+			            <input type="text" name="lastName" class="form-control" placeholder="Enter Last Name" > 
             				
             				<label>National Identity Card No / Birth Certificate No</label>
 
-			            <input type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
+			            <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
             				
             				<label>Date Of Birth:</label>
 			                <div class="input-group date">
 			                  <div class="input-group-addon">
 			                    <i class="fa fa-calendar"></i>
 			                  </div>
-			                  <input type="text" class="form-control pull-right" id="datepicker">
+			                  <input type="text" name="DOB" class="form-control pull-right" id="datepicker">
 			                </div>
             
             				<!-- Start Radio Buttons -->
 			                <label>Gender:</label>
 			                  <div class="radio">
 			                    <label style="margin-left:100px;">
-			                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			                      <input type="radio" name="gender" id="optionsRadios1" value="option1" checked>
 			                      Male
 			                    </label>
 			                    <label style="margin-left:100px;">
-			                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			                      <input type="radio" name="gender" id="optionsRadios2" value="option2">
 			                      Female
 			                    </label>
 			                  </div>
@@ -119,19 +119,19 @@
 			           	<label>Email</label>
 			           	<div class="input-group">
 			                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-			                <input type="email" class="form-control" placeholder="Email">
+			                <input type="email" name="emailAddress" class="form-control" placeholder="Email">
 			              </div>
 			              
 			              <!-- textarea -->
 		                  <label>Address</label>
-		                  <textarea class="form-control" rows="3" placeholder="Enter Address"></textarea>
+		                  <textarea class="form-control" name="address" rows="3" placeholder="Enter Address"></textarea>
 		                
 		                		<label>Home</label>
 			                <div class="input-group">
 			                  <div class="input-group-addon">
 			                    <i class="fa fa-phone"></i>
 			                  </div>
-			                  <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+			                  <input type="text" name="homeNo" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
 			                  </div>
 			                  <label>Mobile</label>
 			
@@ -139,7 +139,7 @@
 			                  <div class="input-group-addon">
 			                    <i class="fa fa-phone"></i>
 			                  </div>
-			                  <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+			                  <input type="text" name="mobileNo" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
             					</div>
 		                 </div>
 		                 </div>
@@ -186,11 +186,11 @@
 			                <label>Study Time:</label>
 			                  <div class="radio">
 			                    <label style="margin-left:300px;">
-			                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			                      <input type="radio" name="studyTime" id="optionsRadios1" value="option1" checked>
 			                      Full-Time
 			                    </label>
 			                    <label style="margin-left:300px;">
-			                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			                      <input type="radio" name="studyTime" id="optionsRadios2" value="option2">
 			                      Part-Time
 			                    </label>
 			                  </div>
@@ -209,7 +209,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary" style="width:100%">Submit</button>
+                <button type="submit" id="btn_inquiryAdd" class="btn btn-primary" style="width:100%">Submit</button>
               </div>
             </form>
           </div>
@@ -240,7 +240,47 @@
 <!-- /.box -->
 
 <!-- ./wrapper -->
+ <script type="text/javascript">
 
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_inquiryAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_inquiryAdd";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/inquiry/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            //            });
+        </script>
+        
+         
 
 </body>
 </html>
