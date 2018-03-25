@@ -72,12 +72,10 @@
                                 <h4 class="modal-title">LECTURER INFORMATION</h4>
                             </div>
                             <div class="modal-body">
-f
-                                 <!-- form start -->
-                                     <form role="form" id="form_leaveAdd">
+
+
                                 <!-- Widget: user widget style 1 -->
                                 <div class="box box-widget widget-user">
-                                   
                                     <!-- Add the bg color to the header using any of the bg-* classes -->
                                     <div class="widget-user-header bg-green-active">
                                         <h3 class="widget-user-username">ANDREW PIERCE</h3>
@@ -177,14 +175,14 @@ f
 
                                                                 <div class="col-sm-6 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><input type="text" name="dateStart" class="form-control" id="datepicker1" placeholder="Please pick the start date" data-date-format="yyyy-mm-dd" >
+                                                                        <h5 class="description-header" style="color:black"><input type="text" class="form-control" id="datepicker1" placeholder="Please pick the start date" >
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">START DATE</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><input type="text" name="dateEnd" class="form-control" id="datepicker2" placeholder="Please pick the end date" data-date-format="yyyy-mm-dd">
+                                                                        <h5 class="description-header" style="color:black"><input type="text" class="form-control" id="datepicker2" placeholder="Please pick the end date" >
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">END DATE</span>
                                                                     </div>
@@ -195,7 +193,7 @@ f
                                                             <div class="row">
                                                                 <div class="col-sm-12 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><textarea name="reason" class="form-control" rows="3" placeholder="Enter the reason"></textarea>
+                                                                        <h5 class="description-header" style="color:black"><textarea class="form-control" rows="3" placeholder="Enter the reason"></textarea>
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">REASON</span>
                                                                     </div>
@@ -221,7 +219,7 @@ f
                                                                                 
 
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control timepicker" >
+                                                                                        <input type="text" class="form-control timepicker">
 
                                                                                         <div class="input-group-addon">
                                                                                             <i class="fa fa-clock-o"></i>
@@ -241,7 +239,7 @@ f
                                                                                 
 
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control timepicker" >
+                                                                                        <input type="text" class="form-control timepicker">
 
                                                                                         <div class="input-group-addon">
                                                                                             <i class="fa fa-clock-o"></i>
@@ -285,9 +283,6 @@ f
 
 
                                 </div>
-                                
-                                <!-- end form -->
-                    </form>
                             </div>
                         </div>
 
@@ -305,7 +300,7 @@ f
 
 
                         <div class="modal-footer">
-                            <button id="btn_leaveAdd" type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
+                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
 
                         </div>
                     </div>
@@ -322,48 +317,7 @@ f
     <!-- /.box -->
 
     <!-- ./wrapper -->
-<script type="text/javascript">
 
-            function ConvertFormToJSON(form) {
-                var array = jQuery(form).serializeArray();
-                var json = {};
-
-                jQuery.each(array, function () {
-                    json[this.name] = this.value || '';
-                });
-
-                return JSON.stringify(json);
-            }
-
-
-            //            jQuery(document).on('ready', function () {
-            jQuery('#btn_leaveAdd').on('click', function (event) {
-                event.preventDefault();
-                console.log("submittingF");
-                var form = "#form_leaveAdd";
-                var json = ConvertFormToJSON(form);
-                //				var tbody = jQuery('#to-do-list > tbody');
-                console.log(json);
-                $.ajax({
-                    type: "POST",
-                    url: "http://localhost:8081/lecturer-leave/645467798943543008081",
-                    data: json,
-                    dataType: "json",
-                    contentType: "application/json;charset=utf-8",
-
-                    success: function (data) {
-                        console.log("success");
-                    }, error: function (data) {
-                        console.log(data);
-                    }
-
-                });
-            });
-            //            });
-            
-
-        </script>
-        
 
 </body>
 </html>

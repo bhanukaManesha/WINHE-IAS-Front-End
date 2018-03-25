@@ -82,7 +82,7 @@
 			                  <div class="input-group-addon">
 			                    <i class="fa fa-calendar"></i>
 			                  </div>
-			                  <input type="text" name="DOB" class="form-control pull-right" id="datepicker" data-date-format="yyyy-mm-dd">
+			                  <input type="text" name="DOB" class="form-control pull-right" id="datepicker">
 			                </div>
             
             				<!-- Start Radio Buttons -->
@@ -99,22 +99,6 @@
 			                  </div>
 			                  
 			           	<!-- End Radio Buttons -->
-                                         <label>Nationality</label>
-
-                                                                    <input type="text" name="nationality" class="form-control" placeholder="Enter Nationality" >
-                                                                    <label>Race</label>
-
-                                                                    <input type="text" name="race" class="form-control" placeholder="Enter Race" >
-                                                                    <label>Religion</label>
-
-                                                                    <input type="text" name="religion" class="form-control" placeholder="Enter Religion" >
-<!--                                                                    <label>Status</label>
-
-                                                                    <select class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
-                                                                        <option>Single</option>
-                                                                        <option>Married</option>
-                                                                    </select>-->
-
             
                  </div>
                  
