@@ -234,12 +234,12 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-<<<<<<< HEAD
+
                                         <form id="form_pastAddBatch" role="form">
                                             <input type="hidden" name="current_past" value="0">
-=======
+
                                         <form id="form_pastBatchAdd" role="form">
->>>>>>> afce04192655035fc426ffd9373bb32a90a0150a
+
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
