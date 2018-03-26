@@ -206,6 +206,10 @@ src="${pageContext.request.contextPath}/plugins/bootstrap-wysihtml5/bootstrap3-w
         $('#datepicker3').datepicker({
             autoclose: true
         })
+        $('#datepicker4').datepicker({
+            autoclose: true
+        })
+        
 
         //iCheck for checkbox and radio inputs
         $('input[type="checkbox"].minimal, input[type="radio"].minimal')

@@ -14,7 +14,6 @@
 
     <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
         <div class="wrapper">
-
             <!-- Adding the header bar -->
             <%@include file= "../../includes/top_navbar.jsp"%>
             <!-- Adding the side bar -->
@@ -38,7 +37,6 @@
 
                 <!-- Main content -->
                 <section class="content">
-
                     <div class="col-md-12">
                         <div class="nav-tabs-custom">
                             <ul class="nav nav-tabs">
@@ -47,6 +45,7 @@
                             </ul>
                             <div class="tab-content">
 
+                                <!-- Enter New Student Details Panel-->
                                 <div class="active tab-pane" id="new_students">
                                     <!-- Import Panel Start -->
                                     <h2 class="box-title">New Student</h2>
@@ -55,11 +54,10 @@
                                             <h3 class="box-title">Import Student Details</h3>
                                         </div>
                                         <!-- /.box-header -->
-                                        <!-- form start -->
+
                                         <form role="form">
                                             <div class="box-body">
                                                 <div class="form-group">
-
                                                     <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
                                                     <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                                 </div>
@@ -79,52 +77,48 @@
                                             <h3 class="box-title">Enter Student Details</h3>
                                         </div>
                                         <!-- /.box-header -->
-                                        <!-- form start -->
-          
-                            <form role="form">
-                                            <input type="hidden" name="status" value="1">
 
                                         <form role="form" id="form_newAddStudent">
+                                            <input type="hidden" name="status" value="1">
+
+                                            <!--<form role="form" id="form_newAddStudent">-->
 
                                             <div class="box-body">
                                                 <div class="form-group">
-
                                                     <div class="row">
                                                         <div class="col-lg-6">    
                                                             <div class="box box-info"  style="padding:10px">
                                                                 <div class="box-header with-border">
                                                                     <h3 class="box-title">Personal Details</h3>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <!--                                                                    <label>Student ID</label>
-                                                                                                                                        <input type="text" class="form-control" placeholder="Enter Student ID" >-->
 
+                                                                <div class="form-group">
                                                                     <label>First Name</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter First Name" >
+                                                                    <input name="firstName" type="text" class="form-control" placeholder="Enter First Name" >
 
                                                                     <label>Last Name</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter Last Name" > 
+                                                                    <input name="lastName" type="text" class="form-control" placeholder="Enter Last Name" > 
 
                                                                     <label>National Identity Card No / Birth Certificate No</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
+                                                                    <input name="NIC" type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
 
                                                                     <label>Date Of Birth:</label>
                                                                     <div class="input-group date">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-                                                                        <input type="text" class="form-control pull-right" id="datepicker">
+                                                                        <input name="DOB" type="text" class="form-control pull-right" id="datepicker4" data-date-format="yyyy-mm-dd">
                                                                     </div>
 
                                                                     <!-- Start Radio Buttons -->
                                                                     <label>Gender:</label>
                                                                     <div class="radio">
                                                                         <label style="margin-left:100px;">
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                            <input name="gender" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                                                             Male
                                                                         </label>
                                                                         <label style="margin-left:100px;">
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                            <input name="gender" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                                                                             Female
                                                                         </label>
                                                                     </div>
@@ -132,17 +126,16 @@
                                                                     <!-- End Radio Buttons -->
 
                                                                     <label>Nationality</label>
+                                                                    <input name="nationality" type="text" class="form-control" placeholder="Enter Nationality" >
 
-                                                                    <input type="text" class="form-control" placeholder="Enter Nationality" >
                                                                     <label>Race</label>
+                                                                    <input name="race" type="text" class="form-control" placeholder="Enter Race" >
 
-                                                                    <input type="text" class="form-control" placeholder="Enter Race" >
                                                                     <label>Religion</label>
+                                                                    <input name="religion" type="text" class="form-control" placeholder="Enter Religion" >
 
-                                                                    <input type="text" class="form-control" placeholder="Enter Religion" >
                                                                     <label>Status</label>
-
-                                                                    <select class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
+                                                                    <select name="civilStatus" lass="form-control select2" data-placeholder="Select a Course" style="width:100%;">
                                                                         <option>Single</option>
                                                                         <option>Married</option>
                                                                     </select>
@@ -151,10 +144,8 @@
                                                             </div>
                                                         </div> 
 
-                                                        <div class="col-lg-6"> 
-
+                                                        <div class="col-lg-6">
                                                             <div class="row">
-
                                                                 <div class="box box-info"  style="padding:10px">
                                                                     <div class="box-header with-border">
                                                                         <h3 class="box-title">Profile Picture</h3>
@@ -164,13 +155,10 @@
                                                                         <div class="widget-user-image" style="margin-top:20px;">
                                                                             <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
                                                                         </div>
-                                                                        <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
+                                                                        <input type="file" name="studentProfilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
                                                                         <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
-
-
                                                                     </div>
                                                                 </div>
-
                                                             </div>
 
                                                             <div class="row">  
@@ -180,23 +168,22 @@
                                                                     </div>
                                                                     <div class="form-group">
 
-
                                                                         <label>Email</label>
                                                                         <div class="input-group">
                                                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                                            <input type="email" class="form-control" placeholder="Email">
+                                                                            <input name="emailAddress" type="email" class="form-control" placeholder="Email">
                                                                         </div>
 
                                                                         <!-- textarea -->
                                                                         <label>Address</label>
-                                                                        <textarea class="form-control" rows="3" placeholder="Enter Address"></textarea>
+                                                                        <textarea name="address" class="form-control" rows="3" placeholder="Enter Address"></textarea>
 
                                                                         <label>Home</label>
                                                                         <div class="input-group">
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-phone"></i>
                                                                             </div>
-                                                                            <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                            <input name="homeNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                         </div>
                                                                         <label>Mobile</label>
 
@@ -204,7 +191,7 @@
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-phone"></i>
                                                                             </div>
-                                                                            <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                            <input name="mobileNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -219,14 +206,14 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label>First Name</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter First Name" >
+                                                                    <input name="guardianFirstName" type="text" class="form-control" placeholder="Enter First Name" >
 
                                                                     <label>Last Name</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter Last Name" > 
+                                                                    <input name="guardianLastName" type="text" class="form-control" placeholder="Enter Last Name" > 
 
                                                                     <label>Relationship</label>
 
-                                                                    <select id="gardian-relationship" class="form-control select2" data-placeholder="Select Relationship" style="width: 100%;" >
+                                                                    <select id="guardian-relationship" class="form-control select2" data-placeholder="Select Relationship" style="width: 100%;" >
                                                                         <option>Father</option>
                                                                         <option>Mother</option>
                                                                         <option>Grand-Father</option>
@@ -238,54 +225,43 @@
                                                                         <option value="other">Other</option>
                                                                     </select>
 
-                                                                    <input id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
+                                                                    <input name="guardianRelation" id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
 
                                                                     <label>Occupation</label>
-                                                                    <input type="text" class="form-control" placeholder="Enter Guardian Occupation" >
-
+                                                                    <input name="guardianOccupation" type="text" class="form-control" placeholder="Enter Guardian Occupation" >
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="col-lg-6">    
                                                             <div class="box box-danger"  style="padding:10px">
                                                                 <div class="box-header with-border">
                                                                     <h3 class="box-title">Guardian Contact Details</h3>
                                                                 </div>
                                                                 <div class="form-group">
-
-
-                                                                    <label>Email</label>
-                                                                    <div class="input-group">
-                                                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                                        <input type="email" class="form-control" placeholder="Email">
-                                                                    </div>
-
                                                                     <!-- textarea -->
                                                                     <label>Address</label>
-                                                                    <textarea class="form-control" rows="3" placeholder="Enter Address"></textarea>
+                                                                    <textarea name="guardianAddress" class="form-control" rows="3" placeholder="Enter Address"></textarea>
 
                                                                     <label>Home</label>
                                                                     <div class="input-group">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-phone"></i>
                                                                         </div>
-                                                                        <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                        <input name="guardianContactHomeNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                     </div>
-                                                                    <label>Mobile</label>
 
+                                                                    <label>Mobile</label>
                                                                     <div class="input-group">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-phone"></i>
                                                                         </div>
-                                                                        <input type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                        <input name="guardianContactMobileNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
-
                                                         <div class="col-lg-12">    
                                                             <div class="box box-warning"  style="padding:10px">
                                                                 <div class="box-header with-border">
@@ -300,17 +276,8 @@
                                                                             <div class="form-group">
 
                                                                                 <label>Name of Qualification</label>
-                                                                                <input type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <input name="year10_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
                                                                                 <label>Subjects Passed</label>
-                                                                                <select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;">
-                                                                                    <option>Mathematics</option>
-                                                                                    <option>Sinhala</option>
-                                                                                    <option>English</option>
-                                                                                    <option>History</option>
-                                                                                    <option>Religion</option>
-                                                                                    <option>Science</option>
-                                                                                </select>
-                                                                                <input id="yeah-10-qulification-fill" hidden type="text" class="form-control" placeholder="Enter year 10 subjects passed">
 
                                                                             </div>
                                                                         </div>
@@ -322,25 +289,72 @@
                                                                                 <h3 class="box-title">Year 12 or Equivalent</h3>
                                                                             </div>
                                                                             <div class="form-group">
-
                                                                                 <label>Name of Qualification</label>
-                                                                                <input type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <input name="year12_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
                                                                                 <label>Subjects Passed</label>
-                                                                                <select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
-                                                                                    <option>Mathematics</option>
-                                                                                    <option>Sinhala</option>
-                                                                                    <option>English</option>
-                                                                                    <option>History</option>
-                                                                                    <option>Religion</option>
-                                                                                    <option>Science</option>
-                                                                                </select>
-                                                                                <input id="yeah-12-qulification-fill" hidden type="text" class="form-control" placeholder="Enter year 12 subjects passed">
 
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                 </div>
+                                                                <div class="row">
+                                                                    <div class ="col-lg-6">
+                                                                        <div class="table-responsive">
+                                                                            <table>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Subject</th>
+                                                                                        <th>Grade</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td> 
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class ="col-lg-6">
+                                                                        <div class="table-responsive">
+                                                                            <table>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Subject</th>
+                                                                                        <th>Grade</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td></td> 
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <!-- changed -->
                                                                 <div class="row">
                                                                     <div class="col-lg-12">    
                                                                         <div class="box box-default"  style="padding:10px">
@@ -350,23 +364,14 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="box-body pad">
-                                                                                    <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
+                                                                                    <textarea name="otherQualifications" id="editor1" name="editor1" rows="10" cols="80"></textarea>
                                                                                 </div>
-
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-
                                                                 </div>
-
                                                             </div>
-
-
                                                         </div>
-
-
-
                                                     </div>
 
                                                     <div class="row">
@@ -397,6 +402,7 @@
                                                                             <option>asp.net - Master</option>
                                                                             <option>asp.net - Expert</option>
                                                                         </select>
+
                                                                     </div>
 
                                                                     <div class="col-lg-4 col-sm-3">
@@ -444,7 +450,7 @@
                                                                     </div>
 
                                                                     <label>Batch ID</label>
-                                                                    <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                    <select name="" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
                                                                         <option>CS-450</option>
                                                                         <option>CS-452</option>
                                                                     </select>
@@ -453,17 +459,16 @@
                                                                     <label>Study Time:</label>
                                                                     <div class="radio">
                                                                         <label style="margin-left:300px;">
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                            <input name="studyTime" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                                                             Full-Time
                                                                         </label>
                                                                         <label style="margin-left:300px;">
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                            <input name="studyTime" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                                                                             Part-Time
                                                                         </label>
                                                                     </div>
 
                                                                     <!-- End Radio Buttons -->
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -474,7 +479,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" id="btn_newStudentAdd"class="btn btn-primary" style="width:100%">Submit</button>
+                                                <button type="submit" id="btn_newStudentAdd" class="btn btn-primary" style="width:100%">Submit</button>
                                             </div>
                                         </form>
                                     </div>
@@ -482,12 +487,11 @@
 
 
 
-
-                                    <!-- Enter Past Student Details Panel-->
                                 </div>
 
+                                <!-- Enter Past Student Details Panel-->
                                 <div class="tab-pane" id="past_students">
-                                    
+
                                     <!-- Import Panel Start -->
                                     <h2 class="box-title">Past Student</h2>
                                     <div class="box box-success">
@@ -660,7 +664,6 @@
                                                                     <label>Last Name</label>
                                                                     <input type="text" class="form-control" placeholder="Enter Last Name" > 
 
-
                                                                     <label>Relationship</label>
 
                                                                     <select class="form-control select2" data-placeholder="Select Relationship" style="width: 100%;" >
@@ -677,10 +680,6 @@
 
                                                                     <label>Occupation</label>
                                                                     <input type="text" class="form-control" placeholder="Enter Guardian Occupation" >
-
-
-
-
 
                                                                 </div>
                                                             </div>
@@ -951,34 +950,30 @@
                         <!-- /.nav-tabs-custom -->
                     </div>
                     <!-- /.col -->
-
-
-
-
                 </section>
 
             </div>
         </div>
         <!-- /.box -->
-
         <!-- ./wrapper -->
 
+
+        <!--if the guardian-relationship is changed to "others", there should be a text field to fill -->
         <script>
 
-            $("#gardian-relationship").change(function (e) {
+            $("#guardian-relationship").change(function (e) {
                 console.log("change");
                 if ($(this).val() === "other") {
                     console.log("true");
-                    $("#other-fill").css("display","inline");
-                }else{
-                    $("#other-fill").css("display","none");
+                    $("#other-fill").css("display", "inline");
+                } else {
+                    $("#other-fill").css("display", "none");
                 }
             });
 
-
-
         </script>
 
+        <!--send data from front-end to the back-end-->
         <script type="text/javascript">
 
             function ConvertFormToJSON(form) {
@@ -992,18 +987,17 @@
                 return JSON.stringify(json);
             }
 
-
-            //            jQuery(document).on('ready', function () {
             jQuery('#btn_newStudentAdd').on('click', function (event) {
                 event.preventDefault();
+                console.log("Description " + $("#editor1").val());
                 console.log("submittingF");
                 var form = "#form_newAddStudent";
                 var json = ConvertFormToJSON(form);
-                //				var tbody = jQuery('#to-do-list > tbody');
+                // var tbody = jQuery('#to-do-list > tbody');
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/newStudents/645467798943543008081",
+                    url: "http://localhost:8081/students/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
@@ -1016,20 +1010,32 @@
 
                 });
             });
-           
 
-            //            jQuery(document).on('ready', function () {
+
             jQuery('#btn_pastStudentAdd').on('click', function (event) {
                 event.preventDefault();
                 console.log("submittingF");
                 var form = "#form_pastStudentAdd";
                 var json = ConvertFormToJSON(form);
-                //				var tbody = jQuery('#to-do-list > tbody');
+                //var tbody = jQuery('#to-do-list > tbody');
+
+                var student = {
+                    "name": $("#nametxt").val()
+                }
+
+                var batch = {
+                    "name": "test"
+                }
+
+                var student_batch = {
+                    "student": student,
+                    "batch": batch
+                }
                 console.log(json);
                 $.ajax({
                     type: "POST",
                     url: "http://localhost:8081/pastStudents/645467798943543008081",
-                    data: json,
+                    data: JSON.stringify(student_batch),
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
 
@@ -1041,7 +1047,6 @@
 
                 });
             });
-            //            });
         </script>	
 
     </body>

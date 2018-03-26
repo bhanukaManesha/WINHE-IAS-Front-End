@@ -349,7 +349,7 @@
                                 <!-- /.box-body -->
 
                                 <div class="box-footer">
-                                    <button type="button" id="btn_pastBatchAdd"class="btn btn-primary" style="width:100%">Add</button>
+                                    <button type="button" id="btn_pastBatchAdd" class="btn btn-primary" style="width:100%">Add</button>
                                 </div>
 
 
@@ -384,7 +384,7 @@
 
 
 
-//            jQuery(document).on('ready', function () {
+// jQuery(document).on('ready', function () {
     jQuery('#btn_newBatchAdd').on('click', function (event) {
         event.preventDefault();
         console.log("Description " + $("#editor1").val());
