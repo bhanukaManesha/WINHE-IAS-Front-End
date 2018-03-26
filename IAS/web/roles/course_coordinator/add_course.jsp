@@ -79,6 +79,7 @@
                                     <!-- /.box-header -->
                                     <!-- form start -->
                                     <form role="form" id="form_courseAdd">
+                                          <input type="hidden" name="current_past" value="1">
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -127,7 +128,7 @@
                                             <div class="form-group">
                                                 <label>Description</label>
                                                 <div class="box-body pad">
-                                                    <textarea id="editor1" name="description" rows="10" cols="80"></textarea>
+                                                    <textarea  name="description" rows="10" cols="195"></textarea>
                                                 </div>
 
                                             </div>
@@ -178,6 +179,7 @@
                                         <!-- /.box-header -->
                                         <!-- form start -->
                                         <form role="form" id="form_pastCourseAdd">
+                                              <input type="hidden" name="current_past" value="0">
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
@@ -225,7 +227,7 @@
                                                 <div class="form-group">
                                                     <label>Description</label>
                                                     <div class="box-body pad">
-                                                        <textarea id="editor1" name="description"  rows="10" cols="80"></textarea>
+                                                        <textarea name="description"  rows="10" cols="195"></textarea>
                                                     </div>
 
                                                 </div>
@@ -310,23 +312,8 @@
 
                 });
             });
-            //            });
-        </script>
-        
-         <script type="text/javascript">
-
-            function ConvertFormToJSON(form) {
-                var array = jQuery(form).serializeArray();
-                var json = {};
-
-                jQuery.each(array, function () {
-                    json[this.name] = this.value || '';
-                });
-
-                return JSON.stringify(json);
-            }
-
-
+            
+            
             //            jQuery(document).on('ready', function () {
             jQuery('#btn_pastCourseAdd').on('click', function (event) {
                 event.preventDefault();
@@ -337,7 +324,7 @@
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/pastCourses/645467798943543008081",
+                    url: "http://localhost:8081/courses/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
@@ -350,9 +337,7 @@
 
                 });
             });
-            //            });
-        </script>	
 
-
-    </body>
+        </script>
+     </body>
 </html>

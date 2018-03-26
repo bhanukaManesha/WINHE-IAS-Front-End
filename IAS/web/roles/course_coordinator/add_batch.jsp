@@ -79,6 +79,7 @@
                                     <!-- /.box-header -->
                                     <!-- form start -->
                                     <form id="form_newAddBatch"> <!--added an id-->
+                                        <input type="hidden" name="current_past" value="1">
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -104,8 +105,8 @@
 
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
-                                                            <label style="display:block;">Select Course</label>
-                                                            <select class="form-control select2" name="courseName" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+                                                            <label style="display:block;">Branch Name</label>
+                                                            <select class="form-control select2" name="branchID" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
                                                                 <option>Java - Associate</option>
                                                                 <option>Java - Professional</option>
                                                                 <option>Java - Master</option>
@@ -114,10 +115,25 @@
                                                             </select>
                                                         </div>
                                                     </div>
-
                                                 </div>
 
                                                 <div class="row">
+                                                    <div class="col-md-6 lg-6">
+                                                        <div class="form-group">
+                                                            <label style="display:block;">Select Course</label>
+                                                            <select class="form-control select2" name="courseID" id="courseIdNew"data-placeholder="Select the Course" style="width: 100%;display:block;" >
+<!--                                                                <option>Java - Associate</option>
+                                                                <option>Java - Professional</option>
+                                                                <option>Java - Master</option>
+                                                                <option>Java - Expert</option>
+                                                                <option>C# - Associate</option>-->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+
+
                                                     <!-- Date -->
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
@@ -223,6 +239,7 @@
                                         <!-- /.box-header -->
                                         <!-- form start -->
                                         <form id="form_pastAddBatch" role="form">
+                                            <input type="hidden" name="current_past" value="0">
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
@@ -248,7 +265,22 @@
                                                         <div class="col-md-6 lg-6">
                                                             <div class="form-group">
                                                                 <label style="display:block;">Select Course</label>
-                                                                <select class="form-control select2" name="courseName" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+                                                                <select class="form-control select2" id="courseIdPast" name="courseID" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+<!--                                                                    <option>Java - Associate</option>
+                                                                    <option>Java - Professional</option>
+                                                                    <option>Java - Master</option>
+                                                                    <option>Java - Expert</option>
+                                                                    <option>C# - Associate</option>-->
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 lg-6">
+                                                            <div class="form-group">
+                                                                <label style="display:block;">Branch Name</label>
+                                                                <select class="form-control select2" name="branchID" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
                                                                     <option>Java - Associate</option>
                                                                     <option>Java - Professional</option>
                                                                     <option>Java - Master</option>
@@ -258,9 +290,9 @@
                                                             </div>
                                                         </div>
 
-                                                    </div>
 
-                                                    <div class="row">
+
+
                                                         <!-- Date -->
                                                         <div class="col-md-6 lg-6">
                                                             <div class="form-group">
@@ -381,6 +413,44 @@
 
         return JSON.stringify(json);
     }
+    
+               //get CourseID and the CourseName to the dropdown List from the DB
+            $(document).ready(function (e) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/courses/645467798943543008081",
+
+                    success: function (data) {
+                        console.log("abc " + data.length);
+                        $("#courseIdNew").html("");
+                        for (var i = 0; i < data.data.length; i++) {
+                            $("#courseIdNew").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
+                        }
+                    }, error: function (data) {
+
+                    }
+
+                });
+            });
+            
+                   //get CourseID and the CourseName to the dropdown List from the DB
+            $(document).ready(function (e) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/courses/645467798943543008081",
+
+                    success: function (data) {
+                        console.log("abc " + data.length);
+                        $("#courseIdPast").html("");
+                        for (var i = 0; i < data.data.length; i++) {
+                            $("#courseIdPast").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
+                        }
+                    }, error: function (data) {
+
+                    }
+
+                });
+            });
 
 
 
