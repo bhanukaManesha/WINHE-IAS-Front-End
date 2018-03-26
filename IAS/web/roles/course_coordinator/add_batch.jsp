@@ -158,7 +158,7 @@
                                             <div class="form-group">
                                                 <label>Description</label>
                                                 <div class="box-body pad">
-                                                    <textarea id="" name="description"  rows="10" cols="200"></textarea>
+                                                    <textarea id="" name="description"  rows="10" cols="80"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -169,8 +169,8 @@
                                                             <label>Batch Fee :</label>
 
                                                             <div class="input-group">
-                                                                <span class="input-group-addon">Rs.</span>
-                                                                <input name="batchFee" type="number" class="form-control" placeholder="Enter Amount">
+                                                                <span class="input-group-addon">$</span>
+                                                                <input name="batchFee" type="text" class="form-control">
                                                                 <span class="input-group-addon">.00</span>
                                                             </div>
                                                         </div>
@@ -180,12 +180,8 @@
                                                         <div class="form-group">
 
                                                             <label>Intake Amount :</label>
-                                                            <div class="input-group">
-                                                                <span class="input-group-addon">Rs.</span>
-                                                                <input name="intakeAmount" type="number" class="form-control"  placeholder="Enter Amount">
-                                                                <span class="input-group-addon">.00</span>
-                                                            </div>
 
+                                                            <input name="intakeAmount" type="text" class="form-control"  placeholder="Enter Amount">
 
                                                         </div>
                                                     </div>
@@ -238,8 +234,12 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
+<<<<<<< HEAD
                                         <form id="form_pastAddBatch" role="form">
                                             <input type="hidden" name="current_past" value="0">
+=======
+                                        <form id="form_pastBatchAdd" role="form">
+>>>>>>> afce04192655035fc426ffd9373bb32a90a0150a
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
@@ -302,7 +302,7 @@
                                                                     <div class="input-group-addon">
                                                                         <i class="fa fa-calendar"></i>
                                                                     </div>
-                                                                    <input name="commenceDate" type="text" class="form-control pull-right" id="datepicker2"  data-date-format="yyyy-mm-dd" >
+                                                                    <input name="commenceDate"  type="text" class="form-control pull-right" id="datepicker2" pattern="yyyy-mm-dd">
                                                                 </div>
                                                                 <!-- /.input group -->
                                                             </div>
@@ -319,7 +319,7 @@
                                                 <div class="form-group">
                                                     <label>Description</label>
                                                     <div class="box-body pad">
-                                                        <textarea id="" name="description"  rows="10" cols="200"></textarea>
+                                                        <textarea id="editor2" name="description"  rows="10" cols="80"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -330,8 +330,8 @@
                                                                 <label>Batch Fee :</label>
 
                                                                 <div class="input-group">
-                                                                    <span class="input-group-addon">Rs.</span>
-                                                                    <input name="batchFee" type="number" class="form-control" placeholder="Enter Amount">
+                                                                    <span class="input-group-addon">$</span>
+                                                                    <input name="batchFee" type="text" class="form-control">
                                                                     <span class="input-group-addon">.00</span>
                                                                 </div>
                                                             </div>
@@ -341,12 +341,8 @@
                                                             <div class="form-group">
 
                                                                 <label>Intake Amount :</label>
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">Rs.</span>
-                                                                    <input name="intakeAmount" type="number" class="form-control"  placeholder="Enter Amount">
-                                                                    <span class="input-group-addon">.00</span>
-                                                                </div>
 
+                                                                <input name="intakeAmount" type="text" class="form-control"  placeholder="Enter Amount">
 
                                                             </div>
                                                         </div>
@@ -359,21 +355,27 @@
                                                 </div>
 
                                             </div> 
-                                            <div class="row">
-                                                <div class="form-group">
-                                                    <div class="col-lg-12">  
-                                                        <label>Reason For Removal</label>
-                                                        <select class="form-control select3" name="reasonForRemoval" data-placeholder="Select the Reason" style="width:100%;">
-                                                            <option>No Longer Available</option>
-                                                            <option>Whole Batch Was Suspended</option>
-                                                        </select>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
                                         </form>
 
+                                        <div class="row">
+
+                                            <div class="col-lg-12">    
+                                                <!--<div class="box box-danger"  style="padding:10px">-->
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">Reason For Removal</h3>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <select class="form-control" id="reasonForRemoval" name="reasonForRemoval" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                            <option value="No Longer Available">No Longer Available</option>
+                                                            <option value="Whole Batch Was Suspended">Whole Batch Was Suspended</option>   
+
+                                                        </select>
+                                                    </div>
+                                                <!--</div>-->
+                                            </div>
+
+                                        </div>
 
                                     </div>
 
@@ -384,7 +386,7 @@
                                     <button type="button" id="btn_pastBatchAdd"class="btn btn-primary" style="width:100%">Add</button>
                                 </div>
 
-
+                                </form>
                             </div>
                             <!-- Enter Batch Details Panel End -->
                         </div>
@@ -455,7 +457,7 @@
 
 
 //            jQuery(document).on('ready', function () {
-    jQuery('#btn_newBatchAdd').on('click', function (event) {
+    jQuery('#btn_newBatchAdd').on('click', function (event) { 
         event.preventDefault();
         console.log("Description " + $("#editor1").val());
         console.log("submitting1");
@@ -481,7 +483,7 @@
 
     jQuery('#btn_pastBatchAdd').on('click', function (event) {
         event.preventDefault();
-        console.log("submitting ; " + $('#reasonForRemoval').val());
+        console.log("submitting ; "+$('#reasonForRemoval').val());
         var form = "#form_pastAddBatch";
         var json = ConvertFormToJSON(form);
 //				var tbody = jQuery('#to-do-list > tbody');
