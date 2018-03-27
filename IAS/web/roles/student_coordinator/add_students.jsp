@@ -20,7 +20,7 @@
             <%@include file= "../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="height: 2800px;">
+            <div class="content-wrapper" style="height: 3300px;">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
@@ -140,8 +140,6 @@
 
                                                                 </div>
 
-
-
                                                             </div>
                                                         </div> 
 
@@ -238,7 +236,6 @@
                                                                     </select>
 
                                                                     <input name="guardianRelation" id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
-
                                                                     <label>Occupation</label>
                                                                     <input name="guardianOccupation" type="text" class="form-control" placeholder="Enter Guardian Occupation" >
 
@@ -281,8 +278,8 @@
                                                                     <h3 class="box-title">Academic Information</h3>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <div class="col-lg-6">    
-                                                                        <div class="box box-default"  style="padding:10px">
+                                                                    <div class="col-lg-6 col-md-6">    
+                                                                        <div class="box box-default">
                                                                             <div class="box-header with-border">
                                                                                 <h3 class="box-title">Year 10 or Equivalent</h3>
                                                                             </div>
@@ -290,31 +287,28 @@
 
                                                                                 <label>Name of Qualification</label>
                                                                                 <input name="year10_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <br>
                                                                                 <label>Subjects Passed</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-lg-6">    
-                                                                        <div class="box box-default"  style="padding:10px">
+                                                                        <div class="box box-default">
                                                                             <div class="box-header with-border">
                                                                                 <h3 class="box-title">Year 12 or Equivalent</h3>
                                                                             </div>
                                                                             <div class="form-group">
                                                                                 <label>Name of Qualification</label>
                                                                                 <input name="year12_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <br>
                                                                                 <label>Subjects Passed</label>
-
-
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class ="col-lg-6">
+                                                                    <div class="col-lg-6 col-md-6">
                                                                         <div class="table-responsive">
-                                                                            <table>
+                                                                            <table class="table table-bordered">
                                                                                 <thead>
                                                                                     <tr>
                                                                                         <th>Subject</th>
@@ -323,24 +317,52 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td></td>
-                                                                                        <td></td> 
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td></td>
-                                                                                        <td></td> 
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td></td>
-                                                                                        <td></td> 
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
                                                                         </div>
                                                                     </div>
-                                                                    <div class ="col-lg-6">
+                                                                    <div class="col-lg-6 col-md-6">
                                                                         <div class="table-responsive">
-                                                                            <table>
+                                                                            <table class="table table-bordered">
                                                                                 <thead>
                                                                                     <tr>
                                                                                         <th>Subject</th>
@@ -349,16 +371,24 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td></td>
-                                                                                        <td></td> 
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td></td>
-                                                                                        <td></td> 
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td></td>
-                                                                                        <td></td> 
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -377,8 +407,9 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="box-body pad">
-                                                                                    <textarea name="otherQualifications" id="editor1" name="editor1" rows="10" cols="80"></textarea>
+                                                                                    <textarea name="editor1" rows="10" cols="195"></textarea>
                                                                                 </div>
+
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -416,7 +447,6 @@
                                                                             <option>asp.net - Master</option>
                                                                             <option>asp.net - Expert</option>
                                                                         </select>
-
                                                                     </div>
 
                                                                     <div class="col-lg-4 col-sm-3">
@@ -642,16 +672,9 @@
                                                                         </div>
                                                                         <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
                                                                         <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
-
-
                                                                     </div>
                                                                 </div>
-
-
-
-
                                                             </div>
-
 
                                                             <div class="row">  
                                                                 <div class="box box-danger"  style="padding:10px">
@@ -762,60 +785,132 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-
                                                         <div class="col-lg-12">    
                                                             <div class="box box-warning"  style="padding:10px">
                                                                 <div class="box-header with-border">
                                                                     <h3 class="box-title">Academic Information</h3>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <div class="col-lg-6">    
-                                                                        <div class="box box-default"  style="padding:10px">
+                                                                    <div class="col-lg-6 col-md-6">    
+                                                                        <div class="box box-default">
                                                                             <div class="box-header with-border">
                                                                                 <h3 class="box-title">Year 10 or Equivalent</h3>
                                                                             </div>
                                                                             <div class="form-group">
 
                                                                                 <label>Name of Qualification</label>
-                                                                                <input type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <input name="year10_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <br>
                                                                                 <label>Subjects Passed</label>
-                                                                                <select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
-                                                                                    <option>Mathematics</option>
-                                                                                    <option>Sinhala</option>
-                                                                                    <option>English</option>
-                                                                                    <option>History</option>
-                                                                                    <option>Religion</option>
-                                                                                    <option>Science</option>
-                                                                                </select>
-
                                                                             </div>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-lg-6">    
-                                                                        <div class="box box-default"  style="padding:10px">
+                                                                        <div class="box box-default">
                                                                             <div class="box-header with-border">
                                                                                 <h3 class="box-title">Year 12 or Equivalent</h3>
                                                                             </div>
                                                                             <div class="form-group">
-
                                                                                 <label>Name of Qualification</label>
-                                                                                <input type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <input name="year12_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <br>
                                                                                 <label>Subjects Passed</label>
-                                                                                <select class="form-control select2" data-placeholder="Select a Subject" multiple="multiple" style="width: 100%;" >
-                                                                                    <option>Mathematics</option>
-                                                                                    <option>Sinhala</option>
-                                                                                    <option>English</option>
-                                                                                    <option>History</option>
-                                                                                    <option>Religion</option>
-                                                                                    <option>Science</option>
-                                                                                </select>
-
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
+                                                                    <div class="col-lg-6 col-md-6">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table table-bordered">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Subject</th>
+                                                                                        <th>Grade</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table table-bordered">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Subject</th>
+                                                                                        <th>Grade</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
+
+
+                                                                <!-- changed -->
                                                                 <div class="row">
                                                                     <div class="col-lg-12">    
                                                                         <div class="box box-default"  style="padding:10px">
@@ -825,23 +920,15 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="box-body pad">
-                                                                                    <textarea id="editor2" name="editor2" rows="10" cols="80"></textarea>
+                                                                                    <textarea name="editor2" rows="10" cols="195"></textarea>
                                                                                 </div>
 
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-
                                                                 </div>
-
                                                             </div>
-
-
                                                         </div>
-
-
-
                                                     </div>
 
                                                     <div class="row">
@@ -914,15 +1001,10 @@
                                                                         <option>Left the Course</option>  
 
                                                                     </select>
-
-
-
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
-
                                                 </div>
                                             </div>
                                             <!-- /.box-body -->
@@ -933,7 +1015,6 @@
                                         </form>
                                     </div>
                                     <!-- Enter Student Details Panel End -->
-
                                 </div>
                                 <!-- /.tab-pane -->
                             </div>
@@ -943,7 +1024,6 @@
                     </div>
                     <!-- /.col -->
                 </section>
-
             </div>
         </div>
         <!-- /.box -->
@@ -999,7 +1079,6 @@
                     }, error: function (data) {
                         console.log(data);
                     }
-
                 });
             });
 
