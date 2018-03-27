@@ -122,11 +122,7 @@
                                                         <div class="form-group">
                                                             <label style="display:block;">Select Course</label>
                                                             <select class="form-control select2" name="courseID" id="courseIdNew"data-placeholder="Select the Course" style="width: 100%;display:block;" >
-<!--                                                                <option>Java - Associate</option>
-                                                                <option>Java - Professional</option>
-                                                                <option>Java - Master</option>
-                                                                <option>Java - Expert</option>
-                                                                <option>C# - Associate</option>-->
+
                                                             </select>
                                                         </div>
                                                     </div>
@@ -158,7 +154,7 @@
                                             <div class="form-group">
                                                 <label>Description</label>
                                                 <div class="box-body pad">
-                                                    <textarea id="" name="description"  rows="10" cols="80"></textarea>
+                                                    <textarea id="" name="description"  rows="10" cols="195"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -266,11 +262,7 @@
                                                             <div class="form-group">
                                                                 <label style="display:block;">Select Course</label>
                                                                 <select class="form-control select2" id="courseIdPast" name="courseID" data-placeholder="Select a Course" style="width: 100%;display:block;" >
-<!--                                                                    <option>Java - Associate</option>
-                                                                    <option>Java - Professional</option>
-                                                                    <option>Java - Master</option>
-                                                                    <option>Java - Expert</option>
-                                                                    <option>C# - Associate</option>-->
+
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -319,7 +311,7 @@
                                                 <div class="form-group">
                                                     <label>Description</label>
                                                     <div class="box-body pad">
-                                                        <textarea id="editor2" name="description"  rows="10" cols="80"></textarea>
+                                                        <textarea  name="description"  rows="10" cols="195"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">

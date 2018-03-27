@@ -274,12 +274,12 @@
                                                                     <h3 class="box-title">Course Information</h3>
                                                                 </div>
                                                                 <div class="form-group">
-
+ 
 
                                                                     <label>Batch ID</label>
-                                                                    <select class="form-control select2" name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
-                                                                        <option>CS-450</option>
-                                                                        <option>CS-452</option>
+                                                                    <select class="form-control select2" id="newBatchID"name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
+<!--                                                                        <option>CS-450</option>
+                                                                        <option>CS-452</option>-->
                                                                     </select>
 
 
@@ -554,7 +554,7 @@
                                                                                 <div class="form-group">
 
                                                                                     <div class="box-body pad">
-                                                                                        <textarea name="otherQualification" rows="10" cols="190"></textarea>
+                                                                                        <textarea name="otherQualification"  rows="10" cols="190"></textarea>
                                                                                     </div>
 
                                                                                 </div>
@@ -585,9 +585,8 @@
 
                                                                 
                                                                         <label>Batch ID</label>
-                                                                        <select class="form-control select2" name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
-                                                                            <option>CS-450</option>
-                                                                            <option>CS-452</option>
+                                                                        <select class="form-control select2" id="pastBatchID" name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
+                                                                        
                                                                         </select>
 
 
@@ -711,6 +710,44 @@
 
                 return JSON.stringify(json);
             }
+            
+                      //get BatchID and the CourseName to the dropdown List from the DB
+            $(document).ready(function (e) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/batches/645467798943543008081",
+
+                    success: function (data) {
+                        console.log("abc " + data.length);
+                        $("#newBatchID").html("");
+                        for (var i = 0; i < data.data.length; i++) {
+                            $("#newBatchID").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].course.courseName + "</option>");
+                        }
+                    }, error: function (data) {
+
+                    }
+
+                });
+            });
+            
+                       //get BatchID and the CourseName to the dropdown List from the DB
+            $(document).ready(function (e) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/batches/645467798943543008081",
+
+                    success: function (data) {
+                        console.log("abc " + data.length);
+                        $("#pastBatchID").html("");
+                        for (var i = 0; i < data.data.length; i++) {
+                            $("#pastBatchID").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].course.courseName + "</option>");
+                        }
+                    }, error: function (data) {
+
+                    }
+
+                });
+            });
 
 
             //            jQuery(document).on('ready', function () {

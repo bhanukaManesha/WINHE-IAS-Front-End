@@ -67,7 +67,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
+                                                <button type="button" class="btn btn-primary" style="width:100%">Import</button>
                                             </div>
                                         </form>
                                     </div>
@@ -91,36 +91,22 @@
                                                                     <h3 class="box-title">Personal Details</h3>
                                                                 </div>
                                                                 <div class="form-group">
-<!--                                                                    <label>Lecturer ID</label>
 
-                                                                    <input type="text" class="form-control" placeholder="Enter Student ID" >
-                                                                  -->
                                                                     <label>First Name</label>
                                                                     <input type="text" name="firstName" class="form-control" placeholder="Enter First Name" >
 
                                                                     <label>Last Name</label>
                                                                     <input type="text" name="lastName" class="form-control" placeholder="Enter Last Name" > 
 
-
                                                                     <label>National Identity Card No</label>
                                                                     <input type="text" name="nic" class="form-control" placeholder="Enter National Identity Card No" >
-
-
-                                                                    <label>National Identity Card No / Birth Certificate No</label>
-
-                                                                    <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
-
 
                                                                     <label>Date Of Birth:</label>
                                                                     <div class="input-group date">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-
                                                                         <input type="text" name="dob" class="form-control pull-right" id="datepicker1" data-date-format="yyyy-mm-dd">
-
-                                                                        <input type="text" name="DOB" class="form-control pull-right" id="datepicker">
-
                                                                     </div>
 
                                                                     <!-- Start Radio Buttons -->
@@ -128,16 +114,11 @@
                                                                     <div class="radio">
                                                                         <label style="margin-left:100px;">
 
-
                                                                             <input type="radio" name="gender" id="optionsRadios1" value="Male" checked>
-
-                                                                             <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
-                                                                            <input type="radio" name="gender" id="optionsRadios1" value="option1" checked>
-
                                                                             Male
                                                                         </label>
                                                                         <label style="margin-left:100px;">
-                                                                            <input type="radio" name="gender" id="optionsRadios2" value="option2">
+                                                                            <input type="radio" name="gender" id="optionsRadios2" value="Female">
                                                                             Female
                                                                         </label>
                                                                     </div>
@@ -145,26 +126,16 @@
                                                                     <!-- End Radio Buttons -->
 
                                                                     <label>Nationality</label>
-
                                                                     <input type="text" name="nationality"class="form-control" placeholder="Enter Nationality" >
 
-
-
-                                                                    <input type="text" name="nationality" class="form-control" placeholder="Enter Nationality" >
                                                                     <label>Race</label>
-
                                                                     <input type="text" name="race" class="form-control" placeholder="Enter Race" >
+
                                                                     <label>Religion</label>
-
                                                                     <input type="text" name="religion" class="form-control" placeholder="Enter Religion" >
-                                                                    <label>Status</label>
-
 
                                                                     <label>Civil Status</label>
                                                                     <select class="form-control select2" name="civilStatus"data-placeholder="Select the Status" style="width:100%;">
-
-                                                                    <select class="form-control select2" name="status" data-placeholder="Select a Course" style="width:100%;">
-
                                                                         <option>Single</option>
                                                                         <option>Married</option>
                                                                     </select>
@@ -276,12 +247,7 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="box-body pad">
-
                                                                                     <textarea name="otherQualification" rows="10" cols="190"></textarea>
-
-                                                                                      <!--<textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>-->
-                                                                                    <textarea id="editor1" name="otherQualification" rows="10" cols="80"></textarea>
-
                                                                                 </div>
 
                                                                             </div>
@@ -330,7 +296,6 @@
                                                                     <h3 class="box-title">Other Information</h3>
                                                                 </div>
 
-
                                                                 <div class ="row">
                                                                     <div class="col-lg-6 col-md-4">
 
@@ -346,20 +311,8 @@
 
                                                                         </div>
 
-
-                                                                <div class="form-group">
-                                                                    <div style="margin:10px 0 30px 0">
-                                                                    
-                                                                    <label >Lecture Hourly Rate</label>
-                                                                    <br>
-                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
-                                                                              <input type="text" name="lecturingType" >
-
                                                                     </div>
-                                                                    
-<!--                                                                   
 
-<<<<<<< HEAD
                                                                     <div class="col-lg-6 col-md-4">
                                                                         <!-- Start Radio Buttons -->
                                                                         <label>Lecturing Time:</label>
@@ -375,31 +328,12 @@
                                                                             </label>
                                                                         </div>
 
-                                                                    <!-- Start Radio Buttons -->
-                                                                    <label>Study Time:</label>
-                                                                    <div class="radio">
-                                                                        <label style="margin-left:300px;">
-                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
-                                                                              <input type="radio" name="lecturingType" id="optionsRadios1" value="option1" checked>
-                                                                            Full-Time
-                                                                        </label>
-                                                                        <label style="margin-left:300px;">
-                                                                            <input type="radio" name="lecturingType" id="optionsRadios2" value="option2">
-                                                                            Part-Time
-                                                                        </label>
+
+                                                                        <!-- End Radio Buttons -->
                                                                     </div>
-
-
-                                                                    <!-- End Radio Buttons -->
-
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
-
-
-
                                                     </div>
 
                                                 </div>
@@ -460,37 +394,23 @@
                                                                         <h3 class="box-title">Personal Details</h3>
                                                                     </div>
                                                                     <div class="form-group">
-<!--                                                                        <label>Lecturer ID</label>
 
-                                                                        <input type="text" class="form-control" placeholder="Enter Student ID" >
-                                                                      -->
                                                                         <label>First Name</label>
-
                                                                         <input type="text" name="firstName" class="form-control" placeholder="Enter First Name" >
 
                                                                         <label>Last Name</label>
                                                                         <input type="text" name="lastName" class="form-control" placeholder="Enter Last Name" > 
 
-
                                                                         <label>National Identity Card No</label>
 
                                                                         <input type="text" name="nic" class="form-control" placeholder="Enter National Identity Card No" >
-
-                                                                        <label>National Identity Card No / Birth Certificate No</label>
-
-                                                                        <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
-
 
                                                                         <label>Date Of Birth:</label>
                                                                         <div class="input-group date">
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-calendar"></i>
                                                                             </div>
-
                                                                             <input type="text" name="dob" class="form-control pull-right" id="datepicker2" data-date-format="yyyy-mm-dd">
-
-                                                                            <input type="text" name="DOB" class="form-control pull-right" id="datepicker">
-
                                                                         </div>
 
                                                                         <!-- Start Radio Buttons -->
@@ -498,15 +418,11 @@
                                                                         <div class="radio">
                                                                             <label style="margin-left:100px;">
 
-
                                                                                 <input type="radio" name="gender" id="optionsRadios1" value="Male" checked>
-
-                                                                                <input type="radio" name="gender"  id="optionsRadios1" value="option1" checked>
-
                                                                                 Male
                                                                             </label>
                                                                             <label style="margin-left:100px;">
-                                                                                <input type="radio" name="gender" id="optionsRadios2" value="option2">
+                                                                                <input type="radio" name="gender" id="optionsRadios2" value="Female">
                                                                                 Female
                                                                             </label>
                                                                         </div>
@@ -514,22 +430,16 @@
                                                                         <!-- End Radio Buttons -->
 
                                                                         <label>Nationality</label>
-
                                                                         <input type="text" name="nationality" class="form-control" placeholder="Enter Nationality" >
+
                                                                         <label>Race</label>
-
                                                                         <input type="text" name="race" class="form-control" placeholder="Enter Race" >
+
                                                                         <label>Religion</label>
-
                                                                         <input type="text" name="religion" class="form-control" placeholder="Enter Religion" >
-                                                                        <label>Status</label>
-
 
                                                                         <label>Civil Status</label>
                                                                         <select class="form-control select2" name="civilStatus" data-placeholder="Select the Status" style="width:100%;">
-
-                                                                        <select name="status" class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
-
                                                                             <option>Single</option>
                                                                             <option>Married</option>
                                                                         </select>
@@ -641,11 +551,7 @@
                                                                                 <div class="form-group">
 
                                                                                     <div class="box-body pad">
-
                                                                                         <textarea name="otherQualification" rows="10" cols="190"></textarea>
-
-                                                                                        <textarea id="editor1" name="otherQualification" name="editor2" rows="10" cols="80"></textarea>
-
                                                                                     </div>
 
                                                                                 </div>
@@ -697,7 +603,6 @@
                                                                     <div class="box-header with-border">
                                                                         <h3 class="box-title">Other Information</h3>
                                                                     </div>
-                                                                    <div class="form-group">
 
                                                                     <div class ="row">
                                                                         <div class="col-lg-6 col-md-4">
@@ -712,29 +617,7 @@
                                                                                     <span class="input-group-addon">/per hour</span>
                                                                                 </div>
 
-                                                                        <div style="margin:10px 0 30px 0">
-                                                                    
-                                                                    <label >Lecture Hourly Rate</label>
-                                                                    <br>
-                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
-                                                                              <input type="text" name="lecturingType" >
-                                                                    </div>
-
-
-                                                                        <!-- Start Radio Buttons -->
-                                                                        <label>Study Time:</label>
-                                                                    <div class="radio">
-                                                                        <label style="margin-left:300px;">
-                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
-                                                                              <input type="radio" name="lecturingType" id="optionsRadios1" value="option1" checked>
-                                                                            Full-Time
-                                                                        </label>
-                                                                        <label style="margin-left:300px;">
-                                                                            <input type="radio" name="lecturingType" id="optionsRadios2" value="option2">
-                                                                            Part-Time
-                                                                        </label>
-                                                                    </div>
-
+                                                                            </div>
 
                                                                         </div>
 
@@ -754,16 +637,12 @@
                                                                             </div>
 
 
-
-                                                                        <!-- End Radio Buttons -->
-
+                                                                            <!-- End Radio Buttons -->
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-
                                                         </div>
-
                                                         <div class="row">
 
                                                             <div class="col-lg-12">    
@@ -786,8 +665,6 @@
                                                             </div>
 
                                                         </div>
-
-
 
                                                     </div>
                                                 </div>
@@ -819,7 +696,6 @@
         <!-- /.box -->
 
         <!-- ./wrapper -->
-
         <script type="text/javascript">
             //get BatchID and the CourseName to the dropdown List from the DB
             $(document).ready(function (e) {
@@ -831,7 +707,7 @@
                         console.log("abc " + data.length);
                         $("#batchIDNew").html("");
                         for (var i = 0; i < data.data.length; i++) {
-                            $("#batchIDNew").append("<option value=" + data.data[i].id + ">" + data.data[i].batchName + " - " + data.data[i].course.courseName + "</option>");
+                            $("#batchIDNew").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].course.courseName + "</option>");
                         }
                     }, error: function (data) {
 
@@ -850,7 +726,7 @@
                         console.log("abc " + data.length);
                         $("#batchIDPast").html("");
                         for (var i = 0; i < data.data.length; i++) {
-                            $("#batchIDPast").append("<option value=" + data.data[i].id + ">" + data.data[i].batchName + " - " + data.data[i].course.courseName + "</option>");
+                            $("#batchIDPast").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].course.courseName + "</option>");
                         }
                     }, error: function (data) {
 
@@ -881,7 +757,7 @@
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/newLecturers/645467798943543008081",
+                    url: "http://localhost:8081/lecturer/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
@@ -894,22 +770,7 @@
 
                 });
             });
-
-        </script>	
-        
-        <script type="text/javascript">
-
-            function ConvertFormToJSON(form) {
-                var array = jQuery(form).serializeArray();
-                var json = {};
-
-                jQuery.each(array, function () {
-                    json[this.name] = this.value || '';
-                });
-
-                return JSON.stringify(json);
-            }
-
+            //            });
 
             //            jQuery(document).on('ready', function () {
             jQuery('#btn_pastLecturerAdd').on('click', function (event) {
@@ -921,7 +782,7 @@
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/pastLecturers/645467798943543008081",
+                    url: "http://localhost:8081/lecturer/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
