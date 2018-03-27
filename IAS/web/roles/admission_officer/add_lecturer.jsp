@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Admission Officer  | Add Lecturer</title>
+        <title> Admission Officer | Add Lecturer</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Adding the link bar -->
@@ -21,11 +21,11 @@
             <%@include file= "../../includes/side_navbar.jsp"%>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="height: 2250px;">
+            <div class="content-wrapper" style="height: 2350px;">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1 style="text-align:center">
-                        Admission Officer 
+                        Admission Officer
                     </h1>
                     <h4 style="text-align:center">
                         Add Lecturer
@@ -42,12 +42,12 @@
                     <div class="col-md-12">
                         <div class="nav-tabs-custom">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#new_students" data-toggle="tab">New Lecturer</a></li>
-                                <li><a href="#past_students" data-toggle="tab">Past Lecturer</a></li>
+                                <li class="active"><a href="#new_lecturer" data-toggle="tab">New Lecturer</a></li>
+                                <li><a href="#past_lecturer" data-toggle="tab">Past Lecturer</a></li>
                             </ul>
                             <div class="tab-content">
 
-                                <div class="active tab-pane" id="new_students">
+                                <div class="active tab-pane" id="new_lecturer">
                                     <!-- Import Panel Start -->
                                     <h2 class="box-title">New Lecturer</h2>
                                     <div class="box box-success">
@@ -67,7 +67,7 @@
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="button" class="btn btn-primary" style="width:100%">Import</button>
+                                                <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
                                             </div>
                                         </form>
                                     </div>
@@ -80,6 +80,7 @@
                                         <!-- /.box-header -->
                                         <!-- form start -->
                                         <form role="form" id="form_newAddLecturer">
+                                            <input type="hidden" name="current_past" value="1">
                                             <div class="box-body">
                                                 <div class="form-group">
 
@@ -90,37 +91,53 @@
                                                                     <h3 class="box-title">Personal Details</h3>
                                                                 </div>
                                                                 <div class="form-group">
+<!--                                                                    <label>Lecturer ID</label>
 
+                                                                    <input type="text" class="form-control" placeholder="Enter Student ID" >
+                                                                  -->
                                                                     <label>First Name</label>
-
                                                                     <input type="text" name="firstName" class="form-control" placeholder="Enter First Name" >
 
                                                                     <label>Last Name</label>
                                                                     <input type="text" name="lastName" class="form-control" placeholder="Enter Last Name" > 
 
+
                                                                     <label>National Identity Card No</label>
+                                                                    <input type="text" name="nic" class="form-control" placeholder="Enter National Identity Card No" >
 
-                                                                    <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No" >
 
-                                                                    <label>Date Of Birth :</label>
+                                                                    <label>National Identity Card No / Birth Certificate No</label>
 
+                                                                    <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
+
+
+                                                                    <label>Date Of Birth:</label>
                                                                     <div class="input-group date">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-                                                                        <input name="DOB" type="text" class="form-control pull-right" id="datepicker2"  data-date-format="yyyy-mm-dd" >
+
+                                                                        <input type="text" name="dob" class="form-control pull-right" id="datepicker1" data-date-format="yyyy-mm-dd">
+
+                                                                        <input type="text" name="DOB" class="form-control pull-right" id="datepicker">
+
                                                                     </div>
 
                                                                     <!-- Start Radio Buttons -->
                                                                     <label>Gender:</label>
                                                                     <div class="radio">
                                                                         <label style="margin-left:100px;">
-                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+
+
                                                                             <input type="radio" name="gender" id="optionsRadios1" value="Male" checked>
+
+                                                                             <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+                                                                            <input type="radio" name="gender" id="optionsRadios1" value="option1" checked>
+
                                                                             Male
                                                                         </label>
                                                                         <label style="margin-left:100px;">
-                                                                            <input type="radio" name="gender" id="optionsRadios2" value="Female">
+                                                                            <input type="radio" name="gender" id="optionsRadios2" value="option2">
                                                                             Female
                                                                         </label>
                                                                     </div>
@@ -128,16 +145,26 @@
                                                                     <!-- End Radio Buttons -->
 
                                                                     <label>Nationality</label>
+
+                                                                    <input type="text" name="nationality"class="form-control" placeholder="Enter Nationality" >
+
+
+
                                                                     <input type="text" name="nationality" class="form-control" placeholder="Enter Nationality" >
-
                                                                     <label>Race</label>
-                                                                    <input type="text" name="race" class="form-control" placeholder="Enter Race" >
 
+                                                                    <input type="text" name="race" class="form-control" placeholder="Enter Race" >
                                                                     <label>Religion</label>
+
                                                                     <input type="text" name="religion" class="form-control" placeholder="Enter Religion" >
+                                                                    <label>Status</label>
+
 
                                                                     <label>Civil Status</label>
-                                                                    <select class="form-control select2" name="status" data-placeholder="Select the Status" style="width:100%;">
+                                                                    <select class="form-control select2" name="civilStatus"data-placeholder="Select the Status" style="width:100%;">
+
+                                                                    <select class="form-control select2" name="status" data-placeholder="Select a Course" style="width:100%;">
+
                                                                         <option>Single</option>
                                                                         <option>Married</option>
                                                                     </select>
@@ -186,7 +213,7 @@
                                                                         <label>Email</label>
                                                                         <div class="input-group">
                                                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                                            <input type="email" name="emailAddress" class="form-control" placeholder="Enter Email">
+                                                                            <input type="email" name="emailAddress" class="form-control" placeholder="Email">
                                                                         </div>
 
                                                                         <!-- textarea -->
@@ -249,8 +276,12 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="box-body pad">
-                                                                                    <!--<textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>-->
-                                                                                    <textarea  name="otherQualification" rows="10" cols="190"></textarea>
+
+                                                                                    <textarea name="otherQualification" rows="10" cols="190"></textarea>
+
+                                                                                      <!--<textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>-->
+                                                                                    <textarea id="editor1" name="otherQualification" rows="10" cols="80"></textarea>
+
                                                                                 </div>
 
                                                                             </div>
@@ -274,8 +305,31 @@
                                                         <div class="col-lg-12">    
                                                             <div class="box box-success"  style="padding:10px">
                                                                 <div class="box-header with-border">
+                                                                    <h3 class="box-title">Course Information</h3>
+                                                                </div>
+                                                                <div class="form-group">
+
+
+                                                                    <label>Batch ID</label>
+                                                                    <select class="form-control select2" id="batchIDNew" name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
+                                                                        <!--                                                                        <option>CS-450</option>
+                                                                                                                                                <option>CS-452</option>-->
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col-lg-12">    
+                                                            <div class="box box-success"  style="padding:10px">
+                                                                <div class="box-header with-border">
                                                                     <h3 class="box-title">Other Information</h3>
                                                                 </div>
+
 
                                                                 <div class ="row">
                                                                     <div class="col-lg-6 col-md-4">
@@ -286,17 +340,29 @@
 
                                                                             <div class="input-group">
                                                                                 <span class="input-group-addon">$</span>
-                                                                                <input type="text" class="form-control">
+                                                                                <input type="text" name="lecturerHourlyRate" class="form-control">
                                                                                 <span class="input-group-addon">/per hour</span>
                                                                             </div>
 
                                                                         </div>
 
-                                                                    </div>
 
+                                                                <div class="form-group">
+                                                                    <div style="margin:10px 0 30px 0">
+                                                                    
+                                                                    <label >Lecture Hourly Rate</label>
+                                                                    <br>
+                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+                                                                              <input type="text" name="lecturingType" >
+
+                                                                    </div>
+                                                                    
+<!--                                                                   
+
+<<<<<<< HEAD
                                                                     <div class="col-lg-6 col-md-4">
                                                                         <!-- Start Radio Buttons -->
-                                                                        <label>Study Time:</label>
+                                                                        <label>Lecturing Time:</label>
                                                                         <div class="radio">
                                                                             <label style="margin-left:100px;">
                                                                                 <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
@@ -309,32 +375,47 @@
                                                                             </label>
                                                                         </div>
 
-
-                                                                        <!-- End Radio Buttons -->
+                                                                    <!-- Start Radio Buttons -->
+                                                                    <label>Study Time:</label>
+                                                                    <div class="radio">
+                                                                        <label style="margin-left:300px;">
+                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+                                                                              <input type="radio" name="lecturingType" id="optionsRadios1" value="option1" checked>
+                                                                            Full-Time
+                                                                        </label>
+                                                                        <label style="margin-left:300px;">
+                                                                            <input type="radio" name="lecturingType" id="optionsRadios2" value="option2">
+                                                                            Part-Time
+                                                                        </label>
                                                                     </div>
+
+
+                                                                    <!-- End Radio Buttons -->
+
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>                                  
+
+
+
+
+
+                                                    </div>
 
                                                 </div>
                                             </div>
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="button" id="btn_newLecturerAdd" class="btn btn-primary" style="width:100%">Submit</button>
+                                                <button type="button" id="btn_newLecturerAdd"class="btn btn-primary" style="width:100%">Submit</button>
                                             </div>
                                         </form>
                                     </div>
                                     <!-- Enter Student Details Panel End -->
 
-
-
-
-
                                 </div>
 
-                                <div class="tab-pane" id="past_students">
+                                <div class="tab-pane" id="past_lecturer">
                                     <div class="active tab-pane" id="new_students">
                                         <!-- Import Panel Start -->
                                         <h2 class="box-title">Past Lecturer</h2>
@@ -355,7 +436,7 @@
                                                 <!-- /.box-body -->
 
                                                 <div class="box-footer">
-                                                    <button type="button" class="btn btn-primary" style="width:100%">Import</button>
+                                                    <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -368,6 +449,7 @@
                                             <!-- /.box-header -->
                                             <!-- form start -->
                                             <form role="form" id="form_pastLecturerAdd">
+                                                <input type="hidden" name="current_past" value="0">
                                                 <div class="box-body">
                                                     <div class="form-group">
 
@@ -378,33 +460,53 @@
                                                                         <h3 class="box-title">Personal Details</h3>
                                                                     </div>
                                                                     <div class="form-group">
+<!--                                                                        <label>Lecturer ID</label>
 
+                                                                        <input type="text" class="form-control" placeholder="Enter Student ID" >
+                                                                      -->
                                                                         <label>First Name</label>
+
                                                                         <input type="text" name="firstName" class="form-control" placeholder="Enter First Name" >
 
                                                                         <label>Last Name</label>
                                                                         <input type="text" name="lastName" class="form-control" placeholder="Enter Last Name" > 
 
+
                                                                         <label>National Identity Card No</label>
-                                                                        <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No" >
+
+                                                                        <input type="text" name="nic" class="form-control" placeholder="Enter National Identity Card No" >
+
+                                                                        <label>National Identity Card No / Birth Certificate No</label>
+
+                                                                        <input type="text" name="NIC" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
+
 
                                                                         <label>Date Of Birth:</label>
                                                                         <div class="input-group date">
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-calendar"></i>
                                                                             </div>
-                                                                            <input type="text" name="DOB" class="form-control pull-right" id="datepicker1" data-date-format="yyyy-mm-dd">
+
+                                                                            <input type="text" name="dob" class="form-control pull-right" id="datepicker2" data-date-format="yyyy-mm-dd">
+
+                                                                            <input type="text" name="DOB" class="form-control pull-right" id="datepicker">
+
                                                                         </div>
 
                                                                         <!-- Start Radio Buttons -->
                                                                         <label>Gender:</label>
                                                                         <div class="radio">
                                                                             <label style="margin-left:100px;">
-                                                                                <input type="radio" name="gender"  id="optionsRadios1" value="Male" checked>
+
+
+                                                                                <input type="radio" name="gender" id="optionsRadios1" value="Male" checked>
+
+                                                                                <input type="radio" name="gender"  id="optionsRadios1" value="option1" checked>
+
                                                                                 Male
                                                                             </label>
                                                                             <label style="margin-left:100px;">
-                                                                                <input type="radio" name="gender" id="optionsRadios2" value="Female">
+                                                                                <input type="radio" name="gender" id="optionsRadios2" value="option2">
                                                                                 Female
                                                                             </label>
                                                                         </div>
@@ -412,19 +514,26 @@
                                                                         <!-- End Radio Buttons -->
 
                                                                         <label>Nationality</label>
+
                                                                         <input type="text" name="nationality" class="form-control" placeholder="Enter Nationality" >
-
                                                                         <label>Race</label>
-                                                                        <input type="text" name="race" class="form-control" placeholder="Enter Race" >
 
+                                                                        <input type="text" name="race" class="form-control" placeholder="Enter Race" >
                                                                         <label>Religion</label>
+
                                                                         <input type="text" name="religion" class="form-control" placeholder="Enter Religion" >
+                                                                        <label>Status</label>
+
 
                                                                         <label>Civil Status</label>
-                                                                        <select name="status" class="form-control select2" data-placeholder="Select the Status" style="width:100%;">
+                                                                        <select class="form-control select2" name="civilStatus" data-placeholder="Select the Status" style="width:100%;">
+
+                                                                        <select name="status" class="form-control select2" data-placeholder="Select a Course" style="width:100%;">
+
                                                                             <option>Single</option>
                                                                             <option>Married</option>
                                                                         </select>
+
                                                                     </div>
 
 
@@ -481,7 +590,7 @@
                                                                                 <div class="input-group-addon">
                                                                                     <i class="fa fa-phone"></i>
                                                                                 </div>
-                                                                                <input type="text" name="homeNo" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                                <input type="text" name="homeNo"class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                             </div>
                                                                             <label>Mobile</label>
 
@@ -532,7 +641,11 @@
                                                                                 <div class="form-group">
 
                                                                                     <div class="box-body pad">
-                                                                                        <textarea  name="otherQualification"  rows="10" cols="190"></textarea>
+
+                                                                                        <textarea name="otherQualification" rows="10" cols="190"></textarea>
+
+                                                                                        <textarea id="editor1" name="otherQualification" name="editor2" rows="10" cols="80"></textarea>
+
                                                                                     </div>
 
                                                                                 </div>
@@ -551,6 +664,32 @@
 
                                                         </div>
 
+
+                                                        <div class="row">
+
+                                                            <div class="col-lg-12">    
+                                                                <div class="box box-success"  style="padding:10px">
+                                                                    <div class="box-header with-border">
+                                                                        <h3 class="box-title">Course Information</h3>
+                                                                    </div>
+                                                                    <div class="form-group">
+
+
+                                                                        <label>Batch ID</label>
+                                                                        <select class="form-control select2" id="batchIDPast" name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
+                                                                            <!--                                                                            <option>CS-450</option>
+                                                                                                                                                        <option>CS-452</option>-->
+                                                                        </select>
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
                                                         <div class="row">
 
                                                             <div class="col-lg-12">    
@@ -558,6 +697,7 @@
                                                                     <div class="box-header with-border">
                                                                         <h3 class="box-title">Other Information</h3>
                                                                     </div>
+                                                                    <div class="form-group">
 
                                                                     <div class ="row">
                                                                         <div class="col-lg-6 col-md-4">
@@ -568,17 +708,39 @@
 
                                                                                 <div class="input-group">
                                                                                     <span class="input-group-addon">$</span>
-                                                                                    <input type="text" class="form-control">
+                                                                                    <input type="text" name="lecturerHourlyRate" class="form-control">
                                                                                     <span class="input-group-addon">/per hour</span>
                                                                                 </div>
 
-                                                                            </div>
+                                                                        <div style="margin:10px 0 30px 0">
+                                                                    
+                                                                    <label >Lecture Hourly Rate</label>
+                                                                    <br>
+                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+                                                                              <input type="text" name="lecturingType" >
+                                                                    </div>
+
+
+                                                                        <!-- Start Radio Buttons -->
+                                                                        <label>Study Time:</label>
+                                                                    <div class="radio">
+                                                                        <label style="margin-left:300px;">
+                                                                            <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
+                                                                              <input type="radio" name="lecturingType" id="optionsRadios1" value="option1" checked>
+                                                                            Full-Time
+                                                                        </label>
+                                                                        <label style="margin-left:300px;">
+                                                                            <input type="radio" name="lecturingType" id="optionsRadios2" value="option2">
+                                                                            Part-Time
+                                                                        </label>
+                                                                    </div>
+
 
                                                                         </div>
 
                                                                         <div class="col-lg-6 col-md-4">
                                                                             <!-- Start Radio Buttons -->
-                                                                            <label>Study Time:</label>
+                                                                            <label>Lecturing Time:</label>
                                                                             <div class="radio">
                                                                                 <label style="margin-left:100px;">
                                                                                     <!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>-->
@@ -592,15 +754,44 @@
                                                                             </div>
 
 
-                                                                            <!-- End Radio Buttons -->
-                                                                        </div>
+
+                                                                        <!-- End Radio Buttons -->
+
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+
                                                         </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-lg-12">    
+                                                                <div class="box box-danger"  style="padding:10px">
+                                                                    <div class="box-header with-border">
+                                                                        <h3 class="box-title">Reason For Removal</h3>
+                                                                    </div>
+                                                                    <div class="form-group">
+
+                                                                        <select class="form-control select2" name="reasonForRemoval" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                                            <option>Left the Course</option>
+                                                                            <option>Permanently Suspended</option>     
+
+                                                                        </select>
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
                                                     </div>
                                                 </div>
-                                                <!-- /.box-form_lecturerAddy -->
+                                                <!-- /.box-body -->
 
                                                 <div class="box-footer">
                                                     <button type="button" id="btn_pastLecturerAdd"class="btn btn-primary" style="width:100%">Submit</button>
@@ -630,6 +821,43 @@
         <!-- ./wrapper -->
 
         <script type="text/javascript">
+            //get BatchID and the CourseName to the dropdown List from the DB
+            $(document).ready(function (e) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/batches/645467798943543008081",
+
+                    success: function (data) {
+                        console.log("abc " + data.length);
+                        $("#batchIDNew").html("");
+                        for (var i = 0; i < data.data.length; i++) {
+                            $("#batchIDNew").append("<option value=" + data.data[i].id + ">" + data.data[i].batchName + " - " + data.data[i].course.courseName + "</option>");
+                        }
+                    }, error: function (data) {
+
+                    }
+
+                });
+            });
+
+            //get BatchID and the CourseName to the dropdown List from the DB
+            $(document).ready(function (e) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8081/batches/645467798943543008081",
+
+                    success: function (data) {
+                        console.log("abc " + data.length);
+                        $("#batchIDPast").html("");
+                        for (var i = 0; i < data.data.length; i++) {
+                            $("#batchIDPast").append("<option value=" + data.data[i].id + ">" + data.data[i].batchName + " - " + data.data[i].course.courseName + "</option>");
+                        }
+                    }, error: function (data) {
+
+                    }
+
+                });
+            });
 
             function ConvertFormToJSON(form) {
                 var array = jQuery(form).serializeArray();
@@ -653,7 +881,7 @@
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/lecturer/645467798943543008081",
+                    url: "http://localhost:8081/newLecturers/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
@@ -666,12 +894,24 @@
 
                 });
             });
-            //            });
-        </script>	
 
+        </script>	
+        
         <script type="text/javascript">
 
-   //            jQuery(document).on('ready', function () {
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
             jQuery('#btn_pastLecturerAdd').on('click', function (event) {
                 event.preventDefault();
                 console.log("submittingF");
@@ -681,7 +921,7 @@
                 console.log(json);
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8081/lecturer/645467798943543008081",
+                    url: "http://localhost:8081/pastLecturers/645467798943543008081",
                     data: json,
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
@@ -696,7 +936,6 @@
             });
             //            });
         </script>	
-
 
 
     </body>
