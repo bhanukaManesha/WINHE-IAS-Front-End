@@ -55,18 +55,18 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form name="" role="form">
+                                    <form action="" method="POST" enctype="multipart/form-data" id="excel-upload-form" role="form">
                                         <div class="box-body">
                                             <div class="form-group">
 
-                                                <input name="batchPhoto" type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                <input type="file" name="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
                                                 <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                             </div>
                                         </div>
                                         <!-- /.box-body -->
 
                                         <div class="box-footer">
-                                            <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
+                                            <button type="button" id="excel-upload-btn" class="btn btn-primary" style="width:100%">Import</button>
                                         </div>
                                     </form>
                                 </div>
@@ -79,7 +79,7 @@
                                     <!-- /.box-header -->
                                     <!-- form start -->
                                     <form id="form_newAddBatch"> <!--added an id-->
-                                        <input type="hidden" name="current_past" value="1">
+                                        <input type="hidden" id="current_pastNew" value="1">
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -100,13 +100,13 @@
                                                 <div class="row">
                                                     <div class="col-md-6 lg-6">
                                                         <label>Batch Name</label>
-                                                        <input name="batchName" type="text" class="form-control" placeholder="Enter Batch Name" >
+                                                        <input id="batchNameNew" type="text" class="form-control" placeholder="Enter Batch Name" >
                                                     </div>
 
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label style="display:block;">Branch Name</label>
-                                                            <select class="form-control select2" name="branchID" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
+                                                            <select class="form-control select2" id="branchIdNew" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
                                                                 <option>Java - Associate</option>
                                                                 <option>Java - Professional</option>
                                                                 <option>Java - Master</option>
@@ -121,7 +121,7 @@
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label style="display:block;">Select Course</label>
-                                                            <select class="form-control select2" name="courseID" id="courseIdNew"data-placeholder="Select the Course" style="width: 100%;display:block;" >
+                                                            <select class="form-control select2"  id="courseIdNew"data-placeholder="Select the Course" style="width: 100%;display:block;" >
 
                                                             </select>
                                                         </div>
@@ -139,14 +139,14 @@
                                                                 <div class="input-group-addon">
                                                                     <i class="fa fa-calendar"></i>
                                                                 </div>
-                                                                <input name="commenceDate" type="text" class="form-control pull-right" id="datepicker1"  data-date-format="yyyy-mm-dd" >
+                                                                <input  type="text" class="form-control pull-right" id="datepicker1"  data-date-format="yyyy-mm-dd" >
                                                             </div>
                                                             <!-- /.input group -->
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 lg-6">
                                                         <label>No Of Seats</label>
-                                                        <input name="noOfSeats" type="number"  class="form-control" placeholder="Enter No Of Seats" >
+                                                        <input id="noOfSeatsNew" type="number"  class="form-control" placeholder="Enter No Of Seats" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -154,7 +154,7 @@
                                             <div class="form-group">
                                                 <label>Description</label>
                                                 <div class="box-body pad">
-                                                    <textarea id="" name="description"  rows="10" cols="195"></textarea>
+                                                    <textarea  id="descriptionNew"  rows="10" cols="195"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -166,7 +166,7 @@
 
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">$</span>
-                                                                <input name="batchFee" type="text" class="form-control">
+                                                                <input id="batchFeeNew" type="text" class="form-control">
                                                                 <span class="input-group-addon">.00</span>
                                                             </div>
                                                         </div>
@@ -177,7 +177,7 @@
 
                                                             <label>Intake Amount :</label>
 
-                                                            <input name="intakeAmount" type="text" class="form-control"  placeholder="Enter Amount">
+                                                            <input id="intakeAmountNew" type="text" class="form-control"  placeholder="Enter Amount">
 
                                                         </div>
                                                     </div>
@@ -232,142 +232,142 @@
                                         <!-- form start -->
 
                                         <form id="form_pastAddBatch" role="form">
-                                            <input type="hidden" name="current_past" value="0">
+                                            <input type="hidden" id="current_pastPast" value="0">
 
-                                        <form id="form_pastBatchAdd" role="form">
+                                            <form id="form_pastBatchAdd" role="form">
 
-                                            <div class="box-body">
-                                                <div class="form-group">
-                                                    <div class="box box-info"  style="padding:10px">
-                                                        <div class="box-header with-border">
-                                                            <div>Batch Profile Picture</div>
-                                                        </div>
-                                                        <div class="form-group">
-
-                                                            <div class="widget-user-image" style="margin-top:20px;">
-                                                                <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
+                                                <div class="box-body">
+                                                    <div class="form-group">
+                                                        <div class="box box-info"  style="padding:10px">
+                                                            <div class="box-header with-border">
+                                                                <div>Batch Profile Picture</div>
                                                             </div>
-                                                            <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
-                                                            <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6 lg-6">
-                                                            <label>Batch Name</label>
-                                                            <input name="batchName" type="text" class="form-control" placeholder="Enter Batch Name" >
-                                                        </div>
-
-                                                        <div class="col-md-6 lg-6">
                                                             <div class="form-group">
-                                                                <label style="display:block;">Select Course</label>
-                                                                <select class="form-control select2" id="courseIdPast" name="courseID" data-placeholder="Select a Course" style="width: 100%;display:block;" >
 
-                                                                </select>
+                                                                <div class="widget-user-image" style="margin-top:20px;">
+                                                                    <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
+                                                                </div>
+                                                                <input type="file" id="profilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
+                                                                <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
+
                                                             </div>
                                                         </div>
-
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6 lg-6">
-                                                            <div class="form-group">
-                                                                <label style="display:block;">Branch Name</label>
-                                                                <select class="form-control select2" name="branchID" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
-                                                                    <option>Java - Associate</option>
-                                                                    <option>Java - Professional</option>
-                                                                    <option>Java - Master</option>
-                                                                    <option>Java - Expert</option>
-                                                                    <option>C# - Associate</option>
-                                                                </select>
+                                                        <div class="row">
+                                                            <div class="col-md-6 lg-6">
+                                                                <label>Batch Name</label>
+                                                                <input id="batchNamePast" type="text" class="form-control" placeholder="Enter Batch Name" >
                                                             </div>
+
+                                                            <div class="col-md-6 lg-6">
+                                                                <div class="form-group">
+                                                                    <label style="display:block;">Select Course</label>
+                                                                    <select class="form-control select2" id="courseIdPast" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 lg-6">
+                                                                <div class="form-group">
+                                                                    <label style="display:block;">Branch Name</label>
+                                                                    <select class="form-control select2" id="branchID" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
+                                                                        <option>Java - Associate</option>
+                                                                        <option>Java - Professional</option>
+                                                                        <option>Java - Master</option>
+                                                                        <option>Java - Expert</option>
+                                                                        <option>C# - Associate</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
 
 
 
-                                                        <!-- Date -->
-                                                        <div class="col-md-6 lg-6">
-                                                            <div class="form-group">
-                                                                <label>Commence Date :</label>
+                                                            <!-- Date -->
+                                                            <div class="col-md-6 lg-6">
+                                                                <div class="form-group">
+                                                                    <label>Commence Date :</label>
 
-                                                                <div class="input-group date">
-                                                                    <div class="input-group-addon">
-                                                                        <i class="fa fa-calendar"></i>
+                                                                    <div class="input-group date">
+                                                                        <div class="input-group-addon">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                        </div>
+                                                                         <input  type="text" class="form-control pull-right" id="datepicker2"  data-date-format="yyyy-mm-dd" >
                                                                     </div>
-                                                                    <input name="commenceDate"  type="text" class="form-control pull-right" id="datepicker2" pattern="yyyy-mm-dd">
-                                                                </div>
-                                                                <!-- /.input group -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 lg-6">
-
-                                                            <label>No Of Seats</label>
-                                                            <input name="noOfSeats" type="number"  class="form-control" placeholder="Enter No Of Seats" >
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label>Description</label>
-                                                    <div class="box-body pad">
-                                                        <textarea  name="description"  rows="10" cols="195"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class ="row">
-                                                        <div class="col-lg-6 col-md-4">
-
-                                                            <div class="form-group">
-                                                                <label>Batch Fee :</label>
-
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">$</span>
-                                                                    <input name="batchFee" type="text" class="form-control">
-                                                                    <span class="input-group-addon">.00</span>
+                                                                    <!-- /.input group -->
                                                                 </div>
                                                             </div>
-                                                            <!-- /.form group -->
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-4">
-                                                            <div class="form-group">
+                                                            <div class="col-md-6 lg-6">
 
-                                                                <label>Intake Amount :</label>
-
-                                                                <input name="intakeAmount" type="text" class="form-control"  placeholder="Enter Amount">
+                                                                <label>No Of Seats</label>
+                                                                <input id="noOfSeatsPast" type="number"  class="form-control" placeholder="Enter No Of Seats" >
 
                                                             </div>
                                                         </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Description</label>
+                                                        <div class="box-body pad">
+                                                            <textarea  id="descriptionPast"  rows="10" cols="195"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class ="row">
+                                                            <div class="col-lg-6 col-md-4">
+
+                                                                <div class="form-group">
+                                                                    <label>Batch Fee :</label>
+
+                                                                    <div class="input-group">
+                                                                        <span class="input-group-addon">$</span>
+                                                                        <input id="batchFeePast" type="text" class="form-control">
+                                                                        <span class="input-group-addon">.00</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /.form group -->
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-4">
+                                                                <div class="form-group">
+
+                                                                    <label>Intake Amount :</label>
+
+                                                                    <input id="intakeAmountPast" type="text" class="form-control"  placeholder="Enter Amount">
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
 
                                                     </div>
 
+                                                </div> 
+                                            </form>
 
+                                            <div class="row">
 
-
-                                                </div>
-
-                                            </div> 
-                                        </form>
-
-                                        <div class="row">
-
-                                            <div class="col-lg-12">    
-                                                <!--<div class="box box-danger"  style="padding:10px">-->
+                                                <div class="col-lg-12">    
+                                                    <!--<div class="box box-danger"  style="padding:10px">-->
                                                     <div class="box-header with-border">
                                                         <h3 class="box-title">Reason For Removal</h3>
                                                     </div>
                                                     <div class="form-group">
 
-                                                        <select class="form-control" id="reasonForRemoval" name="reasonForRemoval" data-placeholder="Reason For Removal" style="width: 100%;" >
+                                                        <select class="form-control" id="reasonForRemovalPast" data-placeholder="Reason For Removal" style="width: 100%;" >
                                                             <option value="No Longer Available">No Longer Available</option>
                                                             <option value="Whole Batch Was Suspended">Whole Batch Was Suspended</option>   
 
                                                         </select>
                                                     </div>
-                                                <!--</div>-->
-                                            </div>
+                                                    <!--</div>-->
+                                                </div>
 
-                                        </div>
+                                            </div>
 
                                     </div>
 
@@ -407,65 +407,82 @@
 
         return JSON.stringify(json);
     }
-    
-               //get CourseID and the CourseName to the dropdown List from the DB
-            $(document).ready(function (e) {
-                $.ajax({
-                    type: "GET",
-                    url: "http://localhost:8081/courses/645467798943543008081",
 
-                    success: function (data) {
-                        console.log("abc " + data.length);
-                        $("#courseIdNew").html("");
-                        for (var i = 0; i < data.data.length; i++) {
-                            $("#courseIdNew").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
-                        }
-                    }, error: function (data) {
+    //get CourseID and the CourseName to the dropdown List from the DB
+    $(document).ready(function (e) {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8081/courses/645467798943543008081",
 
-                    }
+            success: function (data) {
+                console.log("abc " + data.length);
+                $("#courseIdNew").html("");
+                for (var i = 0; i < data.data.length; i++) {
+                    $("#courseIdNew").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
+                }
+            }, error: function (data) {
 
-                });
-            });
-            
-                   //get CourseID and the CourseName to the dropdown List from the DB
-            $(document).ready(function (e) {
-                $.ajax({
-                    type: "GET",
-                    url: "http://localhost:8081/courses/645467798943543008081",
+            }
 
-                    success: function (data) {
-                        console.log("abc " + data.length);
-                        $("#courseIdPast").html("");
-                        for (var i = 0; i < data.data.length; i++) {
-                            $("#courseIdPast").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
-                        }
-                    }, error: function (data) {
+        });
+    });
 
-                    }
+    //get CourseID and the CourseName to the dropdown List from the DB
+    $(document).ready(function (e) {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8081/courses/645467798943543008081",
 
-                });
-            });
+            success: function (data) {
+                console.log("abc " + data.length);
+                $("#courseIdPast").html("");
+                for (var i = 0; i < data.data.length; i++) {
+                    $("#courseIdPast").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
+                }
+            }, error: function (data) {
 
+            }
 
+        });
+    });
 
 
-// jQuery(document).on('ready', function () {
+
+
+
+
+    // add method for Newbatch
     jQuery('#btn_newBatchAdd').on('click', function (event) {
 
-//            jQuery(document).on('ready', function () {
-    jQuery('#btn_newBatchAdd').on('click', function (event) { 
+        var batch = {
+            "batchName": $("#batchNameNew").val(),
+            "description": $("#descriptionNew").val(),
+            "commenceDate": $("#datepicker1").val(),
+            "noOfSeats": $("#noOfSeatsNew").val(),
+            "intakeAmount": $("#intakeAmountNew").val(),
+            "batchFee": $("#batchFeeNew").val(),
+            "current_past": $("#current_pastNew").val(),
+     
+
+            "course": {
+                "id": $("#courseIdNew").val() //dropdown id for the foreign key
+            }
+//            "branch": {
+//                "branchIdNew": $("#courseselector").val() //dropdown id for the foreign key
+//            }
+        }
 
         event.preventDefault();
-        console.log("Description " + $("#editor1").val());
-        console.log("submitting1");
-        var form = "#form_newAddBatch";
-        var json = ConvertFormToJSON(form);
+//        console.log("Description " + $("#editor1").val());
+//        console.log("submitting1");
+//        var form = "#form_newAddBatch";
+//        var json = ConvertFormToJSON(form);
 //				var tbody = jQuery('#to-do-list > tbody');
-        console.log(json);
+//        console.log(json);
         $.ajax({
             type: "POST",
             url: "http://localhost:8081/batches/645467798943543008088",
-            data: json,
+            data: JSON.stringify(batch),
             dataType: "json",
             contentType: "application/json;charset=utf-8",
 
@@ -479,16 +496,35 @@
     });
 
     jQuery('#btn_pastBatchAdd').on('click', function (event) {
+        
+             var batch = {
+            "batchName": $("#batchNamePast").val(),
+            "description": $("#descriptionPast").val(),
+            "commenceDate": $("#datepicker2").val(),
+            "noOfSeats": $("#noOfSeatsPast").val(),
+            "intakeAmount": $("#intakeAmountPast").val(),
+            "batchFee": $("#batchFeePast").val(),
+            "current_past": $("#current_pastPast").val(),
+            "reasonForRemoval": $("#reasonForRemovalPast").val(),
+     
+
+            "course": {
+                "id": $("#courseIdPast").val() //dropdown id for the foreign key
+            }
+//            "branch": {
+//                "branchIdNew": $("#courseselector").val() //dropdown id for the foreign key
+//            }
+        }
         event.preventDefault();
-        console.log("submitting ; "+$('#reasonForRemoval').val());
-        var form = "#form_pastAddBatch";
-        var json = ConvertFormToJSON(form);
-//				var tbody = jQuery('#to-do-list > tbody');
-        console.log(json);
+//        console.log("submitting ; " + $('#reasonForRemoval').val());
+//        var form = "#form_pastAddBatch";
+//        var json = ConvertFormToJSON(form);
+////				var tbody = jQuery('#to-do-list > tbody');
+//        console.log(json);
         $.ajax({
             type: "POST",
             url: "http://localhost:8081/batches/645467798943543008088",
-            data: json,
+            data: JSON.stringify(batch),
             dataType: "json",
             contentType: "application/json;charset=utf-8",
 
@@ -501,6 +537,53 @@
         });
     });
 //            });
+
+
+
+$("#excel-upload-btn").click(function (event) {
+
+        //stop submit the form, we will post it manually.
+        event.preventDefault();
+
+        // Get form
+        var form = $('#excel-upload-form')[0];
+
+		// Create an FormData object 
+        var data = new FormData(form);
+
+		// If you want to add an extra field for the FormData
+//        data.append("CustomField", "This is some extra data, testing");
+
+		// disabled the submit button
+        $("#excel-upload-btn").prop("disabled", true);
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "http://localhost:8081/batches/excel-import",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+
+//                $("#result").text(data);
+                console.log("SUCCESS : ", data);
+                $("#excel-upload-btn").prop("disabled", false);
+
+            },
+            error: function (e) {
+
+//                $("#result").text(e.responseText);
+                console.log("ERROR : ", e);
+                $("#excel-upload-btn").prop("disabled", false);
+
+            }
+        });
+
+    });
+
 </script>	
 
 

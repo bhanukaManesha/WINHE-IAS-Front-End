@@ -109,7 +109,7 @@
                                                 </div>
                                                 <!-- /.box-header -->
                                                 <!-- form start -->
-                                                <form role="form">
+                                                <form role="form" id="form_editCourse">
                                                     <div class="box-body">
                                                         <div class="form-group">
                                                             <div class="box box-info"  style="padding:10px">
@@ -127,57 +127,56 @@
 
                                                                 </div>
                                                             </div>
-                                                         
-                                                            <label style="color:black;">Course ID</label>
 
-                                                <input type="text" class="form-control" placeholder="Enter Course ID" >
-                                                <label style="color:black;">Course Name</label>
-
-                                                <input type="text" class="form-control" placeholder="Enter Course Name" >
-                                                <div class="row">
-                                                    <div class="col-md-6 lg-6">
-                                                        <label style="color:black;">Course Duration</label>
-                                                        <input type="text" class="form-control" placeholder="Enter Duration of The Course" >
-                                                    </div>
-                                                    <div class="col-md-6 lg-6">
-                                                        <div class="form-group">
-                                                            <label style="color:black;">Select Duration Type</label>
-                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;" >
-                                                                <option>Days</option>
-                                                                <option>Weeks</option>
-                                                                <option>Months</option>
-                                                                <option>Years</option>
-                                                            </select>
+                                                          
+                                                           
+                                                            <label style="color:black;">Course Name</label>
+                                                            <input type="text" name="courseName" class="form-control" placeholder="Enter Course Name" >
+                                                            
+                                                            <div class="row">
+                                                                <div class="col-md-6 lg-6">
+                                                                    <label style="color:black;">Course Duration</label>
+                                                                    <input type="text" name="courseDuration" class="form-control" placeholder="Enter Duration of The Course" >
+                                                                </div>
+                                                                <div class="col-md-6 lg-6">
+                                                                    <div class="form-group">
+                                                                        <label style="color:black;">Select Duration Type</label>
+                                                                        <select class="form-control select2" name="durationType" data-placeholder="Select a Course" style="width: 100%;" >
+                                                                            <option>Days</option>
+                                                                            <option>Weeks</option>
+                                                                            <option>Months</option>
+                                                                            <option>Years</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <label style="color:black;">Description</label>
-                                                <div class="box-body pad">
-                                                    <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
-                                                </div>
+                                                        <div class="form-group">
+                                                            <label style="color:black;">Description</label>
+                                                            <div class="box-body pad">
+                                                                <textarea  name="description" rows="10" cols="140"></textarea>
+                                                            </div>
 
-                                            </div>
-                                        </div> 
-                                        <!-- /.box-body -->
+                                                        </div>
+                                                    </div> 
+                                                    <!-- /.box-body -->
                                                 </form>
                                             </div>
 
 
-                                            
+
                                         </div>
-                                        
+
                                     </div>
                                     <!-- Enter Course Details Panel End -->
 
                                 </div>
 
                                 <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-outline">Save Changes</button>
-                                        </div>
+                                    <button type="button" id="btn_closeCourse" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                    <button type="button" id="btn_saveCourse" class="btn btn-outline">Save Changes</button>
+                                </div>
                             </div>
                             <!-- /.modal-content -->
                         </div>  
@@ -188,6 +187,49 @@
             <!--./content-wrapper-->
         </section>
     </div>
-    <!--./wrapper-->               
+    <!--./wrapper-->   
+    
+    <script type="text/javascript">
+        
+            function ConvertFormToJSON(form) {
+        var array = jQuery(form).serializeArray();
+        var json = {};
+
+        jQuery.each(array, function () {
+            json[this.name] = this.value || '';
+            console.log("Name : " + this.name, " , Value : " + this.value)
+        });
+
+        return JSON.stringify(json);
+    }
+    
+    
+//            jQuery(document).on('ready', function () {
+    jQuery('#btn_saveCourse').on('click', function (event) { 
+
+        event.preventDefault();
+        console.log("Description " + $("#editor1").val());
+        console.log("submitting1");
+        var form = "#form_editCourse";
+        var json = ConvertFormToJSON(form);
+//				var tbody = jQuery('#to-do-list > tbody');
+        console.log(json);
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8081/courses/645467798943543008088",
+            data: json,
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+
+            success: function (data) {
+                console.log("success");
+            }, error: function (data) {
+                console.log(data);
+            }
+
+        });
+    });
+
+    </script>
 </body>
 </html>
