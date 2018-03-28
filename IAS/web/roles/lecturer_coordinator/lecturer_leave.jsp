@@ -159,7 +159,8 @@
 
                                             <h3 style="color:black; display:block;text-align:center;;">Enter Leave Information</h3>
                                         </div>
-
+                                    <!-- form started-->
+                                   
                                         <div class="row">
 
                                             <div class="col-md-12">
@@ -169,20 +170,22 @@
                                                         <li><a href="#half_day" data-toggle="tab">Half Day Leave</a></li>
                                                     </ul>
                                                     <div class="tab-content">
-
+                                                        
                                                         <div class="active tab-pane" id="full_day">
+                                                             <form role="form" id="form_LeaveAdd">
+                                        <input type="hidden" name="leaveType" value="Full_Day">
                                                             <div class="row">
 
                                                                 <div class="col-sm-6 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><input type="text" class="form-control" id="datepicker1" placeholder="Please pick the start date" >
+                                                                        <h5 class="description-header" style="color:black"><input  name="dateStart" type="text" class="form-control" id="datepicker1" placeholder="Please pick the start date" data-date-format="yyyy-mm-dd"  >
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">START DATE</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><input type="text" class="form-control" id="datepicker2" placeholder="Please pick the end date" >
+                                                                        <h5 class="description-header" style="color:black"><input name="dateEnd" type="text" class="form-control" id="datepicker2" placeholder="Please pick the end date" data-date-format="yyyy-mm-dd" >
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">END DATE</span>
                                                                     </div>
@@ -193,22 +196,27 @@
                                                             <div class="row">
                                                                 <div class="col-sm-12 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><textarea class="form-control" rows="3" placeholder="Enter the reason"></textarea>
+                                                                        <h5 class="description-header" style="color:black"><textarea name="reason" class="form-control" rows="3" placeholder="Enter the reason"></textarea>
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">REASON</span>
                                                                     </div>
                                                                 </div>
 
                                                             </div>
+                                                             <button id="btn_LeaveAdd" type="button" style="background:#44c1ef;" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
 
+                                                             </form>
                                                         </div>
-
                                                         <div class="tab-pane" id="half_day">
+                                                         
+                                                        <!-- half day form start-->
+                                                         <form role="form" id="form_halfDayLeaveAdd">
+                                                             <input type="hidden" name="leaveType" value="Half_Day">   
                                                             <div class="row">
 
                                                                 <div class="col-sm-4 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><input type="text" class="form-control" id="datepicker3" placeholder="Please pick the date" >
+                                                                        <h5 class="description-header" style="color:black"><input name="dateStart" type="text" class="form-control" id="datepicker3" placeholder="Please pick the date" data-date-format="yyyy-mm-dd" >
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">DATE</span>
                                                                     </div>
@@ -216,21 +224,22 @@
                                                                 <div class="col-sm-4 border-right">
                                                                     <div class="description-block">
                                                                         <h5 class="description-header" style="color:black"><div class="bootstrap-timepicker">
-                                                                                
-
+                                                                               
                                                                                     <div class="input-group">
-                                                                                        <input type="text" class="form-control timepicker">
+                                                                                        <!--<input name="halfDayStart_Time" type="time" class="form-control timepicker">-->
+                                                                                         <input name="halfDayStart_Time" type="text" class="form-control timepicker">
+
 
                                                                                         <div class="input-group-addon">
                                                                                             <i class="fa fa-clock-o"></i>
                                                                                         </div>
-                                                                                    </div>
-                                                                                    <!-- /.input group -->
+                                                                                    </div><!--
+                                                                                     /.input group -->
                                                                                 
                                                                                 <!-- /.form group -->
                                                                             </div>
                                                                         </h5>
-                                                                        <span class="description-text" style="color:black">START TIME</span>
+                                                                        <span  class="description-text" style="color:black" >START TIME</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-4 border-right">
@@ -250,7 +259,7 @@
                                                                                 <!-- /.form group -->
                                                                             </div>
                                                                         </h5>
-                                                                        <span class="description-text" style="color:black">END TIME</span>
+                                                                        <span name="halfDayEnd_Time" class="description-text" style="color:black">END TIME</span>
                                                                     </div>
                                                                 </div>
 
@@ -259,14 +268,19 @@
                                                             <div class="row">
                                                                 <div class="col-sm-12 border-right">
                                                                     <div class="description-block">
-                                                                        <h5 class="description-header" style="color:black"><textarea class="form-control" rows="3" placeholder="Enter the reason"></textarea>
+                                                                        <h5 class="description-header" style="color:black"><textarea name="reason" class="form-control" rows="3" placeholder="Enter the reason"></textarea>
                                                                         </h5>
                                                                         <span class="description-text" style="color:black">REASON</span>
                                                                     </div>
                                                                 </div>
 
                                                             </div>
+                                                             <button id="btn_halfDayLeaveAdd" type="button" style="background:#44c1ef;" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
+
+                                                          </form>
+                                                        <!-- half day tab form close-->
                                                         </div>
+                                                        
                                                         <!-- /.tab-pane -->
                                                     </div>
 
@@ -276,7 +290,6 @@
                                             </div>
                                             <!-- /.col -->
                                         </div>
-
 
 
                                     </div>
@@ -300,7 +313,7 @@
 
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>
+<!--                           <button id="btn_LeaveAdd" type="button" class="btn btn-outline pull-left" data-dismiss="modal">DONE</button>-->
 
                         </div>
                     </div>
@@ -317,6 +330,71 @@
     <!-- /.box -->
 
     <!-- ./wrapper -->
+<script type="text/javascript">
+
+            function ConvertFormToJSON(form) {
+                var array = jQuery(form).serializeArray();
+                var json = {};
+
+                jQuery.each(array, function () {
+                    json[this.name] = this.value || '';
+                });
+
+                return JSON.stringify(json);
+            }
+
+
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_LeaveAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_LeaveAdd";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/lecturer-leave/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+            
+            //            jQuery(document).on('ready', function () {
+            jQuery('#btn_halfDayLeaveAdd').on('click', function (event) {
+                event.preventDefault();
+                console.log("submittingF");
+                var form = "#form_halfDayLeaveAdd";
+                var json = ConvertFormToJSON(form);
+                //				var tbody = jQuery('#to-do-list > tbody');
+                console.log(json);
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8081/lecturer-leave/645467798943543008081",
+                    data: json,
+                    dataType: "json",
+                    contentType: "application/json;charset=utf-8",
+
+                    success: function (data) {
+                        console.log("success");
+                    }, error: function (data) {
+                        console.log(data);
+                    }
+
+                });
+            });
+
+            
+          
+        </script>
 
 
 </body>
