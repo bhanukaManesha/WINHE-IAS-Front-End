@@ -165,9 +165,7 @@
                                                                     <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
                                                                 </div>
                                                             </div>
-
                                                         </div>
-
 
                                                         <div class="row">  
                                                             <div class="box box-danger"  style="padding:10px">

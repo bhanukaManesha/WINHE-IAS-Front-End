@@ -456,11 +456,6 @@
 
 
 
-
-// jQuery(document).on('ready', function () {
-    jQuery('#btn_newBatchAdd').on('click', function (event) {
-
-//            jQuery(document).on('ready', function () {
     jQuery('#btn_newBatchAdd').on('click', function (event) { 
 
         event.preventDefault();
@@ -468,7 +463,7 @@
         console.log("submitting1");
         var form = "#form_newAddBatch";
         var json = ConvertFormToJSON(form);
-//				var tbody = jQuery('#to-do-list > tbody');
+        
         console.log(json);
         $.ajax({
             type: "POST",
@@ -491,7 +486,6 @@
         console.log("submitting ; "+$('#reasonForRemoval').val());
         var form = "#form_pastAddBatch";
         var json = ConvertFormToJSON(form);
-//				var tbody = jQuery('#to-do-list > tbody');
         console.log(json);
         $.ajax({
             type: "POST",
@@ -508,7 +502,6 @@
 
         });
     });
-//            });
 </script>	
 
 
