@@ -91,32 +91,32 @@
 
                                                                 <div class="form-group">
                                                                     <label>First Name</label>
-                                                                    <input name="firstName" type="text" class="form-control" placeholder="Enter First Name" >
+                                                                    <input id="firstName" type="text" class="form-control" placeholder="Enter First Name" >
 
 
                                                                     <label>Last Name</label>
-                                                                    <input name="lastName" type="text" class="form-control" placeholder="Enter Last Name" > 
+                                                                    <input id="lastName" type="text" class="form-control" placeholder="Enter Last Name" > 
 
                                                                     <label>National Identity Card No / Birth Certificate No</label>
-                                                                    <input name="NIC" type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
+                                                                    <input id="nic" type="text" class="form-control" placeholder="Enter National Identity Card No / Birth Certificate No" >
 
                                                                     <label>Date Of Birth:</label>
                                                                     <div class="input-group date">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-                                                                        <input name="DOB" type="text" class="form-control pull-right" id="datepicker4" data-date-format="yyyy-mm-dd">
+                                                                        <input id="dob" type="text" class="form-control pull-right" id="datepicker4" data-date-format="yyyy-mm-dd">
                                                                     </div>
 
                                                                     <!-- Start Radio Buttons -->
                                                                     <label>Gender:</label>
                                                                     <div class="radio">
                                                                         <label style="margin-left:100px;">
-                                                                            <input name="gender" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                            <input id="gender" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                                                             Male
                                                                         </label>
                                                                         <label style="margin-left:100px;">
-                                                                            <input name="gender" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                            <input id="gender" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                                                                             Female
                                                                         </label>
                                                                     </div>
@@ -124,16 +124,16 @@
                                                                     <!-- End Radio Buttons -->
 
                                                                     <label>Nationality</label>
-                                                                    <input name="nationality" type="text" class="form-control" placeholder="Enter Nationality" >
+                                                                    <input id="nationality" type="text" class="form-control" placeholder="Enter Nationality" >
 
                                                                     <label>Race</label>
-                                                                    <input name="race" type="text" class="form-control" placeholder="Enter Race" >
+                                                                    <input id="race" type="text" class="form-control" placeholder="Enter Race" >
 
                                                                     <label>Religion</label>
-                                                                    <input name="religion" type="text" class="form-control" placeholder="Enter Religion" >
+                                                                    <input id="religion" type="text" class="form-control" placeholder="Enter Religion" >
 
-                                                                    <label>Status</label>
-                                                                    <select name="civilStatus" lass="form-control select2" data-placeholder="Select a Course" style="width:100%;">
+                                                                    <label>Civil Status</label>
+                                                                    <select id="civilStatus" lass="form-control select2" data-placeholder="Select a Course" style="width:100%;">
                                                                         <option>Single</option>
                                                                         <option>Married</option>
                                                                     </select>
@@ -154,7 +154,7 @@
                                                                         <div class="widget-user-image" style="margin-top:20px;">
                                                                             <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar" style="display:block;margin:auto;">
                                                                         </div>
-                                                                        <input type="file" name="studentProfilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
+                                                                        <input type="file" id="studentProfilePicture" style="margin:auto;width:100%;text-align:center;margin-top:20px;">
                                                                         <p class="help-block"style="margin:auto;text-align:center;">Please upload a .jpg, .jpeg or .png file</p>
                                                                     </div>
                                                                 </div>
@@ -172,19 +172,19 @@
                                                                         <label>Email</label>
                                                                         <div class="input-group">
                                                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                                            <input name="emailAddress" type="email" class="form-control" placeholder="Email">
+                                                                            <input id="emailAddress" type="email" class="form-control" placeholder="Email">
                                                                         </div>
 
                                                                         <!-- textarea -->
                                                                         <label>Address</label>
-                                                                        <textarea name="address" class="form-control" rows="3" placeholder="Enter Address"></textarea>
+                                                                        <textarea id="address" class="form-control" rows="3" placeholder="Enter Address"></textarea>
 
                                                                         <label>Home</label>
                                                                         <div class="input-group">
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-phone"></i>
                                                                             </div>
-                                                                            <input name="homeNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                            <input id="homeNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                         </div>
                                                                         <label>Mobile</label>
 
@@ -192,7 +192,7 @@
                                                                             <div class="input-group-addon">
                                                                                 <i class="fa fa-phone"></i>
                                                                             </div>
-                                                                            <input name="mobileNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                            <input id="mobileNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -207,19 +207,10 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label>First Name</label>
-                                                                    <input name="guardianFirstName" type="text" class="form-control" placeholder="Enter First Name" >
+                                                                    <input id="guardianFirstName" type="text" class="form-control" placeholder="Enter First Name" >
 
                                                                     <label>Last Name</label>
-                                                                    <input name="guardianLastName" type="text" class="form-control" placeholder="Enter Last Name" > 
-
-
-                                                                    <label>Date Of Birth:</label>
-                                                                    <div class="input-group date">
-                                                                        <div class="input-group-addon">
-                                                                            <i class="fa fa-calendar"></i>
-                                                                        </div>
-                                                                        <input type="text" class="form-control pull-right" id="datepicker">
-                                                                    </div>
+                                                                    <input id="guardianLastName" type="text" class="form-control" placeholder="Enter Last Name" > 
 
                                                                     <label>Relationship</label>
 
@@ -235,9 +226,9 @@
                                                                         <option>Sister</option>
                                                                     </select>
 
-                                                                    <input name="guardianRelation" id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
+                                                                    <input id="guardianRelation" id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
                                                                     <label>Occupation</label>
-                                                                    <input name="guardianOccupation" type="text" class="form-control" placeholder="Enter Guardian Occupation" >
+                                                                    <input id="guardianOccupation" type="text" class="form-control" placeholder="Enter Guardian Occupation" >
 
                                                                 </div>
                                                             </div>
@@ -250,14 +241,14 @@
                                                                 <div class="form-group">
                                                                     <!-- textarea -->
                                                                     <label>Address</label>
-                                                                    <textarea name="guardianAddress" class="form-control" rows="3" placeholder="Enter Address"></textarea>
+                                                                    <textarea id="guardianAddress" class="form-control" rows="3" placeholder="Enter Address"></textarea>
 
                                                                     <label>Home</label>
                                                                     <div class="input-group">
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-phone"></i>
                                                                         </div>
-                                                                        <input name="guardianContactHomeNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                        <input id="guardianContactHomeNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                     </div>
 
                                                                     <label>Mobile</label>
@@ -265,7 +256,7 @@
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-phone"></i>
                                                                         </div>
-                                                                        <input name="guardianContactMobileNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
+                                                                        <input id="guardianContactMobileNo" type="text" class="form-control" data-inputmask='"mask": "(+99) 999-999999"' data-mask>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -286,7 +277,7 @@
                                                                             <div class="form-group">
 
                                                                                 <label>Name of Qualification</label>
-                                                                                <input name="year10_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <input id="year10_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
                                                                                 <br>
                                                                                 <label>Subjects Passed</label>
                                                                             </div>
@@ -300,7 +291,7 @@
                                                                             </div>
                                                                             <div class="form-group">
                                                                                 <label>Name of Qualification</label>
-                                                                                <input name="year12_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
+                                                                                <input id="year12_nameOfQualification" type="text" class="form-control" placeholder="Enter Qualification" >
                                                                                 <br>
                                                                                 <label>Subjects Passed</label>
                                                                             </div>
@@ -317,44 +308,44 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_1" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_1" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_2" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_2"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_3" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_3"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_4" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_4"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_5" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_5"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_6" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_6"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_7" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_7"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_8" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_8"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_9" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_9"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject10_10" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade10_10"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -371,24 +362,24 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject12_1" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade12_1" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject12_2" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade12_2" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject12_3" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade12_3" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject12_4" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade12_4" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject12[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade12[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" id="subject12_5" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" id="grade12_5" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -427,9 +418,9 @@
                                                                 </div>
                                                                 <div class="form-group">
 
-                                                                    <div class="col-lg-4 col-sm-3">
+                                                                    <div class="col-lg-3 col-sm-3">
                                                                         <label>Course Name</label>
-                                                                        <select class="form-control select2" data-placeholder="Select a Course">
+                                                                        <select id="courseName1" class="form-control select2" data-placeholder="Select a Course">
                                                                             <option>Java - Associate</option>
                                                                             <option>Java - Professional</option>
                                                                             <option>Java - Master</option>
@@ -449,9 +440,9 @@
                                                                         </select>
                                                                     </div>
 
-                                                                    <div class="col-lg-4 col-sm-3">
+                                                                    <div class="col-lg-3 col-sm-3">
                                                                         <label>Course Name</label>
-                                                                        <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                        <select id="courseName2" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
                                                                             <option>Java - Associate</option>
                                                                             <option>Java - Professional</option>
                                                                             <option>Java - Master</option>
@@ -471,9 +462,9 @@
                                                                         </select>
                                                                     </div>
 
-                                                                    <div class="col-lg-4 col-sm-3">
+                                                                    <div class="col-lg-3 col-sm-3">
                                                                         <label>Course Name</label>
-                                                                        <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                        <select id="courseName3" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
                                                                             <option>Java - Associate</option>
                                                                             <option>Java - Professional</option>
                                                                             <option>Java - Master</option>
@@ -494,26 +485,28 @@
                                                                     </div>
 
                                                                     <label>Course Name</label>
-                                                                    <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
-                                                                        <option>Java - Associate</option>
-                                                                        <option>Java - Professional</option>
-                                                                        <option>Java - Master</option>
-                                                                        <option>Java - Expert</option>
-                                                                        <option>C# - Associate</option>
-                                                                        <option>C# - Professional</option>
-                                                                        <option>C# - Master</option>
-                                                                        <option>C# - Expert</option>
-                                                                        <option>PHP - Associate</option>
-                                                                        <option>PHP - Professional</option>
-                                                                        <option>PHP - Master</option>
-                                                                        <option>PHP - Expert</option>
-                                                                        <option>asp.net - Associate</option>
-                                                                        <option>asp.net - Professional</option>
-                                                                        <option>asp.net - Master</option>
-                                                                        <option>asp.net - Expert</option>
-                                                                    </select>
+                                                                    <div class="col-lg-3 col-sm-3">
+                                                                        <select id="courseName4" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                            <option>Java - Associate</option>
+                                                                            <option>Java - Professional</option>
+                                                                            <option>Java - Master</option>
+                                                                            <option>Java - Expert</option>
+                                                                            <option>C# - Associate</option>
+                                                                            <option>C# - Professional</option>
+                                                                            <option>C# - Master</option>
+                                                                            <option>C# - Expert</option>
+                                                                            <option>PHP - Associate</option>
+                                                                            <option>PHP - Professional</option>
+                                                                            <option>PHP - Master</option>
+                                                                            <option>PHP - Expert</option>
+                                                                            <option>asp.net - Associate</option>
+                                                                            <option>asp.net - Professional</option>
+                                                                            <option>asp.net - Master</option>
+                                                                            <option>asp.net - Expert</option>
+                                                                        </select>
+                                                                    </div>
                                                                     <label>Batch ID</label>
-                                                                    <select name="" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                    <select id="batch_id" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
                                                                         <option>CS-450</option>
                                                                         <option>CS-452</option>
                                                                     </select>
@@ -522,11 +515,11 @@
                                                                     <label>Study Time:</label>
                                                                     <div class="radio">
                                                                         <label style="margin-left:300px;">
-                                                                            <input name="studyTime" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                            <input id="studyTime" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                                                             Full-Time
                                                                         </label>
                                                                         <label style="margin-left:300px;">
-                                                                            <input name="studyTime" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                            <input id="studyTime" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
                                                                             Part-Time
                                                                         </label>
                                                                     </div>
@@ -830,19 +823,20 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+
+                                                                                        <td><input class="form-control"  placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control"  placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" name="subject10_2" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10_2" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
-                                                                                        <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
+                                                                                        <td><input class="form-control" name="subject10_3" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="grade10_3" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><input class="form-control" name="subject10[]" placeholder="Enter Qualification" ></td>
+                                                                                        <td><input class="form-control" name="subject10_4" placeholder="Enter Qualification" ></td>
                                                                                         <td><input class="form-control" name="grade10[]" placeholder="Enter Qualification" ></td> 
                                                                                     </tr>
                                                                                     <tr>
@@ -1060,17 +1054,107 @@
             }
 
             jQuery('#btn_newStudentAdd').on('click', function (event) {
+                var student = {
+                    "firstName": $("#firstName").val(),
+                    "lastName": $("#lastName").val(),
+                    "nic": $("#nic").val(),
+                    "dob": $("#dob").val(),
+                    "gender": $("#gender").val(),
+                    "nationality": $("#nationality").val(),
+                    "religion": $("#religion").val(),
+                    "race": $("#race").val(),
+                    "civilStatus": $("#civilStatus").val(),
+                    "studentProfilePicture": $("#studentProfilePicture").val(),
+                    "emailAddress": $("#emailAddress").val(),
+                    "address": $("#address").val(),
+                    "homeNo": $("#homeNo").val(),
+                    "mobileNo": $("#mobileNo").val(),
+                    "guardianFirstName": $("#guardianFirstName").val(),
+                    "guardianLastName": $("#guardianLastName").val(),
+                    "guardianRelation": $("#guardianRelation").val(),
+                    "guardianOccupation": $("#guardianOccupation").val(),
+                    "guardianContactHomeNo": $("#guardianContactHomeNo").val(),
+                    "guardianContactMobileNo": $("#guardianContactMobileNo").val(),
+                    "guardianAddress": $("guardianAddress").val(),
+                    "otherQualifications": $("#otherQualifications").val(),
+                    "studyTime": $("#studyTime").val(),
+                    "year10Qualification": [
+                        {
+                            "subjectPassed": $("#subject10_1").val(),
+                            "subjectsGrade": $("#grade10_1").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_2").val(),
+                            "subjectsGrade": $("#grade10_2").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_3").val(),
+                            "subjectsGrade": $("#grade10_3").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_4").val(),
+                            "subjectsGrade": $("#grade10_4").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_5").val(),
+                            "subjectsGrade": $("#grade10_5").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_6").val(),
+                            "subjectsGrade": $("#grade10_6").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_7").val(),
+                            "subjectsGrade": $("#grade10_7").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_8").val(),
+                            "subjectsGrade": $("#grade10_8").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_9").val(),
+                            "subjectsGrade": $("#grade10_9").val()
+                        },
+                        {
+                            "subjectPassed": $("#subject10_10").val(),
+                            "subjectsGrade": $("#grade10_10").val()
+                        }
+                    ],
+                    "year12Qualification": [
+                        {
+                            "subjectPassed": $("#subject12_2").val(),
+                            "subjectsGrade": $("#grade12_2").val()
+                        },
+                        {
+                            "subjectPassed": $("#grade12_3").val(),
+                            "subjectsGrade": $("#grade12_3").val()
+                        },
+                        {
+                            "subjectPassed": $("#grade12_4").val(),
+                            "subjectsGrade": $("#grade12_4").val()
+                        },
+                        {
+                            "subjectPassed": $("#grade12_5").val(),
+                            "subjectsGrade": $("#grade12_5").val()
+                        },
+                        {
+                            "subjectPassed": $("#grade12_6").val(),
+                            "subjectsGrade": $("#grade12_6").val()
+                        }
+                    ]
+                };
+
                 event.preventDefault();
-                console.log("Description " + $("#editor1").val());
-                console.log("submittingF");
-                var form = "#form_newAddStudent";
-                var json = ConvertFormToJSON(form);
-                // var tbody = jQuery('#to-do-list > tbody');
-                console.log(json);
+//                console.log("Description " + $("#editor1").val());
+//                console.log("submittingF");
+//                var form = "#form_newAddStudent";
+//                var json = ConvertFormToJSON(form);
+//                var tbody = jQuery('#to-do-list > tbody');
+//               console.log(json);
                 $.ajax({
                     type: "POST",
                     url: "http://localhost:8081/students/645467798943543008081",
-                    data: json,
+                    data: JSON.stringify(student),
                     dataType: "json",
                     contentType: "application/json;charset=utf-8",
 
@@ -1105,7 +1189,18 @@
                     "student": student,
                     "batch": batch
                 }
-                console.log(json);
+                console.log(json);var student = {
+                    "name": $("#nametxt").val()
+                }
+
+                var batch = {
+                    "name": "test"
+                }
+
+                var student_batch = {
+                    "student": student,
+                    "batch": batch
+                }
                 $.ajax({
                     type: "POST",
                     url: "http://localhost:8081/pastStudents/645467798943543008081",

@@ -448,6 +448,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -479,6 +480,7 @@
 //        var json = ConvertFormToJSON(form);
 //				var tbody = jQuery('#to-do-list > tbody');
 //        console.log(json);
+
         $.ajax({
             type: "POST",
             url: "http://localhost:8081/batches/645467798943543008088",
@@ -516,11 +518,13 @@
 //            }
         }
         event.preventDefault();
+
 //        console.log("submitting ; " + $('#reasonForRemoval').val());
 //        var form = "#form_pastAddBatch";
 //        var json = ConvertFormToJSON(form);
 ////				var tbody = jQuery('#to-do-list > tbody');
 //        console.log(json);
+
         $.ajax({
             type: "POST",
             url: "http://localhost:8081/batches/645467798943543008088",
@@ -536,6 +540,7 @@
 
         });
     });
+
 //            });
 
 
