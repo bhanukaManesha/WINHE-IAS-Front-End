@@ -206,7 +206,7 @@ src="${pageContext.request.contextPath}/plugins/bootstrap-wysihtml5/bootstrap3-w
         $('#datepicker3').datepicker({
             autoclose: true
         });
-        $('#datepicker4').datepicker({
+        $('#dob').datepicker({
             autoclose: true
         });
          

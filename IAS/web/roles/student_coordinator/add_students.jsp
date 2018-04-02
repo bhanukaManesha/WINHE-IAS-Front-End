@@ -105,7 +105,7 @@
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-                                                                        <input id="dob" type="text" class="form-control pull-right" id="datepicker4" data-date-format="yyyy-mm-dd">
+                                                                        <input id="dob" type="text" class="form-control pull-right" data-date-format="yyyy-mm-dd">
                                                                     </div>
 
                                                                     <!-- Start Radio Buttons -->
@@ -224,9 +224,10 @@
                                                                         <option>Aunt</option>
                                                                         <option>Brother</option>
                                                                         <option>Sister</option>
+                                                                        <option value="other">Other</option>
                                                                     </select>
 
-                                                                    <input id="guardianRelation" id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
+                                                                    <input id="other-fill" style="display:none;" type="text" class="form-control" placeholder="Enter his/hers relationship to the student">
                                                                     <label>Occupation</label>
                                                                     <input id="guardianOccupation" type="text" class="form-control" placeholder="Enter Guardian Occupation" >
 
@@ -398,7 +399,7 @@
                                                                             <div class="form-group">
 
                                                                                 <div class="box-body pad">
-                                                                                    <textarea name="editor1" rows="10" cols="195"></textarea>
+                                                                                    <textarea id="otherQualifications" name="editor1" rows="10" cols="195"></textarea>
                                                                                 </div>
 
                                                                             </div>
@@ -417,93 +418,95 @@
                                                                     <h3 class="box-title">Course Information</h3>
                                                                 </div>
                                                                 <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3 col-sm-3">
+                                                                            <label>Course Name</label>
+                                                                            <select id="courseName1" class="form-control select2" data-placeholder="Select a Course">
+                                                                                <option>Java - Associate</option>
+                                                                                <option>Java - Professional</option>
+                                                                                <option>Java - Master</option>
+                                                                                <option>Java - Expert</option>
+                                                                                <option>C# - Associate</option>
+                                                                                <option>C# - Professional</option>
+                                                                                <option>C# - Master</option>
+                                                                                <option>C# - Expert</option>
+                                                                                <option>PHP - Associate</option>
+                                                                                <option>PHP - Professional</option>
+                                                                                <option>PHP - Master</option>
+                                                                                <option>PHP - Expert</option>
+                                                                                <option>asp.net - Associate</option>
+                                                                                <option>asp.net - Professional</option>
+                                                                                <option>asp.net - Master</option>
+                                                                                <option>asp.net - Expert</option>
+                                                                            </select>
+                                                                        </div>
 
-                                                                    <div class="col-lg-3 col-sm-3">
-                                                                        <label>Course Name</label>
-                                                                        <select id="courseName1" class="form-control select2" data-placeholder="Select a Course">
-                                                                            <option>Java - Associate</option>
-                                                                            <option>Java - Professional</option>
-                                                                            <option>Java - Master</option>
-                                                                            <option>Java - Expert</option>
-                                                                            <option>C# - Associate</option>
-                                                                            <option>C# - Professional</option>
-                                                                            <option>C# - Master</option>
-                                                                            <option>C# - Expert</option>
-                                                                            <option>PHP - Associate</option>
-                                                                            <option>PHP - Professional</option>
-                                                                            <option>PHP - Master</option>
-                                                                            <option>PHP - Expert</option>
-                                                                            <option>asp.net - Associate</option>
-                                                                            <option>asp.net - Professional</option>
-                                                                            <option>asp.net - Master</option>
-                                                                            <option>asp.net - Expert</option>
-                                                                        </select>
-                                                                    </div>
+                                                                        <div class="col-lg-3 col-sm-3">
+                                                                            <label>Course Name</label>
+                                                                            <select id="courseName2" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                                <option>Java - Associate</option>
+                                                                                <option>Java - Professional</option>
+                                                                                <option>Java - Master</option>
+                                                                                <option>Java - Expert</option>
+                                                                                <option>C# - Associate</option>
+                                                                                <option>C# - Professional</option>
+                                                                                <option>C# - Master</option>
+                                                                                <option>C# - Expert</option>
+                                                                                <option>PHP - Associate</option>
+                                                                                <option>PHP - Professional</option>
+                                                                                <option>PHP - Master</option>
+                                                                                <option>PHP - Expert</option>
+                                                                                <option>asp.net - Associate</option>
+                                                                                <option>asp.net - Professional</option>
+                                                                                <option>asp.net - Master</option>
+                                                                                <option>asp.net - Expert</option>
+                                                                            </select>
+                                                                        </div>
 
-                                                                    <div class="col-lg-3 col-sm-3">
-                                                                        <label>Course Name</label>
-                                                                        <select id="courseName2" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
-                                                                            <option>Java - Associate</option>
-                                                                            <option>Java - Professional</option>
-                                                                            <option>Java - Master</option>
-                                                                            <option>Java - Expert</option>
-                                                                            <option>C# - Associate</option>
-                                                                            <option>C# - Professional</option>
-                                                                            <option>C# - Master</option>
-                                                                            <option>C# - Expert</option>
-                                                                            <option>PHP - Associate</option>
-                                                                            <option>PHP - Professional</option>
-                                                                            <option>PHP - Master</option>
-                                                                            <option>PHP - Expert</option>
-                                                                            <option>asp.net - Associate</option>
-                                                                            <option>asp.net - Professional</option>
-                                                                            <option>asp.net - Master</option>
-                                                                            <option>asp.net - Expert</option>
-                                                                        </select>
-                                                                    </div>
+                                                                        <div class="col-lg-3 col-sm-3">
+                                                                            <label>Course Name</label>
+                                                                            <select id="courseName3" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                                <option>Java - Associate</option>
+                                                                                <option>Java - Professional</option>
+                                                                                <option>Java - Master</option>
+                                                                                <option>Java - Expert</option>
+                                                                                <option>C# - Associate</option>
+                                                                                <option>C# - Professional</option>
+                                                                                <option>C# - Master</option>
+                                                                                <option>C# - Expert</option>
+                                                                                <option>PHP - Associate</option>
+                                                                                <option>PHP - Professional</option>
+                                                                                <option>PHP - Master</option>
+                                                                                <option>PHP - Expert</option>
+                                                                                <option>asp.net - Associate</option>
+                                                                                <option>asp.net - Professional</option>
+                                                                                <option>asp.net - Master</option>
+                                                                                <option>asp.net - Expert</option>
+                                                                            </select>
+                                                                        </div>
 
-                                                                    <div class="col-lg-3 col-sm-3">
-                                                                        <label>Course Name</label>
-                                                                        <select id="courseName3" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
-                                                                            <option>Java - Associate</option>
-                                                                            <option>Java - Professional</option>
-                                                                            <option>Java - Master</option>
-                                                                            <option>Java - Expert</option>
-                                                                            <option>C# - Associate</option>
-                                                                            <option>C# - Professional</option>
-                                                                            <option>C# - Master</option>
-                                                                            <option>C# - Expert</option>
-                                                                            <option>PHP - Associate</option>
-                                                                            <option>PHP - Professional</option>
-                                                                            <option>PHP - Master</option>
-                                                                            <option>PHP - Expert</option>
-                                                                            <option>asp.net - Associate</option>
-                                                                            <option>asp.net - Professional</option>
-                                                                            <option>asp.net - Master</option>
-                                                                            <option>asp.net - Expert</option>
-                                                                        </select>
-                                                                    </div>
+                                                                        <div class="col-lg-3 col-sm-3">
+                                                                            <label>Course Name</label>
 
-                                                                    <label>Course Name</label>
-                                                                    <div class="col-lg-3 col-sm-3">
-                                                                        <select id="courseName4" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
-                                                                            <option>Java - Associate</option>
-                                                                            <option>Java - Professional</option>
-                                                                            <option>Java - Master</option>
-                                                                            <option>Java - Expert</option>
-                                                                            <option>C# - Associate</option>
-                                                                            <option>C# - Professional</option>
-                                                                            <option>C# - Master</option>
-                                                                            <option>C# - Expert</option>
-                                                                            <option>PHP - Associate</option>
-                                                                            <option>PHP - Professional</option>
-                                                                            <option>PHP - Master</option>
-                                                                            <option>PHP - Expert</option>
-                                                                            <option>asp.net - Associate</option>
-                                                                            <option>asp.net - Professional</option>
-                                                                            <option>asp.net - Master</option>
-                                                                            <option>asp.net - Expert</option>
-                                                                        </select>
+                                                                            <select id="courseName4" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
+                                                                                <option>Java - Associate</option>
+                                                                                <option>Java - Professional</option>
+                                                                                <option>Java - Master</option>
+                                                                                <option>Java - Expert</option>
+                                                                                <option>C# - Associate</option>
+                                                                                <option>C# - Professional</option>
+                                                                                <option>C# - Master</option>
+                                                                                <option>C# - Expert</option>
+                                                                                <option>PHP - Associate</option>
+                                                                                <option>PHP - Professional</option>
+                                                                                <option>PHP - Master</option>
+                                                                                <option>PHP - Expert</option>
+                                                                                <option>asp.net - Associate</option>
+                                                                                <option>asp.net - Professional</option>
+                                                                                <option>asp.net - Master</option>
+                                                                                <option>asp.net - Expert</option>
+                                                                            </select>
+                                                                        </div>
                                                                     </div>
                                                                     <label>Batch ID</label>
                                                                     <select id="batch_id" class="form-control select2" data-placeholder="Select a Course" style="width: 100%;">
@@ -515,11 +518,11 @@
                                                                     <label>Study Time:</label>
                                                                     <div class="radio">
                                                                         <label style="margin-left:300px;">
-                                                                            <input id="studyTime" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                            <input name="studyTime" type="radio" name="optionsRadios" value="option1" checked>
                                                                             Full-Time
                                                                         </label>
                                                                         <label style="margin-left:300px;">
-                                                                            <input id="studyTime" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                            <input name="studyTime" type="radio" name="optionsRadios" value="option2">
                                                                             Part-Time
                                                                         </label>
                                                                     </div>
@@ -1060,6 +1063,7 @@
                     "nic": $("#nic").val(),
                     "dob": $("#dob").val(),
                     "gender": $("#gender").val(),
+                    "current_past" : true,
                     "nationality": $("#nationality").val(),
                     "religion": $("#religion").val(),
                     "race": $("#race").val(),
@@ -1071,13 +1075,15 @@
                     "mobileNo": $("#mobileNo").val(),
                     "guardianFirstName": $("#guardianFirstName").val(),
                     "guardianLastName": $("#guardianLastName").val(),
-                    "guardianRelation": $("#guardianRelation").val(),
+                    "guardianRelation": $("#other-fill").val(),
                     "guardianOccupation": $("#guardianOccupation").val(),
                     "guardianContactHomeNo": $("#guardianContactHomeNo").val(),
                     "guardianContactMobileNo": $("#guardianContactMobileNo").val(),
-                    "guardianAddress": $("guardianAddress").val(),
-                    "otherQualifications": $("#otherQualifications").val(),
-                    "studyTime": $("#studyTime").val(),
+                    "guardianAddress": $("#guardianAddress").val(),
+                    "otherQualifications": $("#batch_id").val(),
+                    "studyTime": $("input[name=studyTime]").val(),
+                    "year10_nameOfQualification": $("#id="year10_nameOfQualification"").val(),
+                    "year10_nameOfQualification": $("#id="year12_nameOfQualification"").val(),
                     "year10Qualification": [
                         {
                             "subjectPassed": $("#subject10_1").val(),
@@ -1166,7 +1172,7 @@
                 });
             });
 
-            //            });
+
         </script>	
         <script type="text/javascript">
 
@@ -1189,7 +1195,8 @@
                     "student": student,
                     "batch": batch
                 }
-                console.log(json);var student = {
+                console.log(json);
+                var student = {
                     "name": $("#nametxt").val()
                 }
 

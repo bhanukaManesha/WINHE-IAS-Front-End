@@ -448,9 +448,12 @@
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 7ff70dffe0d31d0675cf4fe74fcf142609885c13
     // add method for Newbatch
     jQuery('#btn_newBatchAdd').on('click', function (event) {
 
