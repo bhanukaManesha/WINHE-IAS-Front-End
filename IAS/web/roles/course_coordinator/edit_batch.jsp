@@ -102,7 +102,7 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form role="form">
+                                    <form role="form" id="form_editBatch">
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -120,67 +120,41 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
+                                                    <div class="col-md-6 lg-6">
+                                                        <label>Batch Name</label>
+                                                        <input id="batchName" type="text" class="form-control" placeholder="Enter Batch Name" >
+                                                    </div>
 
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
-                                                            <label style="display:block;">Select Course</label>
-                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
+                                                            <label style="display:block;">Branch Name</label>
+                                                            <select class="form-control select2" id="branchId" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
                                                                 <option>Java - Associate</option>
                                                                 <option>Java - Professional</option>
                                                                 <option>Java - Master</option>
                                                                 <option>Java - Expert</option>
                                                                 <option>C# - Associate</option>
-                                                                <option>C# - Professional</option>
-                                                                <option>C# - Master</option>
-                                                                <option>C# - Expert</option>
-                                                                <option>PHP - Associate</option>
-                                                                <option>PHP - Professional</option>
-                                                                <option>PHP - Master</option>
-                                                                <option>PHP - Expert</option>
-                                                                <option>asp.net - Associate</option>
-                                                                <option>asp.net - Professional</option>
-                                                                <option>asp.net - Master</option>
-                                                                <option>asp.net - Expert</option>
                                                             </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6 lg-6">
-                                                        <label>Batch ID</label>
-                                                        <input type="text" class="form-control" placeholder="Batch ID" >
-                                                    </div>
                                                 </div>
+
 
                                                 <div class="row">
                                                     <div class="col-md-6 lg-6">
-                                                        <label>Course Duration</label>
-                                                        <input type="number" class="form-control" placeholder="Enter Duration of The Course" >
-                                                    </div>
-                                                    <div class="col-md-6 lg-6">
                                                         <div class="form-group">
-                                                            <label style="display:block;">Select Duration Type</label>
-                                                            <select class="form-control select2" data-placeholder="Select a Course" style="width: 100%;display:block;" >
-                                                                <option>Days</option>
-                                                                <option>Weeks</option>
-                                                                <option>Months</option>
-                                                                <option>Years</option>
+                                                            <label style="display:block;">Select Course</label>
+                                                            <select class="form-control select2"  id="courseId"data-placeholder="Select the Course" style="width: 100%;display:block;" >
+
                                                             </select>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <label>Description </label>
-                                                <div class="box-body pad">
-                                                    <textarea id="editor1" name="editor1" rows="10" cols="80"></textarea>
-                                                </div>
 
-                                            </div>
-                                            <div class="form-group">
-                                                <div class ="row">
-                                                    <div class="col-lg-6 col-md-4">
 
-                                                        <!-- Date -->
+
+                                                    <!-- Date -->
+                                                    <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label>Commence Date :</label>
 
@@ -188,33 +162,34 @@
                                                                 <div class="input-group-addon">
                                                                     <i class="fa fa-calendar"></i>
                                                                 </div>
-                                                                <input type="text" class="form-control pull-right" id="datepicker1">
+                                                                <input  type="text" class="form-control pull-right" id="datepicker1"  data-date-format="yyyy-mm-dd" >
                                                             </div>
                                                             <!-- /.input group -->
                                                         </div>
-                                                        <!-- /.form group -->
                                                     </div>
-                                                    <div class="col-lg-6 col-md-4">
-                                                        <div class="form-group">
-
-                                                            <label>Intake Amount :</label>
-
-                                                            <input type="text" class="form-control" id="" placeholder="Enter Amount">
-
-                                                        </div>
+                                                    <div class="col-md-6 lg-6">
+                                                        <label>No Of Seats</label>
+                                                        <input id="noOfSeats" type="number"  class="form-control" placeholder="Enter No Of Seats" >
                                                     </div>
-
                                                 </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Description</label>
+                                                <div class="box-body pad">
+                                                    <textarea  id="description"  rows="10" cols="140"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
                                                 <div class ="row">
                                                     <div class="col-lg-6 col-md-4">
 
-                                                        <!-- Date -->
                                                         <div class="form-group">
                                                             <label>Batch Fee :</label>
 
                                                             <div class="input-group">
                                                                 <span class="input-group-addon">$</span>
-                                                                <input type="text" class="form-control">
+                                                                <input id="batchFee" type="text" class="form-control">
                                                                 <span class="input-group-addon">.00</span>
                                                             </div>
                                                         </div>
@@ -223,33 +198,27 @@
                                                     <div class="col-lg-6 col-md-4">
                                                         <div class="form-group">
 
-                                                            <label>Hourly Rate:</label>
+                                                            <label>Intake Amount :</label>
 
-                                                            <div class="input-group">
-                                                                <span class="input-group-addon">$</span>
-                                                                <input type="text" class="form-control">
-                                                                <span class="input-group-addon">/per hour</span>
-                                                            </div>
+                                                            <input id="intakeAmount" type="text" class="form-control"  placeholder="Enter Amount">
 
                                                         </div>
                                                     </div>
 
                                                 </div>
-
-
-
                                             </div>
 
+
                                         </div> 
-                                        
-                                        
+
+
 
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-outline">Save Changes</button>
-                                        </div>
+                                    <button type="button" id="btn_closeEditBatch"class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                                    <button type="button" id="btn_save_editBatch"class="btn btn-outline">Save Changes</button>
+                                </div>
 
                             </div>
 
@@ -262,6 +231,85 @@
             <!--./content-wrapper-->
         </div>
         <!--./wrapper--> 
+        
+        <script type="text/javascript">
+
+    function ConvertFormToJSON(form) {
+        var array = jQuery(form).serializeArray();
+        var json = {};
+
+        jQuery.each(array, function () {
+            json[this.name] = this.value || '';
+            console.log("Name : " + this.name, " , Value : " + this.value)
+        });
+
+        return JSON.stringify(json);
+    }
+
+    //get CourseID and the CourseName to the dropdown List from the DB
+    $(document).ready(function (e) {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8081/courses/645467798943543008081",
+
+            success: function (data) {
+                console.log("abc " + data.length);
+                $("#courseId").html("");
+                for (var i = 0; i < data.data.length; i++) {
+                    $("#courseId").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
+                }
+            }, error: function (data) {
+
+            }
+
+        });
+    });
+    
+    
+    // add method for Newbatch
+    jQuery('#btn_save_editBatch').on('click', function (event) {
+
+        var batch = {
+            "batchName": $("#batchName").val(),
+            "description": $("#description").val(),
+            "commenceDate": $("#datepicker1").val(),
+            "noOfSeats": $("#noOfSeats").val(),
+            "intakeAmount": $("#intakeAmount").val(),
+            "batchFee": $("#batchFee").val(),
+            
+     
+
+            "course": {
+                "id": $("#courseId").val() //dropdown id for the foreign key
+            }
+//            "branch": {
+//                "branchIdNew": $("#courseselector").val() //dropdown id for the foreign key
+//            }
+        }
+
+        event.preventDefault();
+//        console.log("Description " + $("#editor1").val());
+//        console.log("submitting1");
+//        var form = "#form_newAddBatch";
+//        var json = ConvertFormToJSON(form);
+//				var tbody = jQuery('#to-do-list > tbody');
+//        console.log(json);
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8081/batches/645467798943543008088",
+            data: JSON.stringify(batch),
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+
+            success: function (data) {
+                console.log("success");
+            }, error: function (data) {
+                console.log(data);
+            }
+
+        });
+    });
+    </script>
 
     </body>
 </html>
