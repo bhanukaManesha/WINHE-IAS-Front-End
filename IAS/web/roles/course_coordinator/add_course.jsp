@@ -55,18 +55,18 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form role="form" >
+                                    <form role="form" method="POST" action="" enctype="multipart/form-data" id="excel-upload-formNew" >
                                         <div class="box-body">
                                             <div class="form-group">
 
-                                                <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                <input type="file" name="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
                                                 <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                             </div>
                                         </div>
                                         <!-- /.box-body -->
 
                                         <div class="box-footer">
-                                            <button type="button" class="btn btn-primary" style="width:100%">Import</button>
+                                            <button type="button" id="excel-upload-btnNew" class="btn btn-primary" style="width:100%">Import</button>
                                         </div>
                                     </form>
                                 </div>
@@ -79,7 +79,7 @@
                                     <!-- /.box-header -->
                                     <!-- form start -->
                                     <form role="form" id="form_courseAdd">
-                                          <input type="hidden" name="current_past" value="1">
+                                        <input type="hidden" name="current_past" value="1">
                                         <div class="box-body">
                                             <div class="form-group">
                                                 <div class="box box-info"  style="padding:10px">
@@ -98,9 +98,7 @@
                                                     </div>
                                                 </div>
 
-<!--                                                <label>Course ID</label>
-                                                <input type="text" name="id" class="form-control" placeholder="Enter Course ID" >-->
-
+                                              
                                                 <label>Course Name</label>
                                                 <input type="text" name="courseName" class="form-control" placeholder="Enter Course Name" >
 
@@ -155,18 +153,18 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" action="" method="POST" enctype="multipart/form-data" id="excel-upload-formPast">
                                             <div class="box-body">
                                                 <div class="form-group">
 
-                                                    <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                    <input type="file" name="file" id="exampleInputFile_Past" style="margin:auto;width:100%;text-align:center;">
                                                     <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                                 </div>
                                             </div>
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
+                                                <button type="button" id="excel-upload-btnPast" class="btn btn-primary" style="width:100%">Import</button>
                                             </div>
                                         </form>
                                     </div>
@@ -179,7 +177,7 @@
                                         <!-- /.box-header -->
                                         <!-- form start -->
                                         <form role="form" id="form_pastCourseAdd">
-                                              <input type="hidden" name="current_past" value="0">
+                                            <input type="hidden" name="current_past" value="0">
                                             <div class="box-body">
                                                 <div class="form-group">
                                                     <div class="box box-info"  style="padding:10px">
@@ -198,10 +196,10 @@
                                                         </div>
                                                     </div>
 
-<!--                                                    <label>Course ID</label>
-
-                                                    <input type="text" class="form-control" placeholder="Enter Course ID" >
-                                                   -->
+                                                    <!--                                                    <label>Course ID</label>
+                                                    
+                                                                                                        <input type="text" class="form-control" placeholder="Enter Course ID" >
+                                                    -->
                                                     <label>Course Name</label>
 
                                                     <input type="text" name="courseName" class="form-control" placeholder="Enter Course Name" >
@@ -312,8 +310,8 @@
 
                 });
             });
-            
-            
+
+
             //            jQuery(document).on('ready', function () {
             jQuery('#btn_pastCourseAdd').on('click', function (event) {
                 event.preventDefault();
@@ -338,6 +336,99 @@
                 });
             });
 
+
+            // Import Excel File for New Course
+            $("#excel-upload-btnNew").click(function (event) {
+
+
+                //stop submit the form, we will post it manually.
+                event.preventDefault();
+
+                // Get form
+                var form = $('#excel-upload-formNew')[0];
+
+                // Create an FormData object 
+                var data = new FormData(form);
+
+                // If you want to add an extra field for the FormData
+//        data.append("CustomField", "This is some extra data, testing");
+
+                // disabled the submit button
+                $("#excel-upload-btnNew").prop("disabled", true);
+
+                $.ajax({
+                    type: "POST",
+                    enctype: 'multipart/form-data',
+                    url: "http://localhost:8081/courses/excel-import",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                    timeout: 600000,
+                    success: function (data) {
+
+//                $("#result").text(data);
+                        console.log("SUCCESS : ", data);
+                        $("#excel-upload-btnNew").prop("disabled", false);
+
+                    },
+                    error: function (e) {
+
+//                $("#result").text(e.responseText);
+                        console.log("ERROR : ", e);
+                        $("#excel-upload-btnNew").prop("disabled", false);
+
+                    }
+                });
+
+            });
+            
+                // Import Excel File for Past Batch
+    $("#excel-upload-btnPast").click(function (event) {
+        
+
+        //stop submit the form, we will post it manually.
+        event.preventDefault();
+
+        // Get form
+        var form = $('#excel-upload-formPast')[0];
+
+        // Create an FormData object 
+        var data = new FormData(form);
+
+        // If you want to add an extra field for the FormData
+//        data.append("CustomField", "This is some extra data, testing");
+
+        // disabled the submit button
+        $("#excel-upload-btnPast").prop("disabled", true);
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "http://localhost:8081/courses/excel-import",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+
+//                $("#result").text(data);
+                console.log("SUCCESS : ", data);
+                $("#excel-upload-btnPast").prop("disabled", false);
+
+            },
+            error: function (e) {
+
+//                $("#result").text(e.responseText);
+                console.log("ERROR : ", e);
+                $("#excel-upload-btnPast").prop("disabled", false);
+
+            }
+        });
+
+    });
+
         </script>
-     </body>
+    </body>
 </html>

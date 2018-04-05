@@ -190,6 +190,82 @@
                         <!-- /.row -->
                     </div>
                     <!-- =========================================================== -->
+                                      <div class="invoice">
+
+                        <h3> Branch </h3>
+                        <!-- Small boxes (Stat box) -->
+                        <div class="row">
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-aqua">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <a href="search_branch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Search Branch
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-green">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-plus"></i>
+                                    </div>
+                                    <a href="add_branch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Add Branch
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-yellow">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-edit"></i>
+                                    </div>
+                                    <a href="edit_branch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Edit Branch
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-xs-6">
+                                <!-- small box -->
+                                <div class="small-box bg-red">
+                                    <div class="inner">
+                                        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+
+                                        <p>&nbsp</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fa fa-trash"></i>
+                                    </div>
+                                    <a href="delete_branch.jsp" class="small-box-footer" style="font-size:20px;">
+                                        Delete Branch
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
                     <!-- =========================================================== -->
 
                     <div class="invoice">

@@ -56,18 +56,18 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" action="" method="POST" enctype="multipart/form-data" id="excel-upload-formNew">
                                             <div class="box-body">
                                                 <div class="form-group">
 
-                                                    <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                    <input type="file" id="exampleInputFile_New" style="margin:auto;width:100%;text-align:center;">
                                                     <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                                 </div>
                                             </div>
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="button" class="btn btn-primary" style="width:100%">Import</button>
+                                                <button type="button" id="excel-upload-btnNew" class="btn btn-primary" style="width:100%">Import</button>
                                             </div>
                                         </form>
                                     </div>
@@ -274,12 +274,12 @@
                                                                     <h3 class="box-title">Course Information</h3>
                                                                 </div>
                                                                 <div class="form-group">
- 
+
 
                                                                     <label>Batch ID</label>
                                                                     <select class="form-control select2" id="newBatchID"name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
-<!--                                                                        <option>CS-450</option>
-                                                                        <option>CS-452</option>-->
+                                                                        <!--                                                                        <option>CS-450</option>
+                                                                                                                                                <option>CS-452</option>-->
                                                                     </select>
 
 
@@ -362,18 +362,18 @@
                                             </div>
                                             <!-- /.box-header -->
                                             <!-- form start -->
-                                            <form role="form">
+                                            <form role="form" action="" method="POST" enctype="multipart/form-data" id="excel-upload-formPast">
                                                 <div class="box-body">
                                                     <div class="form-group">
 
-                                                        <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                        <input type="file" name="file" id="exampleInputFile_Past" style="margin:auto;width:100%;text-align:center;">
                                                         <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                                     </div>
                                                 </div>
                                                 <!-- /.box-body -->
 
                                                 <div class="box-footer">
-                                                    <button type="submit" class="btn btn-primary" style="width:100%">Import</button>
+                                                    <button type="button" id="excel-upload-btnPast" class="btn btn-primary" style="width:100%">Import</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -583,10 +583,10 @@
                                                                     </div>
                                                                     <div class="form-group">
 
-                                                                
+
                                                                         <label>Batch ID</label>
                                                                         <select class="form-control select2" id="pastBatchID" name="batchID" data-placeholder="Select the Batch" style="width: 100%;">
-                                                                        
+
                                                                         </select>
 
 
@@ -710,8 +710,8 @@
 
                 return JSON.stringify(json);
             }
-            
-                      //get BatchID and the CourseName to the dropdown List from the DB
+
+            //get BatchID and the CourseName to the dropdown List from the DB
             $(document).ready(function (e) {
                 $.ajax({
                     type: "GET",
@@ -729,8 +729,8 @@
 
                 });
             });
-            
-                       //get BatchID and the CourseName to the dropdown List from the DB
+
+            //get BatchID and the CourseName to the dropdown List from the DB
             $(document).ready(function (e) {
                 $.ajax({
                     type: "GET",
@@ -750,13 +750,13 @@
             });
 
 
-            //            jQuery(document).on('ready', function () {
+            //Add function for New Lecturer
             jQuery('#btn_newLecturerAdd').on('click', function (event) {
                 event.preventDefault();
                 console.log("submittingF");
                 var form = "#form_newAddLecturer";
                 var json = ConvertFormToJSON(form);
-                //				var tbody = jQuery('#to-do-list > tbody');
+
                 console.log(json);
                 $.ajax({
                     type: "POST",
@@ -773,15 +773,15 @@
 
                 });
             });
-            //            });
 
-            //            jQuery(document).on('ready', function () {
+
+            //Add function for Past Lecturer
             jQuery('#btn_pastLecturerAdd').on('click', function (event) {
                 event.preventDefault();
                 console.log("submittingF");
                 var form = "#form_pastLecturerAdd";
                 var json = ConvertFormToJSON(form);
-                //				var tbody = jQuery('#to-do-list > tbody');
+
                 console.log(json);
                 $.ajax({
                     type: "POST",
@@ -798,7 +798,100 @@
 
                 });
             });
-            //            });
+
+
+  
+            // Import Excel File for New Lecturer
+            $("#excel-upload-btnNew").click(function (event) {
+
+
+                //stop submit the form, we will post it manually.
+                event.preventDefault();
+
+                // Get form
+                var form = $('#excel-upload-formNew')[0];
+
+                // Create an FormData object 
+                var data = new FormData(form);
+
+                // If you want to add an extra field for the FormData
+//        data.append("CustomField", "This is some extra data, testing");
+
+                // disabled the submit button
+                $("#excel-upload-btnNew").prop("disabled", true);
+
+                $.ajax({
+                    type: "POST",
+                    enctype: 'multipart/form-data',
+                    url: "http://localhost:8081/lecturer/excel-import",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                    timeout: 600000,
+                    success: function (data) {
+
+//                $("#result").text(data);
+                        console.log("SUCCESS : ", data);
+                        $("#excel-upload-btnNew").prop("disabled", false);
+
+                    },
+                    error: function (e) {
+
+//                $("#result").text(e.responseText);
+                        console.log("ERROR : ", e);
+                        $("#excel-upload-btnNew").prop("disabled", false);
+
+                    }
+                });
+
+            });
+
+            // Import Excel File for Past Lecturer
+    $("#excel-upload-btnPast").click(function (event) {
+        
+
+        //stop submit the form, we will post it manually.
+        event.preventDefault();
+
+        // Get form
+        var form = $('#excel-upload-formPast')[0];
+
+        // Create an FormData object 
+        var data = new FormData(form);
+
+        // If you want to add an extra field for the FormData
+//        data.append("CustomField", "This is some extra data, testing");
+
+        // disabled the submit button
+        $("#excel-upload-btnPast").prop("disabled", true);
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "http://localhost:8081/lecturer/excel-import",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+
+//                $("#result").text(data);
+                console.log("SUCCESS : ", data);
+                $("#excel-upload-btnPast").prop("disabled", false);
+
+            },
+            error: function (e) {
+
+//                $("#result").text(e.responseText);
+                console.log("ERROR : ", e);
+                $("#excel-upload-btnPast").prop("disabled", false);
+
+            }
+        });
+
+    });
         </script>	
 
 

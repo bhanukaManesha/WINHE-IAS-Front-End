@@ -55,18 +55,19 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <!-- form start -->
-                                    <form action="" method="POST" enctype="multipart/form-data" id="excel-upload-form" role="form">
+                                    <form action="" method="POST" enctype="multipart/form-data" id="excel-upload-formNew" role="form">
+<!--                                        <input type="hidden" id="current_pastNewImport" value="1">-->
                                         <div class="box-body">
                                             <div class="form-group">
 
-                                                <input type="file" name="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                <input type="file" name="file" id="exampleInputFile_New" style="margin:auto;width:100%;text-align:center;">
                                                 <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                             </div>
                                         </div>
                                         <!-- /.box-body -->
 
                                         <div class="box-footer">
-                                            <button type="button" id="excel-upload-btn" class="btn btn-primary" style="width:100%">Import</button>
+                                            <button type="button" id="excel-upload-btnNew" class="btn btn-primary" style="width:100%">Import</button>
                                         </div>
                                     </form>
                                 </div>
@@ -107,11 +108,7 @@
                                                         <div class="form-group">
                                                             <label style="display:block;">Branch Name</label>
                                                             <select class="form-control select2" id="branchIdNew" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
-                                                                <option>Java - Associate</option>
-                                                                <option>Java - Professional</option>
-                                                                <option>Java - Master</option>
-                                                                <option>Java - Expert</option>
-                                                                <option>C# - Associate</option>
+                                                              
                                                             </select>
                                                         </div>
                                                     </div>
@@ -121,7 +118,7 @@
                                                     <div class="col-md-6 lg-6">
                                                         <div class="form-group">
                                                             <label style="display:block;">Select Course</label>
-                                                            <select class="form-control select2"  id="courseIdNew"data-placeholder="Select the Course" style="width: 100%;display:block;" >
+                                                            <select class="form-control select2"  id="courseIdNew" data-placeholder="Select the Course" style="width: 100%;display:block;" >
 
                                                             </select>
                                                         </div>
@@ -207,18 +204,19 @@
                                         </div>
                                         <!-- /.box-header -->
                                         <!-- form start -->
-                                        <form role="form">
+                                        <form role="form" action="" method="POST" enctype="multipart/form-data" id="excel-upload-formPast" >
+<!--                                            <input type="hidden" id="current_pastPast" value="0">-->
                                             <div class="box-body">
                                                 <div class="form-group">
 
-                                                    <input type="file" id="exampleInputFile" style="margin:auto;width:100%;text-align:center;">
+                                                    <input type="file" name="file" id="exampleInputFile_Past" style="margin:auto;width:100%;text-align:center;">
                                                     <p class="help-block"style="margin:auto;text-align:center;">Please upload a .xls file only</p>
                                                 </div>
                                             </div>
                                             <!-- /.box-body -->
 
                                             <div class="box-footer">
-                                                <button type="button" class="btn btn-primary" style="width:100%">Import</button>
+                                                <button type="button" id="excel-upload-btnPast"class="btn btn-primary" style="width:100%">Import</button>
                                             </div>
                                         </form>
                                     </div>
@@ -272,12 +270,8 @@
                                                             <div class="col-md-6 lg-6">
                                                                 <div class="form-group">
                                                                     <label style="display:block;">Branch Name</label>
-                                                                    <select class="form-control select2" id="branchID" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
-                                                                        <option>Java - Associate</option>
-                                                                        <option>Java - Professional</option>
-                                                                        <option>Java - Master</option>
-                                                                        <option>Java - Expert</option>
-                                                                        <option>C# - Associate</option>
+                                                                    <select class="form-control select2" id="branchIdPast" data-placeholder="Select the Branch" style="width: 100%;display:block;" >
+                                                                     
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -294,7 +288,7 @@
                                                                         <div class="input-group-addon">
                                                                             <i class="fa fa-calendar"></i>
                                                                         </div>
-                                                                         <input  type="text" class="form-control pull-right" id="datepicker2"  data-date-format="yyyy-mm-dd" >
+                                                                        <input  type="text" class="form-control pull-right" id="datepicker2"  data-date-format="yyyy-mm-dd" >
                                                                     </div>
                                                                     <!-- /.input group -->
                                                                 </div>
@@ -408,7 +402,7 @@
         return JSON.stringify(json);
     }
 
-    //get CourseID and the CourseName to the dropdown List from the DB
+    //get CourseID and the CourseName to the dropdown List from the DB (For New)
     $(document).ready(function (e) {
         $.ajax({
             type: "GET",
@@ -427,7 +421,7 @@
         });
     });
 
-    //get CourseID and the CourseName to the dropdown List from the DB
+    //get CourseID and the CourseName to the dropdown List from the DB (For Past)
     $(document).ready(function (e) {
         $.ajax({
             type: "GET",
@@ -438,6 +432,44 @@
                 $("#courseIdPast").html("");
                 for (var i = 0; i < data.data.length; i++) {
                     $("#courseIdPast").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].courseName + "</option>");
+                }
+            }, error: function (data) {
+
+            }
+
+        });
+    });
+    
+        //get BranchID and the BranchName to the dropdown List from the DB (For New)
+    $(document).ready(function (e) {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8081/branch/645467798943543008081",
+
+            success: function (data) {
+                console.log("abc " + data.length);
+                $("#branchIdNew").html("");
+                for (var i = 0; i < data.data.length; i++) {
+                    $("#branchIdNew").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].branchName + "</option>");
+                }
+            }, error: function (data) {
+
+            }
+
+        });
+    });
+    
+            //get BranchID and the BranchName to the dropdown List from the DB (For Past)
+    $(document).ready(function (e) {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8081/branch/645467798943543008081",
+
+            success: function (data) {
+                console.log("abc " + data.length);
+                $("#branchIdPast").html("");
+                for (var i = 0; i < data.data.length; i++) {
+                    $("#branchIdPast").append("<option value=" + data.data[i].id + ">" + data.data[i].id + " - " + data.data[i].branchName + "</option>");
                 }
             }, error: function (data) {
 
@@ -460,15 +492,14 @@
             "intakeAmount": $("#intakeAmountNew").val(),
             "batchFee": $("#batchFeeNew").val(),
             "current_past": $("#current_pastNew").val(),
-     
 
             "course": {
                 "id": $("#courseIdNew").val() //dropdown id for the foreign key
+            },
+            "branch": {
+                "id": $("#branchIdNew").val() //dropdown id for the foreign key
             }
-//            "branch": {
-//                "branchIdNew": $("#courseselector").val() //dropdown id for the foreign key
-//            }
-        }
+        };
 
         event.preventDefault();
 //        console.log("Description " + $("#editor1").val());
@@ -494,9 +525,11 @@
         });
     });
 
+
+    // add method for Past batch
     jQuery('#btn_pastBatchAdd').on('click', function (event) {
-        
-             var batch = {
+
+        var batch = {
             "batchName": $("#batchNamePast").val(),
             "description": $("#descriptionPast").val(),
             "commenceDate": $("#datepicker2").val(),
@@ -505,15 +538,16 @@
             "batchFee": $("#batchFeePast").val(),
             "current_past": $("#current_pastPast").val(),
             "reasonForRemoval": $("#reasonForRemovalPast").val(),
-     
+
 
             "course": {
                 "id": $("#courseIdPast").val() //dropdown id for the foreign key
+            },
+            "branch": {
+                "id": $("#branchIdPast").val() //dropdown id for the foreign key
             }
-//            "branch": {
-//                "branchIdNew": $("#courseselector").val() //dropdown id for the foreign key
-//            }
-        }
+        
+        };
         event.preventDefault();
 
 //        console.log("submitting ; " + $('#reasonForRemoval').val());
@@ -538,26 +572,74 @@
         });
     });
 
-//            });
 
 
+            // Import Excel File for New Course
+            $("#excel-upload-btnNew").click(function (event) {
 
-$("#excel-upload-btn").click(function (event) {
+
+                //stop submit the form, we will post it manually.
+                event.preventDefault();
+
+                // Get form
+                var form = $('#excel-upload-formNew')[0];
+
+                // Create an FormData object 
+                var data = new FormData(form);
+
+                // If you want to add an extra field for the FormData
+//        data.append("CustomField", "This is some extra data, testing");
+
+                // disabled the submit button
+                $("#excel-upload-btnNew").prop("disabled", true);
+
+                $.ajax({
+                    type: "POST",
+                    enctype: 'multipart/form-data',
+                    url: "http://localhost:8081/batches/excel-import",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                    timeout: 600000,
+                    success: function (data) {
+
+//                $("#result").text(data);
+                        console.log("SUCCESS : ", data);
+                        $("#excel-upload-btnNew").prop("disabled", false);
+
+                    },
+                    error: function (e) {
+
+//                $("#result").text(e.responseText);
+                        console.log("ERROR : ", e);
+                        $("#excel-upload-btnNew").prop("disabled", false);
+
+                    }
+                });
+
+            });
+
+ 
+
+                // Import Excel File for Past Batch
+    $("#excel-upload-btnPast").click(function (event) {
+        
 
         //stop submit the form, we will post it manually.
         event.preventDefault();
 
         // Get form
-        var form = $('#excel-upload-form')[0];
+        var form = $('#excel-upload-formPast')[0];
 
-		// Create an FormData object 
+        // Create an FormData object 
         var data = new FormData(form);
 
-		// If you want to add an extra field for the FormData
+        // If you want to add an extra field for the FormData
 //        data.append("CustomField", "This is some extra data, testing");
 
-		// disabled the submit button
-        $("#excel-upload-btn").prop("disabled", true);
+        // disabled the submit button
+        $("#excel-upload-btnPast").prop("disabled", true);
 
         $.ajax({
             type: "POST",
@@ -572,19 +654,20 @@ $("#excel-upload-btn").click(function (event) {
 
 //                $("#result").text(data);
                 console.log("SUCCESS : ", data);
-                $("#excel-upload-btn").prop("disabled", false);
+                $("#excel-upload-btnPast").prop("disabled", false);
 
             },
             error: function (e) {
 
 //                $("#result").text(e.responseText);
                 console.log("ERROR : ", e);
-                $("#excel-upload-btn").prop("disabled", false);
+                $("#excel-upload-btnPast").prop("disabled", false);
 
             }
         });
 
     });
+
 
 </script>	
 
